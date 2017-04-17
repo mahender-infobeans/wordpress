@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width" />
+<title>jQuery wSelect Plugin Demo</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/wSelect.js"></script>
+
+</head>
+<body>
+
+<div id="content">
+
+
+
+<link rel="Stylesheet" type="text/css" href="css/wSelect.css" />
+<div class="content-box">
+<label class="wLabel-left">Country:</label>
+<select id="demo">
+<option value="">Select a Country</option>
+<option value="AU" data-icon="./img/AU.png">Australia</option>
+<option value="CA" data-icon="./img/CA.png">Canada</option>
+<option value="PL" data-icon="./img/PL.png">Poland</option>
+<option value="TH" data-icon="./img/TH.png">Thailand</option>
+<option value="UK" data-icon="./img/UK.png">England (United Kingdom)</option>
+</select>
+
+</div>
+<style>
+            .wSelect-multiple {
+                width: 150px;
+            }
+			.wSelect-option-value {
+    background-position: 0 center;
+    background-repeat: no-repeat;
+    margin: 0 5px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+        </style>
+<script type="text/javascript">
+            $('select').wSelect();
+
+            $('#demo').change(function() {
+                console.log($(this).val());
+            });
+
+            $('#demo').val('AU').change(); // should see in console
+            $('#demo').val('PL').wSelect('change'); // should see the selected option change to three
+            $('#demo').append('<option value="US" data-icon="./img/US.png">United States of America</option>').wSelect('reset');
+            $('#demo').val('CA').change();
+            
+            $('#demo-multi').val(['soccer', 'archery']).change();
+        </script>
+</div> 
+
+
+
+
+</body>
+</html>

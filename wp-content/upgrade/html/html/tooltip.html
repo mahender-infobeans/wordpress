@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" /-->
+	 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">	
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>CueBack -Draft Memory</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/modal-box.css" rel="stylesheet">
+    <link href="css/memory-draft.css" rel="stylesheet">
+    <!--link href=""http://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.5.4/bootstrap-select.min.css" /-->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+ 
+</head>
+<body class="background-img memory-body">
+<!--images gallery pop up start here-->
+<div class="memory-overlay"></div>
+<div class="memory-modal">
+	<div class="modal-box-inner">
+		<div class="modal-box-close white"><img src="images/close-x.png"></div>
+		<div class="width100">
+			<div id="myCarousel" class="carousel slide article-slide">
+
+			  <!-- Wrapper for slides -->
+				<div class="carousel-inner cont-slider">
+					<div class="item">
+						<i class="fa fa-zoom-out zoom-in-img"></i>
+						<img src="images/memory-gallery1.jpg" class="img100">
+						
+					</div>
+					<div class="item">
+						<i class="fa fa-zoom-out zoom-in-img"></i>
+						<img src="images/memory-gallery1.jpg" class="img100">
+						
+					</div>
+					<div class="item active">
+						<i class="fa fa-zoom-out zoom-in-img"></i>
+						<img src="images/memory-gallery1.jpg" class="img100">
+						
+					</div>
+					<div class="item">
+						<i class="fa fa-zoom-out zoom-in-img"></i>
+						<img src="images/memory-gallery1.jpg" class="img100">
+						
+					</div>
+			  </div>
+			  <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a> 
+			  <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+
+			</div>
+			
+				<div class="caption memory-model-txtbot">
+					<div><label><input type="checkbox"/> <span class="font14 gray-dark normal marginlft5"><strong>Football Ground</strong></span></label></div>
+					<div class="font12 gray marginlft20"><a href="javascript:void(0);" class="memory-gallery">By Lisa Amburg - July 10, 2016</a></div>
+				</div>
+			
+		</div>
+		
+	</div>
+	
+</div>
+<!--images gallery pop up end here-->
+<!-- right side block start html here-->
+<div id="test2" class="pos-r">
+    <div class="list-group" style="height:100%;">
+		<!-- Tabs -->
+		<ul class="nav nav-tabs chat-bar" id="tabs">
+			<li class="active"><a href="#Chat" data-toggle="tab">Chat</a></li>
+			<li><a href="#Collaborators" data-toggle="tab">Collaborators</a></li>
+		</ul>
+		<!-- Tabs -->
+	  <div class="clearfix"></div>
+	  <div class="col-md-12" style="height:100%;">
+	  <div class="tab-content" style="height:100%;">
+	  <!-- Chat block html start here-->
+			<div class="tab-pane active" id="Chat">
+				
+					<div class="width100" id="chat-inner">
+						<div class="col-md-12 margintop20">
+							<div class="row"><strong>People (4)</strong></div>
+						</div>
+						<div class="col-md-12 margintop20">
+							<div class="row">
+							<div class="memory-chat-img"><a href="javascript:void(0);"><img src="images/private1.jpg"></a></div>
+								<div class="memory-chat-txt">
+									<div><a href="javascript:void(0);" class="font14 marginrht15 black">Jonas Oliver</a><span class="pull-right"><a href="javascript:void(0);" class="common">Chat</a></span></div>
+									<div><span class="font12 gray">Joined July 2</span></div>
+								</div>
+								<!--i class="fa fa-comment"></i-->
+							</div>
+						</div>
+						<div class="clearfix"></div>
+						<div class="hr-line marginbot20 margintop20"></div>
+						<div class="col-md-12 margintop20">
+							<div class="row">
+							<div class="memory-chat-img"><a href="javascript:void(0);"><img src="images/private2.jpg"></a></div>
+								<div class="memory-chat-txt">
+									<div><a href="javascript:void(0);" class="font14 marginrht15 black">Jonas Oliver</a><span class="pull-right"><a href="javascript:void(0);" class="common">Chat</a></span></div>
+									<div><span class="font12 gray">Joined July 2</span></div>
+								</div>
+								<!--i class="fa fa-comment"></i-->
+							</div>
+						</div>
+						<div class="clearfix"></div>
+						<div class="hr-line marginbot20 margintop20"></div>
+						<div class="col-md-12 margintop20">
+							<div class="row">
+							<div class="memory-chat-img"><a href="javascript:void(0);"><img src="images/private3.jpg"></a></div>
+								<div class="memory-chat-txt">
+									<div><a href="javascript:void(0);" class="font14 marginrht15 black">Jonas Oliver</a><span class="pull-right"><a href="javascript:void(0);" class="common">Chat</a></span></div>
+									<div><span class="font12 gray">Joined July 2</span></div>
+								</div>
+								<!--i class="fa fa-comment"></i-->
+							</div>
+						</div>
+						<div class="clearfix"></div>
+						<div class="hr-line marginbot20 margintop20"></div>
+						<div class="col-md-12 margintop20">
+							<div class="row">
+							<div class="memory-chat-img"><a href="javascript:void(0);"><img src="images/private4.jpg"></a></div>
+								<div class="memory-chat-txt">
+									<div><a href="javascript:void(0);" class="font14 marginrht15 black">Jonas Oliver</a></div>
+									<div><span class="font12 errorred">Pending Invitation</span></div>
+								</div>
+								<!--i class="fa fa-comment"></i-->
+							</div>
+						</div>
+						<div class="clearfix"></div>
+						<div class="hr-line marginbot20 margintop20"></div>
+						<div class="col-md-12 margintop20">
+							<div class="row"><strong>Group (4)</strong></div>
+						</div>
+						<div class="col-md-12 margintop20">
+							<div class="row">
+							<div class="memory-chat-img pos-r">
+								<div class="memory-chat-img-multip"><img src="images/private1.jpg"></div>
+								<div class="memory-chat-img-multip"><img src="images/private2.jpg"></div>
+								<div class="memory-chat-img-multip"><img src="images/private3.jpg"></div>
+								<div class="memory-chat-img-multip"><img src="images/private4.jpg"></div>
+								<div class="memory-chat-img-multip-notfc font12">6</div>
+							</div>
+								<div class="memory-chat-txt">
+									<div><a href="javascript:void(0);" class="font14 marginrht15 black">My Buddies</a></div>
+									<div><span class="font12 gray">Joined July 2</span></div>
+								</div>
+								<!--i class="fa fa-comment"></i-->
+							</div>
+						</div>
+						<div class="clearfix"></div>
+						<div class="hr-line marginbot20 margintop20"></div>
+						<a href="javascript:void(0);" class="memory-invite">Invite Collaborators</a>
+					</div>
+					
+			</div>
+			
+		<!-- Chat block html end here-->
+		
+		
+			<!-- collaborators block html start here-->
+			<div class="width100 tab-pane" id="Collaborators">
+				<ul class="chat-public">
+					<li><a href="#Public" data-toggle="tab">Public (2)</a></li>
+					<li><a href="#Private" data-toggle="tab">Private (2)</a></li>
+					<li style="padding-right:0px;"><a href="#New-Chat" class="font12" style="border:1px solid #115740; padding:5px 10px; margin-top:5px;" data-toggle="tab">New Chat</a></li>
+				</ul>
+				<div class="tab-content" style="height:100%;">
+					<div class="clearfix"></div>
+					<div class="width100 tab-pane active" id="Public">
+						<div class="col-md-12 margintop10">
+							<div class="row"><label><span class="pull-left"><input type="checkbox"></span> <span class="label-span-txt font12 gray-dark normal marginlft5"><strong>Bookmarked</strong></span></label></div>
+						</div>
+						<div class="col-md-12 memory-cola-box">
+							<div class="row">
+								<a href="javascript:void(0);" class="font14 black">Jonas Oliver</a> - <span class="font12 light-gray">July 12</span> <a href="javascript:void(0);"><i class="fa fa-star light-gray pull-right"></i></a>
+							</div>
+							<div class="row margintop10 font14 gray-dark">
+								Lorem ipsum dolor sit amet, cons ectetur adipiscing elit, sed do eius.
+							</div>
+						</div>
+						<div class="col-md-12 margintop10 memory-cola-box-alter">
+							<div class="row">
+								<a href="javascript:void(0);" class="font14 black">You</a> - <span class="font12 light-gray">July 12</span> <a href="javascript:void(0);"><i class="fa fa-star light-gray pull-right"></i></a>
+							</div>
+							<div class="row margintop10 font14 gray-dark">
+								Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan tium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+							</div>
+						</div>
+						<div class="col-md-12 margintop10 text-center errorred font12">2 unread messages</div>
+						<div class="col-md-12 margintop10 memory-cola-box">
+							<div class="row">
+								<a href="javascript:void(0);" class="font14 black">Lisa Hamburg</a> - <span class="font12 light-gray">Yesterday</span> <a href="javascript:void(0);"><i class="fa fa-star light-gray pull-right"></i></a>
+							</div>
+							<div class="row margintop10 font14 gray-dark">
+								Lorem ipsum dolor sit amet, cons ectetur adipiscing elit, sed do eius.
+							</div>
+						</div>
+						<div class="col-md-12 margintop10 memory-cola-box">
+							<div class="row">
+								<a href="javascript:void(0);" class="font14 black">Simon Augustine</a> - <span class="font12 light-gray">2 hours ago</span> <a href="javascript:void(0);"><i class="fa fa-star light-gray pull-right"></i></a>
+							</div>
+							<div class="row margintop10 font14 gray-dark">
+								Lorem ipsum dolor sit amet, cons ectetur adipiscing elit, sed do eius.
+							</div>
+						</div>
+						<div class="memory-send-block">
+							<input type="text" placeholder="Type Your Message" /><button><i class="fa fa-paper-plane"></i></button>
+						</div>
+					</div>
+					<div class="width100 tab-pane" id="Private">
+						<div class="col-md-12 margintop20">
+							<div class="row">
+								<div class="memory-chat-img"><a href="javascript:void(0);"><img src="images/private1.jpg"></a></div>
+								<div class="memory-chat-txt pos-r">
+									<div><a href="javascript:void(0);" class="font14 black">Jonas Oliver</a> - <span class="font12 gray">Yesterday</span>
+										<a href="javascript:void(0)"><i class="fa fa-comment light-gray memory-private-txt-chat pos-r"><span class="memory-private-txt-chat-indctr"></span></i></a>
+									</div>
+									<div class="gray font12 memory-private-txt">Lorem ipsum is a dummy textLorem ipsum is a dummy textLorem ipsum is a dummy text</div>
+								</div>
+								
+							</div>
+						</div>
+						<div class="clearfix"></div>
+						<div class="hr-line marginbot20 margintop20"></div>
+						<div class="col-md-12 margintop20">
+							<div class="row">
+								<div class="memory-chat-img"><a href="javascript:void(0);"><img src="images/private1.jpg"></a></div>
+								<div class="memory-chat-txt pos-r">
+									<div><a href="javascript:void(0);" class="font14 black">Jonas Oliver</a> - <span class="font12 gray">Yesterday</span>
+										<a href="javascript:void(0)"><i class="fa fa-comment light-gray memory-private-txt-chat pos-r"><span class="memory-private-txt-chat-indctr"></span></i></a>
+									</div>
+									<div class="gray font12 memory-private-txt">Lorem ipsum is a dummy textLorem ipsum is a dummy textLorem ipsum is a dummy text</div>
+								</div>
+								
+							</div>
+						</div>
+						<div class="clearfix"></div>
+						<div class="hr-line marginbot20 margintop20"></div>
+						<div class="col-md-12 margintop20">
+							<div class="row">
+								<div class="memory-chat-img"><a href="javascript:void(0);"><img src="images/private2.jpg"></a></div>
+								<div class="memory-chat-txt pos-r">
+									<div><a href="javascript:void(0);" class="font14 black">Jonas Oliver</a> - <span class="font12 gray">Yesterday</span>
+										<a href="javascript:void(0)"><i class="fa fa-comment light-gray memory-private-txt-chat pos-r"><span class="memory-private-txt-chat-indctr"></span></i></a>
+									</div>
+									<div class="gray font12 memory-private-txt">Lorem ipsum is a dummy textLorem ipsum is a dummy textLorem ipsum is a dummy text</div>
+								</div>
+								
+							</div>
+						</div>
+						<div class="clearfix"></div>
+						<div class="hr-line marginbot20 margintop20"></div>
+						<div class="col-md-12 margintop20">
+							<div class="row">
+								<div class="memory-chat-img"><a href="javascript:void(0);"><img src="images/private3.jpg"></a></div>
+								<div class="memory-chat-txt pos-r">
+									<div><a href="javascript:void(0);" class="font14 black">Jonas Oliver</a> - <span class="font12 gray">Yesterday</span>
+										<a href="javascript:void(0)"><i class="fa fa-comment light-gray memory-private-txt-chat pos-r"><span class="memory-private-txt-chat-indctr"></span></i></a>
+									</div>
+									<div class="gray font12 memory-private-txt">Lorem ipsum is a dummy textLorem ipsum is a dummy textLorem ipsum is a dummy text</div>
+								</div>
+								
+							</div>
+						</div>
+						<div class="clearfix"></div>
+						<div class="hr-line marginbot20 margintop20"></div>
+					</div>
+					<div class="width100 tab-pane" id="New-Chat">
+						<div class="col-md-12 margintop20">
+							<div class="row"><strong>People (4)</strong></div>
+						</div>
+						<div class="col-md-12 margintop20">
+							<div class="row">
+							<div class="memory-chat-img"><a href="javascript:void(0);"><img src="images/private1.jpg"></a></div>
+								<div class="memory-chat-txt">
+									<div><a href="javascript:void(0);" class="font14 marginrht15 black">Jonas Oliver</a><span class="pull-right"><a href="javascript:void(0);" class="common">Chat</a></span></div>
+									<div><span class="font12 gray">Joined July 2</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+						<div class="hr-line marginbot20 margintop20"></div>
+						<div class="col-md-12 margintop20">
+							<div class="row">
+							<div class="memory-chat-img"><a href="javascript:void(0);"><img src="images/private1.jpg"></a></div>
+								<div class="memory-chat-txt">
+									<div><a href="javascript:void(0);" class="font14 marginrht15 black">Jonas Oliver</a><span class="pull-right"><a href="javascript:void(0);" class="common">Chat</a></span></div>
+									<div><span class="font12 gray">Joined July 2</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+						<div class="hr-line marginbot20 margintop20"></div>
+						<div class="col-md-12 margintop20">
+							<div class="row">
+							<div class="memory-chat-img"><a href="javascript:void(0);"><img src="images/private1.jpg"></a></div>
+								<div class="memory-chat-txt">
+									<div><a href="javascript:void(0);" class="font14 marginrht15 black">Jonas Oliver</a><span class="pull-right"><a href="javascript:void(0);" class="common">Chat</a></span></div>
+									<div><span class="font12 gray">Joined July 2</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+						<div class="hr-line marginbot20 margintop20"></div>
+						<div class="col-md-12 margintop20">
+							<div class="row">
+							<div class="memory-chat-img"><a href="javascript:void(0);"><img src="images/private1.jpg"></a></div>
+								<div class="memory-chat-txt">
+									<div><a href="javascript:void(0);" class="font14 marginrht15 black">Jonas Oliver</a><span class="pull-right"><a href="javascript:void(0);" class="common">Chat</a></span></div>
+									<div><span class="font12 gray">Joined July 2</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+						<div class="hr-line marginbot20 margintop20"></div>
+					</div>
+				</div>
+			</div>
+		<!-- collaborators block html end here-->
+		
+		</div>
+	  </div>
+    </div>
+  </div>
+<!-- right side block start html end-->
+
+<!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top height65 header-box" role="navigation">
+        <!--div class="container"-->
+            <!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header header-height">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><img src="images/cueback-logo.png"></a>
+		</div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<div class="col-md-5 col-sm-5">
+			<ul class="nav navbar-nav margintop10 remove-mrg-top">
+				<li class="visible-xs paddingtopbot10">
+					<div class="input-group input-group-xs">
+						<div class="input-group-btn search-panel">
+
+							<button type="button" class="btn btn-default dropdown-toggle bgcolorgray" data-toggle="dropdown">
+								<span id="search_concept" class="font12 glyphicon glyphicon-user icon-color">Memory</span> <span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu" role="menu">
+							  <li><a href="javascript:void(0);"><i class="glyphicon glyphicon-user icon-color"></i><small>Memory</small></a></li>
+							  <li><a href="javascript:void(0);"><i class="glyphicon glyphicon-user icon-color"></i><small>Alumin</small></a></li>
+							</ul>
+						</div>
+						<input type="hidden" name="search_param" value="all" id="search_param">         
+						<input type="text" class="form-control boxshoadowno font12" name="x" placeholder="Search Alumin...">
+						<span class="input-group-btn">
+							<button class="btn btn-default borderlftnone" type="button"><span class="glyphicon glyphicon-search gray-color"></span></button>
+						</span>
+					</div>
+				</li>                   
+				<li>
+					<a href="javascript:void(0);">Home</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">Events</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">Memory Drafts</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">People</a>
+				</li>                  
+				<li class="visible-xs">
+					<a href="javascript:void(0);" class="mobile-view-submenu">User Name <i class="glyphicon glyphicon-menu-down pull-right"></i></a>
+					<ul class="username-submenu">
+						<li><a href="javascript:void(0);">Edit</a></li>
+						<li><a href="javascript:void(0);">View</a></li>
+						<li><a href="javascript:void(0);">Profile</a></li>
+						<li><a href="javascript:void(0);">My Order</a></li>
+						<li><a href="javascript:void(0);">Logout</a></li>
+					</ul>
+
+				</li>
+			</ul>
+			</div>
+
+
+		</div>
+			<!-- right side serach and icons nav start-->
+		<div class="col-md-6 col-sm-6 col-xs-6 pull-right margintopm50">
+			<div class="header-icon text-right">
+				<span class="marginrht35"><a href="javascript:void(0);"><img src="images/bulb-icon.png" /></a></span>
+				<span class="marginrht35"><a href="javascript:void(0);"><img src="images/message-icon.png" /></a></span>
+				<span class="marginrht35"><a href="javascript:void(0);" class="pos-r"><img src="images/notification-icon.png" /><span class="notificatio-circle">3</span></a></span>
+				<span class="hidden-xs" id="user-drop-down">
+					<a href="javascript:void(0);"><img src="images/user-icon.png" /><i class="glyphicon glyphicon-menu-down icon-color-hd font11" style="margin-left:5px; top:2px;"></i></a>
+					<div id="" class="user-drop-down">
+						<div id="" class="user-drop-down-inner">
+							<ul class="logout-top">
+								<li><a href="javascript:void(0);" class="common">Profile</a>
+									<ul>
+										<li><a href="javascript:void(0);">Edit</a></li>
+										<li><a href="javascript:void(0);">View</a></li>
+										<li><a href="javascript:void(0);">Friends</a></li>
+										<li><a href="javascript:void(0);">My Orders</a></li>
+									</ul>
+								</li>
+								<li><a href="javascript:void(0);" class="common">Logout</a></li>
+							</ul>	
+						</div>
+					</div>
+				</span>
+			</div>
+			<div class="input-group search-div">
+                <div class="input-group-btn search-panel">
+                    <button type="button" class="btn btn-default dropdown-toggle bgcolorgray" data-toggle="dropdown">
+                    	<span id="search_concept" class="font12">Memory</span> <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#contains"><i class="glyphicon glyphicon-user icon-color"></i><small class="open-sans">Memory</small></a></li>
+                      <li><a href="#contains"><i class="glyphicon glyphicon-user icon-color"></i><small class="open-sans">Alumin</small></a></li>
+                    </ul>
+                </div>
+                <input type="hidden" name="search_param" value="all" id="search_param">         
+                <input type="text" class="form-control boxshoadowno font12" name="x" placeholder="Search Alumin...">
+                <span class="input-group-btn">
+                    <button class="btn btn-default borderlftnone" type="button"><span class="glyphicon glyphicon-search gray-color"></span></button>
+                </span>
+            </div>
+		</div>
+    </nav>
+	<div class="container">
+		<div class="row">
+			<div class="memory-draft-wrapper">
+				<div class="col-md-12">
+					<div class="row">
+						<span class="orange font14">Draft</span> <span class="font12 light-gray">Last Saved: July 8, 2016</span>
+						<a href="javascript:void(0);"><i class="fa fa-trash pull-right fa-2x light-gray"></i></a>
+						<button class="pull-right btn btn-primary memory-btn font12">Preview</button>
+						<button class="pull-right btn btn-primary memory-btn font12">Publish</button>
+						<button class="pull-right btn btn-primary memory-btn font12">Edit</button>
+					</div>
+					<div class="row margintop10">
+						<div class="memory-inner">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="tl-img-block"><a href="javascript:void(0);"><img src="images/memory-pic.jpg" /></a></div>
+									<div class="tl-img-txt-block">
+										<div class="font20 dark-gray meriweather"><strong>It All Started with a Football game</strong></div>
+										<div class="light-gray font14">Dec 1988, Cooper Union, New York, NY</div>
+									</div>
+								</div>
+							</div>
+							<div class="row margintop20">
+								<div class="col-md-12 font14">
+									Notes to collaborators: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam... view more
+								</div>
+							</div>
+							<div class="row margintop20">
+								<div class="col-md-12 meriweather font16">
+									<strong>Who else was there?</strong>
+								</div>
+							</div>
+							<div class="row margintop10">
+								<div class="col-md-12">
+									<span class="marginrht10"><a href="javascript:void(0);"><img src="images/m1.jpg" /></a></span>
+									<span class="marginrht10"><a href="javascript:void(0);"><img src="images/m2.jpg" /></a></span>
+									<span class="marginrht10"><a href="javascript:void(0);"><img src="images/m3.jpg" /></a></span>
+									<span class="marginrht10"><a href="javascript:void(0);"><img src="images/m4.jpg" /></a></span>
+									<span class="marginrht10"><a href="javascript:void(0);"><img src="images/m5.jpg" /></a></span>
+								</div>
+							</div>
+							<div class="row margintop20">
+								<div class="col-md-12 font16">
+									Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi archi tecto beatae vitae dicta sunt explicabo. Nemo enim ipsa voluptatem quia voluptas sit asp ernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptate m sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquameius modi tempora incidunt ut laboreet dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eiure reprehenderitqui in ea voluptate velit esse quam nihil molestiae consequatur,vel illum qui dolorem .
+								</div>
+							</div>
+							<div class="row margintop20">
+								<div class="col-md-12 font16">
+									Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi archi tecto beatae vitae dicta sunt explicabo. Nemo enim ipsa voluptatem quia voluptas sit asp ernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptate m sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquameius modi tempora incidunt ut laboreet dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eiure reprehenderitqui in ea voluptate velit esse quam nihil molestiae consequatur,vel illum qui dolorem .
+								</div>
+							</div>
+							<div class="clearfix"></div>
+							<div class="hr-line marginbot20 margintop20"></div>
+							<div class="row">
+								<div class="col-md-12 icon-active-color">
+									<div class="memory-upload">
+										<div class="fileUpload btn btn-primary memory-btn-active">
+											<span>Upload</span>
+											<input type="file" class="upload" />
+										</div>
+									</div>
+									<div class="memory-upload-txt">
+										<div class="col-md-12">
+											<div class="row">
+												<div class="width100 gray-dark font16">Photos (6)</div>
+												<div class="width100 font14 gray margintop10">Select the items you want to show in your story</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-12 margintop20"><label><input type="checkbox" /> <span class="font14 gray normal">Sellect All</span></label></div>
+							</div>
+							<!--gallery -->
+							 <div class="row margintop10">
+							  <div class="col-md-4">
+								<div class="thumbnail memory-thumbnail">
+									<a href="javascript:void(0);">
+										<img src="images/mg-1.jpg" alt="memory Gallery" class="img-responsive open-memory-modal" />
+									</a>
+									<div class="caption paddingtopbot0">
+									  <div><label><input type="checkbox"/> <span class="font14 gray-dark normal marginlft5"><strong>Football Ground</strong></span></label></div>
+									  <div class="font12 gray marginlft20"><a href="javascript:void(0);" class="memory-gallery">By Lisa Amburg - July 10, 2016</a></div>
+									</div>
+								  
+								</div>
+							  </div>
+							  <div class="col-md-4">
+								<div class="thumbnail memory-thumbnail">
+									<a href="javascript:void(0);">
+										<img src="images/mg-2.jpg" alt="memory Gallery" class="img-responsive open-memory-modal" />
+									</a>
+									<div class="caption paddingtopbot0">
+									  <div><label><input type="checkbox"/> <span class="font14 gray-dark normal marginlft5"><strong>Match Recording</strong></span></label></div>
+									  <div class="font12 gray marginlft20"><a href="javascript:void(0);" class="memory-gallery">By Nicole Singate - July 10, 2016</a></div>
+									</div>
+								  
+								</div>
+							  </div>
+							  <div class="col-md-4">
+								<div class="thumbnail memory-thumbnail">
+									<a href="javascript:void(0);">
+										<img src="images/mg-3.jpg" alt="memory Gallery" class="img-responsive open-memory-modal" />
+									</a>
+									<div class="caption paddingtopbot0">
+									  <div><label><input type="checkbox"/> <span class="font14 gray-dark normal marginlft5"><strong>Team Group Photos</strong></span></label></div>
+									  <div class="font12 gray marginlft20"><a href="javascript:void(0);" class="memory-gallery">By You - July 10, 2016</a></div>
+									</div>
+								  
+								</div>
+							  </div>
+							  <div class="col-md-4">
+								<div class="thumbnail memory-thumbnail">
+									<a href="javascript:void(0);">
+										<img src="images/mg-3.jpg" alt="memory Gallery" class="img-responsive open-memory-modal" />
+									</a>
+									<div class="caption paddingtopbot0">
+									  <div><label><input type="checkbox"/> <span class="font14 gray-dark normal marginlft5"><strong>Team Group Photos</strong></span></label></div>
+									  <div class="font12 gray marginlft20"><a href="javascript:void(0);" class="memory-gallery">By You - July 10, 2016</a></div>
+									</div>
+								</div>
+							  </div>
+							  <div class="col-md-4">
+								<div class="thumbnail memory-thumbnail">
+									<a href="javascript:void(0);">
+										<img src="images/mg-3.jpg" alt="memory Gallery" class="img-responsive open-memory-modal" />
+									</a>
+									<div class="caption paddingtopbot0">
+									  <div><label><input type="checkbox"/> <span class="font14 gray-dark normal marginlft5"><strong>Football Ground</strong></span></label></div>
+									  <div class="font12 gray marginlft20"><a href="javascript:void(0);" class="memory-gallery">By Lisa Amburg - July 10, 2016</a></div>
+									</div>
+								  
+								</div>
+							  </div>
+							  <div class="col-md-4">
+								<div class="thumbnail memory-thumbnail">
+									<a href="javascript:void(0);">
+										<img src="images/mg-3.jpg" alt="memory Gallery" class="img-responsive open-memory-modal" />
+									</a>
+									<div class="caption paddingtopbot0">
+									  <div><label><input type="checkbox"/> <span class="font14 gray-dark normal marginlft5"><strong>Match Recording</strong></span></label></div>
+									  <div class="font12 gray marginlft20"><a href="javascript:void(0);" class="memory-gallery">By Nicole Singate - July 10, 2016</a></div>
+									</div>
+								  
+								</div>
+							  </div>
+							</div>
+							<!--gallery end here-->
+							<div class="clearfix"></div>
+							<div class="hr-line marginbot20 margintop20"></div>
+							<div class="row">
+								<div class="col-md-12 icon-active-color">
+									<div class="memory-upload">
+										<div class="fileUpload btn btn-primary memory-btn-active">
+											<span>Upload</span>
+											<input type="file" class="upload" />
+										</div>
+									</div>
+									<div class="memory-upload-txt">
+										<div class="col-md-12">
+											<div class="row">
+												<div class="width100 gray-dark font16">Photos (6)</div>
+												<div class="width100 font14 gray margintop10">Select the items you want to show in your story</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-12 margintop20"><label><input type="checkbox" /> <span class="font14 gray normal">Sellect All</span></label></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+					
+			</div>
+		</div>
+	</div>
+
+<style>
+	.reply-tooltip{
+		width:300px; 
+		border:1px solid #eeeeee; 
+		height:auto; 
+		background-color:#f3f3f3;
+		position:fixed;
+		left:750px;
+		top:200px;
+		box-shadow:1px 1px 1px 1px #d6d6d6;
+	}
+	.reply-tooltip-inner{
+		padding:15px 15px 10px;
+		width:260px
+		float:left;
+		background-color:#ffffff;
+	}
+	.reply-tool-lft{
+		width:45px;
+		height:40px;
+		float:left;
+	}
+	.reply-tool-rht{
+		height:auto;
+		display:block;
+		margin-left:45px;
+		position:relative;
+	}
+	.reply-button{
+		height:30px;
+		width:50px;
+		position:absolute;
+		top:0px;
+		right:0px;
+		border:none;
+		color:#fff;
+		background-color:#115740;
+	}
+	.reply-txt{
+		height:auto;
+		position:relative;
+		width:90%;
+		margin:7px auto 7px;
+	}
+	.reply-txt input{
+		height:30px;
+		width:96%;
+		padding:2px 2%;
+		border:1px solid #cccccc;
+	}
+	.reply-tool-lft-in{
+		width:40px;
+		height:40px;
+		float:left;
+	}
+	.reply-tool-rht-in{
+		height:auto;
+		display:block;
+		margin-left:40px;
+		position:relative;
+	}
+	.close-reply-tooltip{
+		position:absolute;
+		top:0px;
+		right:10px;
+		cursor:pointer;
+	}
+</style>
+<div class="reply-tooltip">
+	<div class="close-reply-tooltip"><i class="fa fa-close gray"></i></div>
+	<div class="reply-tooltip-inner">
+		<div class="width100">
+			<div class="reply-tool-lft"><a href="javascript:void(0);"><img src="images/m1.jpg"></a></div>
+			<div class="reply-tool-rht">
+				<div class="font14 dark-gray meriweather"><strong>Jason Thomas</strong></div>
+				<div class="light-gray font12">Yesterday</div>
+			</div>
+			<div class="width100 pull-left">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusanti.</div>
+		</div>
+		<div class="clearfix"></div>
+		<div class="margintop20" style="margin-left:50px;">
+			<div class="reply-tool-lft-in"><a href="javascript:void(0);"><img src="images/img1.png"></a></div>
+			<div class="reply-tool-rht-in">
+				<div class="font12 dark-gray meriweather"><strong>Schindler</strong></div>
+				<div class="light-gray font12">Yesterday</div>
+			</div>
+			<div class="pull-left">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusanti. Sed ut perspiciatis unde omnis.</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<div class="reply-txt">
+		<input value="" placeholder="Your Reply" type="text" class="font12"><button class="reply-button font12">Reply</button>
+	</div>	
+</div>
+
+
+ 
+ 
+
+    <!-- Page Content -->
+    
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/BootSideMenu.js"></script>
+
+ <script type="text/javascript">
+    $('#test2').BootSideMenu({side:"right"});
+  </script>
+
+
+    
+</body>
+
+</html>

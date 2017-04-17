@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" /-->
+	 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">	
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>CueBack -Collaboration</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/modal-box.css" rel="stylesheet">
+    <link href="css/memory-draft.css" rel="stylesheet">
+    <link href="css/collaboration.css" rel="stylesheet">
+    <!--link href=""http://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.5.4/bootstrap-select.min.css" /-->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+ 
+</head>
+<body class="background-img memory-body">
+<!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top height65 header-box" role="navigation">
+        <!--div class="container"-->
+            <!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header header-height">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><img src="images/cueback-logo.png"></a>
+		</div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<div class="col-md-5 col-sm-5">
+			<ul class="nav navbar-nav margintop10 remove-mrg-top">
+				<li class="visible-xs paddingtopbot10">
+					<div class="input-group input-group-xs">
+						<div class="input-group-btn search-panel">
+
+							<button type="button" class="btn btn-default dropdown-toggle bgcolorgray" data-toggle="dropdown">
+								<span id="search_concept" class="font12 glyphicon glyphicon-user icon-color">Memory</span> <span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu" role="menu">
+							  <li><a href="javascript:void(0);"><i class="glyphicon glyphicon-user icon-color"></i><small>Memory</small></a></li>
+							  <li><a href="javascript:void(0);"><i class="glyphicon glyphicon-user icon-color"></i><small>Alumin</small></a></li>
+							</ul>
+						</div>
+						<input type="hidden" name="search_param" value="all" id="search_param">         
+						<input type="text" class="form-control boxshoadowno font12" name="x" placeholder="Search Alumin...">
+						<span class="input-group-btn">
+							<button class="btn btn-default borderlftnone" type="button"><span class="glyphicon glyphicon-search gray-color"></span></button>
+						</span>
+					</div>
+				</li>                   
+				<li>
+					<a href="javascript:void(0);">Home</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">Events</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">Memory Drafts</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">People</a>
+				</li>                  
+				<li class="visible-xs">
+					<a href="javascript:void(0);" class="mobile-view-submenu">User Name <i class="glyphicon glyphicon-menu-down pull-right"></i></a>
+					<ul class="username-submenu">
+						<li><a href="javascript:void(0);">Edit</a></li>
+						<li><a href="javascript:void(0);">View</a></li>
+						<li><a href="javascript:void(0);">Profile</a></li>
+						<li><a href="javascript:void(0);">My Order</a></li>
+						<li><a href="javascript:void(0);">Logout</a></li>
+					</ul>
+
+				</li>
+			</ul>
+			</div>
+
+
+		</div>
+			<!-- right side serach and icons nav start-->
+		<div class="col-md-6 col-sm-6 col-xs-6 pull-right margintopm50">
+			<div class="header-icon text-right">
+				<span class="marginrht35"><a href="javascript:void(0);"><img src="images/bulb-icon.png" /></a></span>
+				<span class="marginrht35"><a href="javascript:void(0);"><img src="images/message-icon.png" /></a></span>
+				<span class="marginrht35"><a href="javascript:void(0);" class="pos-r"><img src="images/notification-icon.png" /><span class="notificatio-circle">3</span></a></span>
+				<span class="hidden-xs" id="user-drop-down">
+					<a href="javascript:void(0);"><img src="images/user-icon.png" /><i class="glyphicon glyphicon-menu-down icon-color-hd font11" style="margin-left:5px; top:2px;"></i></a>
+					<div id="" class="user-drop-down">
+						<div id="" class="user-drop-down-inner">
+							<ul class="logout-top">
+								<li><a href="javascript:void(0);" class="common">Profile</a>
+									<ul>
+										<li><a href="javascript:void(0);">Edit</a></li>
+										<li><a href="javascript:void(0);">View</a></li>
+										<li><a href="javascript:void(0);">Friends</a></li>
+										<li><a href="javascript:void(0);">My Orders</a></li>
+									</ul>
+								</li>
+								<li><a href="javascript:void(0);" class="common">Logout</a></li>
+							</ul>	
+						</div>
+					</div>
+				</span>
+			</div>
+			<div class="input-group search-div">
+                <div class="input-group-btn search-panel">
+                    <button type="button" class="btn btn-default dropdown-toggle bgcolorgray" data-toggle="dropdown">
+                    	<span id="search_concept" class="font12">Memory</span> <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#contains"><i class="glyphicon glyphicon-user icon-color"></i><small class="open-sans">Memory</small></a></li>
+                      <li><a href="#contains"><i class="glyphicon glyphicon-user icon-color"></i><small class="open-sans">Alumin</small></a></li>
+                    </ul>
+                </div>
+                <input type="hidden" name="search_param" value="all" id="search_param">         
+                <input type="text" class="form-control boxshoadowno font12" name="x" placeholder="Search Alumin...">
+                <span class="input-group-btn">
+                    <button class="btn btn-default borderlftnone" type="button"><span class="glyphicon glyphicon-search gray-color"></span></button>
+                </span>
+            </div>
+		</div>
+    </nav>
+	<div class="container collaboration-wrapper">
+		<div class="col-md-12 margintop35">
+			<ul class="nav nav-tabs font16 collaboration-tabs" id="tabs">
+				<li class="active"><a href="#Mine" data-toggle="tab">Mine</a></li>
+				<li><a href="#Collaborations" data-toggle="tab">Collaborations</a></li>
+			</ul>	
+			<!-- html for search on 12-30-16 start-->
+			<a href="javascript:void(0);" class="font14 pull-right colla-create"><i class="fa fa-plus"></i> <span class="mb-new">Create New Memory</span></a>			
+			<!-- html for search on 12-30-16 end-->
+		</div>
+		<div class="clearfix"></div>
+		<div class="tab-content">
+			<!-- tab for mine block start here-->
+			<div class="tab-pane active" id="Mine">
+				<div class="col-md-12">
+					<div class="col-md-12 mine-search-warpper">
+					<span class="marginrht20 font14 gray">Sort by :  </span>
+					<select class="colla-select">
+						<option>Recent Activity</option>
+						<option>Recent Activity</option>
+						<option>Recent Activity</option>
+						<option>Recent Activity</option>
+					</select>
+					<!-- html for search on 12-30-16 start-->
+					<style>
+						@media(min-width:320px) and (max-width:650px){
+							.colla-serach-warpper {
+								position: relative;
+								width: 100%;
+								float:left;
+								margin-top:20px;
+							}
+							.mine-search-warpper {
+								background-color: #fff;
+								padding: 20px;
+								float:left;
+								width:100%;
+							}
+							.colla-serach {
+								background-color: #f5f5f5;
+								border: 1px solid #ddd;
+								height: 35px;
+								padding-left: 10px;
+								padding-right: 10px;
+								width: 100%;
+							}
+						}
+						@media(min-width:320px) and (max-width:450px){
+							.mb-new{
+								display:none;
+							}
+							a.colla-create{
+								margin-top:0px;
+							}
+							a.colla-create:hover{
+								margin-top:0px;
+							}
+						}
+					</style>
+					<div class="colla-serach-warpper pull-right">
+					<input type="text" placeholder="Search by title or user name" class="colla-serach" />
+					<a href="javascript:void(0);"><i class="fa fa-search colla-serach-warpper-search gray"></i></a>
+					</div>
+					</div>
+					<div class="clearfix"></div>
+					<!-- html for search on 12-30-16 end-->
+				</div>
+				
+				<!-- 23-2-17 carousel block start -->
+				<style>
+					.margintop0{
+						margin-top:0px;
+					}
+					.memory-suggestion .carousel-inner{
+						height:auto !important;
+					}
+					.bg-color-block{
+						background-color:#fffce9;
+						border:1px solid #f0ecbd;
+						padding:8px;
+						margin:5px -10px;
+					}
+					.memory-suggestion .carousel-indicators{
+						display:none;
+					}
+					.memory-suggestion .carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right{
+						top:18%;
+					}
+					.memory-suggestion .carousel-control .icon-prev, .carousel-control .glyphicon-chevron-left{
+						left:20%;
+					}
+					.memory-suggestion .carousel-control{
+						top:32%;
+					}
+					.memory-suggestion .carousel-control .icon-next, .carousel-control .glyphicon-chevron-right{
+						right:20%;
+					}
+				</style>
+				<div class="col-md-12 margintop20">
+					
+					<div class="col-md-12 mine-search-warpper memory-suggestion">
+						<h3 class="font14 margintop0">Memory Suggestions</h3>
+						<!-- carousel start here-->
+						<div id="myCarousel" class="carousel slide" data-ride="carousel">
+						  <!-- Indicators -->
+						  <ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel" data-slide-to="1"></li>
+							<li data-target="#myCarousel" data-slide-to="2"></li>
+							<li data-target="#myCarousel" data-slide-to="3"></li>
+						  </ol>
+
+						  <!-- Wrapper for slides -->
+						  <div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+									<div class="bg-color-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+								</div>
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+									<div class="bg-color-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+								</div>
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+									<div class="bg-color-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+								</div>
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+									<div class="bg-color-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+								</div>
+							</div>
+
+							<div class="item">
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+									<div class="bg-color-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+								</div>
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+									<div class="bg-color-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+								</div>
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+									<div class="bg-color-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+								</div>
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+									<div class="bg-color-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+								</div>
+							</div>
+
+							<div class="item">
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+									<div class="bg-color-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+								</div>
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+									<div class="bg-color-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+								</div>
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+									<div class="bg-color-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+								</div>
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+									<div class="bg-color-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+								</div>
+							</div>
+
+							<div class="item">
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+									<div class="bg-color-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+								</div>
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+									<div class="bg-color-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+								</div>
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+									<div class="bg-color-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+								</div>
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+									<div class="bg-color-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+								</div>
+							</div>
+						  </div>
+
+						  <!-- Left and right controls -->
+						  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						  </a>
+						  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						  </a>
+						</div>
+						<!-- carousel start end-->
+					</div>
+					<div class="clearfix"></div>
+					
+				</div>
+				<!-- 23-2-17 carousel block end -->
+				<div class="grid margintop20">
+					<div class="grid-item">
+						<div class="width100"><img src="images/c1.jpg" class="width100" /></div>
+						<div class="col-md-12 margintop20 font16 meriweather gray-dark">Meetup of college friends at NY Studio</div>
+						<div class="col-md-12 margintop10">
+							<span class="pull-left pos-r"><a href="javascript:void(0)" class="marginrht20"><i class="fa fa-comment light-gray collaboration-private-txt-chat pos-r"><span class="memory-private-txt-chat-indctr"></span></i></a> 7</span>
+							<span class="pull-right font14 gray-dark">By Jason Thomas</span>
+						</div>
+					</div>
+					<div class="grid-item">
+						<div class="width100"><img src="images/c2.jpg" class="width100" /></div>
+						<div class="col-md-12 margintop20 font16 meriweather gray-dark">It all started with a football Game</div>
+						<div class="col-md-12 margintop10">
+							<span class="pull-left pos-r"><a href="javascript:void(0)" class="marginrht20"><i class="fa fa-comment light-gray collaboration-private-txt-chat pos-r"><span class="memory-private-txt-chat-indctr"></span></i></a> 7</span>
+							<span class="pull-right font14 gray-dark">By Schindler</span>
+						</div>
+					</div>
+					<div class="grid-item">
+						<div class="width100"><img src="images/c3.jpg" class="width100" /></div>
+						<div class="col-md-12 margintop20 font16 meriweather gray-dark">Horrifying funny night at college</div>
+						<div class="col-md-12 margintop10">
+							<span class="pull-left pos-r"><a href="javascript:void(0)" class="marginrht20"><i class="fa fa-comment light-gray collaboration-private-txt-chat pos-r"></i></a> 7</span>
+							<span class="pull-right font14 gray-dark">By Jason Thomas</span>
+						</div>
+					</div>
+					<div class="grid-item">
+						<div class="width100"><img src="images/c4.jpg" class="width100" /></div>
+						<div class="col-md-12 margintop20 font16 meriweather gray-dark">The girl without a ticket</div>
+						<div class="col-md-12 margintop10">
+							<span class="pull-left pos-r"><a href="javascript:void(0)" class="marginrht20"><i class="fa fa-comment light-gray collaboration-private-txt-chat pos-r"><span class="memory-private-txt-chat-indctr"></span></i></a> 7</span>
+							<span class="pull-right font14 gray-dark">By Schindler</span>
+						</div>
+					</div>
+					<div class="grid-item">
+						<div class="width100"><img src="images/c5.jpg" class="width100" /></div>
+						<div class="col-md-12 margintop20 font16 meriweather gray-dark">Horrifying funny night at college</div>
+						<div class="col-md-12 margintop10">
+							<span class="pull-left pos-r"><a href="javascript:void(0)" class="marginrht20"><i class="fa fa-comment light-gray collaboration-private-txt-chat pos-r"><span class="memory-private-txt-chat-indctr"></span></i></a> 7</span>
+							<span class="pull-right font14 gray-dark">By Jason Thomas</span>
+						</div>
+					</div>
+					<div class="grid-item">
+						<div class="width100"><img src="images/c1.jpg" class="width100" /></div>
+						<div class="col-md-12 margintop20 font16 meriweather gray-dark">Meetup of college friends at NY Studio</div>
+						<div class="col-md-12 margintop10">
+							<span class="pull-left pos-r"><a href="javascript:void(0)" class="marginrht20"><i class="fa fa-comment light-gray collaboration-private-txt-chat pos-r"><span class="memory-private-txt-chat-indctr"></span></i></a> 7</span>
+							<span class="pull-right font14 gray-dark">By Jason Thomas</span>
+						</div>
+					</div>
+					<div class="grid-item">
+						<div class="width100"><img src="images/c1.jpg" class="width100" /></div>
+						<div class="col-md-12 margintop20 font16 meriweather gray-dark">Meetup of college friends at NY Studio</div>
+						<div class="col-md-12 margintop10">
+							<span class="pull-left pos-r"><a href="javascript:void(0)" class="marginrht20"><i class="fa fa-comment light-gray collaboration-private-txt-chat pos-r"><span class="memory-private-txt-chat-indctr"></span></i></a> 7</span>
+							<span class="pull-right font14 gray-dark">By Jason Thomas</span>
+						</div>
+					</div>
+					<div class="grid-item">
+						<div class="width100"><img src="images/c1.jpg" class="width100" /></div>
+						<div class="col-md-12 margintop20 font16 meriweather gray-dark">Meetup of college friends at NY Studio</div>
+						<div class="col-md-12 margintop10">
+							<span class="pull-left pos-r"><a href="javascript:void(0)" class="marginrht20"><i class="fa fa-comment light-gray collaboration-private-txt-chat pos-r"><span class="memory-private-txt-chat-indctr"></span></i></a> 7</span>
+							<span class="pull-right font14 gray-dark">By Jason Thomas</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- tab for mine block end here-->
+			<!-- tab for Collaborations block start here-->
+			<div class="tab-pane" id="Collaborations">
+				<div class="col-md-12">
+					<div class="col-md-12 mine-search-warpper">
+					<span class="marginrht20 font14 gray">2Sort by :  </span>
+					<select class="colla-select">
+						<option>Recent Activity</option>
+						<option>Recent Activity</option>
+						<option>Recent Activity</option>
+						<option>Recent Activity</option>
+					</select>
+					<div class="colla-serach-warpper pull-right">
+					<input type="text" placeholder="Search by title or user name" class="colla-serach" />
+					<a href="javascript:void(0);"><i class="fa fa-search colla-serach-warpper-search gray"></i></a>
+					</div>
+					</div>
+				</div>
+				<div class="grid margintop20">
+					<div class="grid-item">
+						<div class="width100"><img src="images/c1.jpg" class="width100" /></div>
+						<div class="col-md-12 margintop20 font16 meriweather gray-dark">Meetup of college friends at NY Studio</div>
+						<div class="col-md-12 margintop10">
+							<span class="pull-left pos-r"><a href="javascript:void(0)" class="marginrht20"><i class="fa fa-comment light-gray collaboration-private-txt-chat pos-r"><span class="memory-private-txt-chat-indctr"></span></i></a> 7</span>
+							<span class="pull-right font14 gray-dark">By Jason Thomas</span>
+						</div>
+					</div>
+					<div class="grid-item">
+						<div class="width100"><img src="images/c2.jpg" class="width100" /></div>
+						<div class="col-md-12 margintop20 font16 meriweather gray-dark">It all started with a football Game</div>
+						<div class="col-md-12 margintop10">
+							<span class="pull-left pos-r"><a href="javascript:void(0)" class="marginrht20"><i class="fa fa-comment light-gray collaboration-private-txt-chat pos-r"><span class="memory-private-txt-chat-indctr"></span></i></a> 7</span>
+							<span class="pull-right font14 gray-dark">By Schindler</span>
+						</div>
+					</div>
+					<div class="grid-item">
+						<div class="width100"><img src="images/c3.jpg" class="width100" /></div>
+						<div class="col-md-12 margintop20 font16 meriweather gray-dark">Horrifying funny night at college</div>
+						<div class="col-md-12 margintop10">
+							<span class="pull-left pos-r"><a href="javascript:void(0)" class="marginrht20"><i class="fa fa-comment light-gray collaboration-private-txt-chat pos-r"></i></a> 7</span>
+							<span class="pull-right font14 gray-dark">By Jason Thomas</span>
+						</div>
+					</div>
+					<div class="grid-item">
+						<div class="width100"><img src="images/c4.jpg" class="width100" /></div>
+						<div class="col-md-12 margintop20 font16 meriweather gray-dark">The girl without a ticket</div>
+						<div class="col-md-12 margintop10">
+							<span class="pull-left pos-r"><a href="javascript:void(0)" class="marginrht20"><i class="fa fa-comment light-gray collaboration-private-txt-chat pos-r"><span class="memory-private-txt-chat-indctr"></span></i></a> 7</span>
+							<span class="pull-right font14 gray-dark">By Schindler</span>
+						</div>
+					</div>
+					<div class="grid-item">
+						<div class="width100"><img src="images/c5.jpg" class="width100" /></div>
+						<div class="col-md-12 margintop20 font16 meriweather gray-dark">Horrifying funny night at college</div>
+						<div class="col-md-12 margintop10">
+							<span class="pull-left pos-r"><a href="javascript:void(0)" class="marginrht20"><i class="fa fa-comment light-gray collaboration-private-txt-chat pos-r"><span class="memory-private-txt-chat-indctr"></span></i></a> 7</span>
+							<span class="pull-right font14 gray-dark">By Jason Thomas</span>
+						</div>
+					</div>
+					<div class="grid-item">
+						<div class="width100"><img src="images/c1.jpg" class="width100" /></div>
+						<div class="col-md-12 margintop20 font16 meriweather gray-dark">Meetup of college friends at NY Studio</div>
+						<div class="col-md-12 margintop10">
+							<span class="pull-left pos-r"><a href="javascript:void(0)" class="marginrht20"><i class="fa fa-comment light-gray collaboration-private-txt-chat pos-r"><span class="memory-private-txt-chat-indctr"></span></i></a> 7</span>
+							<span class="pull-right font14 gray-dark">By Jason Thomas</span>
+						</div>
+					</div>
+					<div class="grid-item">
+						<div class="width100"><img src="images/c1.jpg" class="width100" /></div>
+						<div class="col-md-12 margintop20 font16 meriweather gray-dark">Meetup of college friends at NY Studio</div>
+						<div class="col-md-12 margintop10">
+							<span class="pull-left pos-r"><a href="javascript:void(0)" class="marginrht20"><i class="fa fa-comment light-gray collaboration-private-txt-chat pos-r"><span class="memory-private-txt-chat-indctr"></span></i></a> 7</span>
+							<span class="pull-right font14 gray-dark">By Jason Thomas</span>
+						</div>
+					</div>
+					<div class="grid-item">
+						<div class="width100"><img src="images/c1.jpg" class="width100" /></div>
+						<div class="col-md-12 margintop20 font16 meriweather gray-dark">Meetup of college friends at NY Studio</div>
+						<div class="col-md-12 margintop10">
+							<span class="pull-left pos-r"><a href="javascript:void(0)" class="marginrht20"><i class="fa fa-comment light-gray collaboration-private-txt-chat pos-r"><span class="memory-private-txt-chat-indctr"></span></i></a> 7</span>
+							<span class="pull-right font14 gray-dark">By Jason Thomas</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- tab for Collaborations block end here-->
+			
+		</div>
+	</div>
+
+
+
+
+
+ 
+ 
+
+    <!-- Page Content -->
+    
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="http://masonry.desandro.com/masonry.pkgd.js"></script>
+    <script src="js/custom.js"></script>
+<script>
+
+$('.grid').masonry({
+  itemSelector: '.grid-item',
+  columnWidth: 20,
+  isFitWidth: true
+});
+
+</script>
+
+    
+</body>
+
+</html>

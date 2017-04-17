@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Popover</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $('.popper').popover({
+      placement: 'bottom',
+    container: 'body',
+    html: true,
+    content: function () {
+        return $(this).next('.popper-content').html();
+      }
+     });
+
+
+    $(document).mouseup(function (e) {
+          if(!($(e.target).hasClass("popover-content"))){
+       		$(".popover").popover('hide');
+    		}
+     });
+
+
+
+
+     });
+  </script>
+</head>
+<body>
+
+<div class="container">
+  <h3 class="popper-content dd">Popover </h3>
+                                 <a  data-toggle="popover" class="btn popper btn-default ">                                           
+                                        Click me 1
+                                           
+                                 </a> 
+                                   <div class="popper-content hide profile-popover">
+                                             This content place for click me 1 button
+                                    </div>
+
+                                       <a  data-toggle="popover" class="btn popper btn-default ">                                           
+                                        Click me 2
+                                           
+                                        </a> 
+                                    <div class="popper-content hide profile-popover">
+                                             This content place for click me 2 button
+                                    </div>
+ 
+</div>
+
+</body>
+</html>
