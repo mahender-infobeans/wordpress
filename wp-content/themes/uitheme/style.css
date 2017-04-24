@@ -1,0 +1,163 @@
+
+
+/*Horizontal menu of all page start */
+.menu-horizontal{
+	padding: 0;
+	list-style: none;
+	margin: 2.9375rem 0.3125rem 0;
+	text-align: center;
+}
+
+.menu-horizontal li{
+	float: left;
+	padding: 0px 0px 0px 0px;
+}
+
+.menu-horizontal li a{
+	color: #fff;
+}
+/*Horizontal menu of all page end*/
+
+/*logo start*/
+div.logo{
+	margin: 12px 0px 3px 0px;
+	color: #fff;
+	max-width: 200px;
+}
+.logo img{
+	width:100%; 
+}
+
+.logo1 img{
+	margin-top: 100px;
+	width: 100%;
+	margin-bottom: 50px;
+	padding: 50px;
+}
+.logo1{
+	width: 100%;
+	text-align: center;
+}
+.logo1 a{
+	max-width: 300px;
+	display: inline-block;
+}
+
+/*logo end*/
+
+/*Vertical menu of all page start*/
+.scroll{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	z-index: 10;
+	background-color: #6F43D6;
+	width: 32%;
+}
+
+.header-background{
+	background-color: #6F43D6;
+	padding-bottom: 10px;
+}
+
+.menu{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	text-align: center;
+}
+.menu-item{
+	padding: 5px;
+}
+.menu li a ,.menu li {
+	color: #fff;
+	text-decoration: none;
+	font-size: 26px;
+}
+
+/*Vertical menu of all page end*/
+
+/*toggle navigation responsive btn start*/
+.button-toggle-menu{
+	background-color: #fff;
+	color: #6f43d6;
+	margin: 25px 0px 0px 0px;
+}
+
+.button-toggle-menu .icon-bar{
+	height: 2px;
+	width: 20px;
+	background-color: #f60;
+	color: #fff;
+}
+/*toggle navigation responsive btn end*/
+
+/*text animation home page start*/
+.btm-text{
+	position: absolute;
+	bottom: 25px;
+	right: 0;
+	width: 65%;
+	color: #6f43d6;
+	z-index: 11;
+	font-size: 165px;
+	font-weight: bold;
+}
+
+.pos-r *{
+	color: #6f43d6;
+	text-decoration: none !important;
+}
+/*text animation home page end */
+.home-top-header{
+	display: none;
+}
+.home-side-header{
+	display: block;
+}
+@media screen and (min-width: 320px) and (max-width: 767px){
+	.menu-horizontal li{
+		float: left;
+		padding: 10px 10px;
+		width: 100%;
+		text-align: center;
+	}
+	.button-toggle-menu{
+		margin: 15px 0px 0px 0px;
+	}
+	.home-top-header{
+		display: block;
+	}
+	.home-side-header{
+		display: none;
+	}
+	.btm-text{
+		font-size: 50px;
+	}
+	#canvas{
+		width: 100%;
+		top: auto;
+		bottom: 0;
+		left: 0;
+		z-index: -2;
+	}
+	.footer-home *{
+		color: #6f43d6 !important;
+	}
+}
+
+@media screen and (min-width: 768px){
+	.right-768up{
+		float: right;
+	}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1024px){
+	.menu li a{
+		padding: 0.625rem 2.20rem;
+	}
+	.btm-text{
+		font-size: 80px;
+	}
+}
