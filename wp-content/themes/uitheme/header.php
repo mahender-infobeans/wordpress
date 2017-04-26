@@ -17,18 +17,9 @@
 	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222599/canvas-pointer.js?v=20150516"></script>
 
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style.css">
+	
 
 	<script src="<?php bloginfo('template_directory'); ?>/assets/js/script.js"></script>
-	
-	<style type="text/css">
-		#canvas {
-			position: absolute;
-			right: 0;
-			top: 0%;
-			width: 75%;
-			height: 100%;
-		}
-	</style>
 
 
 </head>
@@ -39,32 +30,41 @@
 	?>
 	<header>
 		
-			<div class="header-background <?php echo is_front_page()?'home-top-header':''?>">
+		<div class="header-background <?php echo is_front_page()?'home-top-header':''?>">
 
-				<div class="container">
-					<div class="col-lg-4 col-md-4 col-sm-3 col-xs-12">
-						<div class="logo pull-left col-lg-12 col-md-12 col-sm-12 col-xs-6">
-							
-							<!-- <a href="JavaScript:void(0)"><img src="https://unity3d.com/profiles/unity3d/themes/unity/images/company/brand/logos/primary/unity-logo.png"></a> -->
-							<a href="JavaScript:void(0)"><img src="<?php echo $image[0]; ?>"></a>
+			<div class="container">
+				<div class="col-lg-4 col-md-4 col-sm-3 col-xs-12">
+					<div class="logo pull-left col-lg-12 col-md-12 col-sm-12 col-xs-6">
 
-						</div>
-						<div class="col-xs-6 hidden-lg hidden-md hidden-sm pull-right">
-							<button type="button" class="navbar-toggle button-toggle-menu " id="toggle-btn" data-toggle="collapse" data-target="#menu-header-horizontal"> 
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>                        
-							</button>
-						</div>
+						<!-- <a href="JavaScript:void(0)"><img src="https://unity3d.com/profiles/unity3d/themes/unity/images/company/brand/logos/primary/unity-logo.png"></a> -->
+						<a href="JavaScript:void(0)"><img src="<?php echo $image[0]; ?>"></a>
+
 					</div>
+					<div class="col-xs-6 hidden-lg hidden-md hidden-sm pull-right">
+						<button type="button" class="navbar-toggle button-toggle-menu " id="toggle-btn" data-toggle="collapse" data-target="#menu-header-horizontal"> 
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>                        
+						</button>
 
-					<div class="col-lg-8 col-md-8 col-sm-9 col-xs-12">
+					</div>
+				</div>
 
-						<nav class="header-menu">
-							<?php wp_nav_menu( array('menu' => 'header-horizontal',
-								'menu_id' => 'menu-header-horizontal',
-								'menu_class' => 'menu-horizontal navbar-collapse collapse nav navbar-nav right-768up'
-								)); ?>
+				<div class="col-lg-8 col-md-8 col-sm-9 col-xs-12">
+
+					<nav class="header-menu">
+						<!-- <?php wp_nav_menu( array('menu' => 'header-horizontal',
+							'menu_id' => 'menu-header-horizontal',
+							'menu_class' => 'menu-horizontal navbar-collapse collapse nav navbar-nav right-768up'
+							)); ?> -->
+
+						<?php 
+						wp_nav_menu( array( 'theme_location' => 'header-menu',
+							'menu_id' => 'menu-header-horizontal',
+							'menu_class' => 'menu-horizontal navbar-collapse collapse nav navbar-nav right-768up'
+							) );
+							?>
+
 							<!-- <ul class="navbar-collapse collapse nav navbar-nav right-768up nav-ul" id="navbar-header">
 								<li class="horizontal-nav  nav-li box">
 									<a href="JavaScript:void(0);" class="box-inner">Home</a>
@@ -84,8 +84,8 @@
 					</div>
 				</div>
 			</div>
-		
-			<div class="scroll  <?php echo is_front_page()?'home-side-header':''?>">
+
+			<div class="scroll  <?php echo is_front_page()?'home-side-header':'hidden'?>">
 				<div class="logo1">
 					<a href="JavaScript:void(0)"><img src="<?php echo $image[0]; ?>"></a>
 				</div>
@@ -110,6 +110,6 @@
 					</li>
 				</ul> -->
 			</div>
-		
-	</header>
-	
+
+		</header>
+

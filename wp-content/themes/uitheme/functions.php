@@ -18,24 +18,6 @@ function register_my_menu() {
 add_action( 'init', 'register_my_menu' );
 
 
-// images for rotate in home page
-// add_action( 'init', 'homepgAnimation' );
-// function homepgAnimation() {
-//   register_post_type( 'AnimationImages',
-//     array(
-//       'labels' => array(
-//         'name' => __( 'Images' ),
-//         'singular_name' => __( 'Image' )
-//       ),
-//       'public' => true,
-//       'has_archive' => true,
-//       'rewrite' => array('slug' => 'images'),
-//       'supports' => array( 'title', 'editor', 'thumbnail', 'revisions' )
-//     )
-//   );
-// }
-
-
 add_theme_support('post-thumbnails');
 function homepgAnimation() {
     register_post_type('Images', array(
@@ -49,7 +31,8 @@ add_action('init', 'homepgAnimation');
 
 
 
-
+settings_fields( 'myoption-group' );
+do_settings_sections( 'myoption-group' );
 
 
 
