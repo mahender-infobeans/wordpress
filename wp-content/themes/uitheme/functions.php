@@ -31,8 +31,7 @@ add_action('init', 'homepgAnimation');
 
 
 
-settings_fields( 'myoption-group' );
-do_settings_sections( 'myoption-group' );
+
 
 
 
