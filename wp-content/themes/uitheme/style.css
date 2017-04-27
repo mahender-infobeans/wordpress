@@ -210,11 +210,27 @@ html{
 	width: 150px;
 	z-index: -1;
 }
-.tab-button{
+.service-left{
+	position: absolute;
+	right: 1px;
+	top: -61px;
+	background-image: url(/wp-content/themes/uitheme/assets/images/circle-left.png);
+	height: 590px;
+	width: 254px;
+}
+.service-right{
+	position: absolute;
+	left: 40px;
+	top: 159px;
+	background-image: url(/wp-content/themes/uitheme/assets/images/circle-right.png);
+	height: 464px;
+	width: 400px;
+}
+.tab-button {
 	width: 698px;
 	margin: 40px auto;
 }
-.tab-button li a{
+.tab-button  li a{
 	border-radius: 0px;
 	width: 230px;
 	text-align: center;
@@ -222,20 +238,20 @@ html{
 	color: #fff;
 	font-size: 20px;
 }
-.tab-button ul li{
+.tab-button  ul li{
 	margin-right: -2px;
 }
 .margintop40{
 	margin-top: 40px;
 }
-.tab-button li.active>a,
-.tab-button li.active>a:focus,
-.tab-button li.active>a:hover{
+.tab-button  li.active>a,
+.tab-button  li.active>a:focus,
+.tab-button  li.active>a:hover{
 	background-color: #4FD5EE;
 	color: #fff;
 }
-.tab-button li>a:focus, 
-.tab-button li>a:hover{
+.tab-button  li>a:focus, 
+.tab-button  li>a:hover{
 	background-color: #1ac69b;
 	color: #fff;	
 }
@@ -321,7 +337,9 @@ html{
 .image-box img{
 	margin-top: 20px;
 }
-
+.marginTop100{
+	margin-top: 100px;
+}
 .block-title{
 	margin-left: 20px;
 	margin-top: 15px;
@@ -428,7 +446,7 @@ html{
 	animation-delay: 26s;
 	-moz-animation-delay: 26s;
 	-webkit-animation-delay: 26s; 
-	-o-animation-delay:26s;
+	-o-animation-delay: 26s;
 	visibility: hidden;
 }
 .circle5{
@@ -463,7 +481,6 @@ html{
 	100% {top: 200px; right:117px; visibility: visible;  opacity: 1;}
 }
 
-
 .work-div{
 	background-color: #F0F0F0;
 	padding: 10px 0px;
@@ -482,7 +499,6 @@ html{
 	}
 
 }
-
 @media screen and (min-width: 320px) and (max-width: 1024px){
 	.aboutus-header {
 		padding-top: 60px;
@@ -492,6 +508,25 @@ html{
 	.img1{
 		z-index: -1;
 	}
+	.service-left{
+		z-index: -1;
+	}
+	.service-right{
+		z-index: -1;
+	}
+	.bottom-zero{
+		margin-bottom: 0px;
+	}
+	.image-box{
+		width: 100%;
+	}
+	.resp-text-center{
+		text-align: center;
+		margin-top: 10px;
+	}
+	.resp-bottom-30{
+		margin-bottom: 30px;
+	}
 }
 @media screen and (min-width: 320px) and (max-width: 767px){
 	.we-text {
@@ -500,10 +535,7 @@ html{
 	}
 }
 
-
-
-
-
+/**shivangi css ends here **/
 
 @media screen and (min-width: 320px) and (max-width: 767px){
 	.btm-text{

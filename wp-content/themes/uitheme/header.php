@@ -37,7 +37,7 @@
 					<div class="logo pull-left col-lg-12 col-md-12 col-sm-12 col-xs-6">
 
 						<!-- <a href="JavaScript:void(0)"><img src="https://unity3d.com/profiles/unity3d/themes/unity/images/company/brand/logos/primary/unity-logo.png"></a> -->
-						<a href="JavaScript:void(0)"><img src="<?php echo $image[0]; ?>"></a>
+						<a href="<?php echo get_site_url(); ?>"><img src="<?php echo $image[0]; ?>"></a>
 
 					</div>
 					<div class="col-xs-6 hidden-lg hidden-md hidden-sm pull-right">
