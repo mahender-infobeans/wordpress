@@ -31,6 +31,7 @@
 		</a>
 	</h1>
 </div>
+
 <script type="text/javascript">
 	var TxtType = function(el, toRotate, period) {
 		this.toRotate = toRotate;

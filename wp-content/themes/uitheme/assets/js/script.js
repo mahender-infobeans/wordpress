@@ -72,6 +72,19 @@ $(document).ready(function(){
 			});
 			// horizontal-navigation hover effect end
 
+ // shivangi js 
+  	$( 'ul.nav.nav-tabs  a' ).click( function ( e ) {
+			e.preventDefault();
+			$( this ).tab( 'show' );
+		} );
+
+		( function( $ ) {
+          // Test for making sure event are maintained
+          $( '.js-alert-test' ).click( function () {
+          	alert( 'Button Clicked: Event was maintained' );
+          } );
+          fakewaffle.responsiveTabs( [ 'xs', 'sm' ] );
+      } )( jQuery );
 		});
 function getRandomInt(min, max) {
 	return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -108,3 +121,5 @@ function getRandomColor() {
 			$("#menu-primary, #menu-header-horizontal").css("transition", "background-color 0.5s, color 0.5s");
 			$("#menu-primary *, #menu-header-horizontal *").css("transition", "background-color 0.5s, color 0.5s");
 		}
+
+

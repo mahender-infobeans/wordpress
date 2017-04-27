@@ -18,7 +18,7 @@
 
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style.css">
 	
-
+	<script src="<?php bloginfo('template_directory'); ?>/assets/js/responsive-tabs.js"></script>
 	<script src="<?php bloginfo('template_directory'); ?>/assets/js/script.js"></script>
 
 
