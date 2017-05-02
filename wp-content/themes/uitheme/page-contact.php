@@ -9,35 +9,7 @@
 			background-color: #F7F7F7;
 		}
 
-		.bgcolor-yellow{
-			background-color: #FFFA78;
-		}
-		.bgcolor-green{
-			/*background-color: #92d17b;*/
-			background-color: #74c454;
-		}
-		.title-1{
-			color: #333;
-			/*color: #284b1b;*/
-		}
-		.portfolio-box{
-			height: 380px;
-			background-color: #ddd;
-			width: 550px;
-			margin: 10px auto;
-			display: table;
-		}
-		.color-darkgray{
-			color: #333;
-		}
-		.padding1{
-			padding: 10px;
-		}
-		.test{
-			text-align: center;
-			display: table-cell;
-			vertical-align: middle;
-		} 
+		
 </style>
 <!-- 2nd page header -->
 <div class="aboutus-header bgcolor-green">	
@@ -65,8 +37,8 @@
 				</div>
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-				<div class="portfolio-box padding1">
-					<div class="test">
+				<div class="portfolio-box padding-1">
+					<div class="center-vertical-box">
 						<h3><strong>E-mail:</strong></h3><p> uiteam@infobeans.com</p>
 						<h3><strong>Contact:</strong></h3><p> +91-9999(999-999)</p>
 						<h2 class="text-center">
