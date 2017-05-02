@@ -1,7 +1,7 @@
 
 body{
 	font-family: centuryFont;
-	background-color: #F7F7F7;
+	/*background-color: #F7F7F7;*/
 	margin-bottom: 60px;
 }
 
@@ -476,9 +476,12 @@ html{
 }
 /*team page css*/
 .team-back{
-	background-color: #FFA500;
+	background-color: #FFE933;
 }
-
+.team-slogan{
+	font-size: 26px;
+    padding: 20px 0px;
+}
 /*media query*/
 @media screen and (min-width: 767px) and (max-width: 1024px){
 	.we-text {
