@@ -1,27 +1,9 @@
-*,
-*:before,
-*:after {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing:    border-box;
-	box-sizing:         border-box;
-}
-
-html {
-	height: 100%;
-}
 
 body{
 	font-family: centuryFont;
 	background-color: #F7F7F7;
 	margin-bottom: 60px;
 }
-
-/*footer {
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	left: 0;
-}*/
 
 /*Horizontal menu of all page start */
 .menu-horizontal{
@@ -42,7 +24,7 @@ body{
 /*Horizontal menu of all page end*/
 
 /*logo start*/
-div.logo{
+.logo{
 	margin: 12px 0px 3px 0px;
 	color: #fff;
 	max-width: 200px;
@@ -149,7 +131,8 @@ div.logo{
 	left: 0px;
 	z-index: 10;
 }
-.footer{
+	
+.footer {
 	background-color: #4FD5EE;
 	color: #fff;
 	bottom: 0;
@@ -178,7 +161,7 @@ html{
 	padding-top: 100px;
 	padding-bottom: 100px;
 }
-.aboutBckcolor{
+.about-back-color{
 	background-color: #1DE9B6;
 }
 .text-trans{
@@ -491,6 +474,11 @@ html{
 	margin-top: 40px;
 	margin-bottom: -40px;
 }
+/*team page css*/
+.team-back{
+	background-color: #FFA500;
+}
+
 /*media query*/
 @media screen and (min-width: 767px) and (max-width: 1024px){
 	.we-text {
