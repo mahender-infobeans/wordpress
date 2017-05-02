@@ -6,10 +6,6 @@
 	box-sizing:         border-box;
 }
 
-html {
-	height: 100%;
-}
-
 body{
 	font-family: centuryFont;
 	background-color: #F7F7F7;
