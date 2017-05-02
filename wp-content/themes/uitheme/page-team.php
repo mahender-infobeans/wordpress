@@ -18,17 +18,99 @@
 		</div>
 		<div class="container">
 		<div class="row">
-			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 text-center">
-				testmonial
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+			<div class="image-overlay">
+				<img class="team-image" src="/wp-content/themes/uitheme/assets/images/person1.jpg" alt="image-person" />
 			</div>
-			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 text-center">
-				testmonial
+				<div class="box-image">
+				</div>
+				<div class="text-center team-name">
+					<p> Davina Claire</p>
+				</div>
 			</div>
-			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 text-center">
-				testmonial
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+			<div class="image-overlay">
+				<img class="team-image" src="/wp-content/themes/uitheme/assets/images/person2.png" alt="image-person" />
 			</div>
-			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 text-center">
-				testmonial
+				<div class="box-image blue-background">
+				</div>
+				<div class="text-center team-name">
+					<p> Niklaus Michealson</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+			<div class="image-overlay">
+				<img class="team-image" src="/wp-content/themes/uitheme/assets/images/mypic.jpg" alt="image-person" />
+			</div>
+				<div class="box-image">
+				</div>
+				<div class="text-center team-name">
+					<p>Shivangi verma</p>
+				</div>
+			</div>
+		</div>
+		<div class="row margin-top30">
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+			<div class="image-overlay">
+				<img class="team-image" src="/wp-content/themes/uitheme/assets/images/person3.jpg" alt="image-person" />
+			</div>
+				<div class="box-image blue-background">
+				</div>
+				<div class="text-center team-name">
+					<p>Ian Somelhalder</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+			<div class="image-overlay">
+				<img class="team-image" src="/wp-content/themes/uitheme/assets/images/person4.jpg" alt="image-person" />
+			</div>
+				<div class="box-image">
+				</div>
+				<div class="text-center team-name">
+					<p> Neil Patrick Harris</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+			<div class="image-overlay">
+				<img class="team-image" src="/wp-content/themes/uitheme/assets/images/person2.png" alt="image-person" />
+			</div>
+				<div class="box-image blue-background">
+				</div>
+				<div class="text-center team-name">
+					<p>Cobbie Smulders</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+			<div class="image-overlay">
+				<img class="team-image" src="/wp-content/themes/uitheme/assets/images/person1.jpg" alt="image-person" />
+			</div>
+				<div class="box-image">
+				</div>
+				<div class="text-center team-name">
+					<p> Davina Claire</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+			<div class="image-overlay">
+				<img class="team-image" src="/wp-content/themes/uitheme/assets/images/person2.png" alt="image-person" />
+			</div>
+				<div class="box-image blue-background">
+				</div>
+				<div class="text-center team-name">
+					<p> Niklaus Michealson</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+			<div class="image-overlay">
+				<img class="team-image" src="/wp-content/themes/uitheme/assets/images/mypic.jpg" alt="image-person" />
+			</div>
+				<div class="box-image">
+				</div>
+				<div class="text-center team-name">
+					<p>Shivangi verma</p>
+				</div>
 			</div>
 		</div>
 		</div>
