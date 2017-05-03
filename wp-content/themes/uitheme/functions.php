@@ -1,4 +1,7 @@
 <?php 
+// custom fields added in this file.
+require_once(TEMPLATEPATH . '/functions/admin-menu.php');
+
 // logo image
 add_theme_support( 'custom-logo', array(
 	'height'      => 100,
@@ -17,16 +20,16 @@ function register_my_menu() {
 }
 add_action( 'init', 'register_my_menu' );
 
-
+// cpt for projects in portfolio page
 add_theme_support('post-thumbnails');
-function homepgAnimation() {
-    register_post_type('Images', array(
-        'label' => __('Images'),
+function portfolio_projects() {
+    register_post_type('projects', array(
+        'label' => __('projects'),
         'supports' => array( 'title', 'editor', 'thumbnail', 'revisions' ),
         'show_ui' => true,
     ));
 }
-add_action('init', 'homepgAnimation');
+add_action('init', 'portfolio_projects');
 
 
 
