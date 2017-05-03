@@ -25,7 +25,7 @@
 				<div class="box-image">
 				</div>
 				<div class="text-center team-name">
-					<p> Davina Claire</p>
+					<p class="paddingtop8"> Davina Claire</p>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
@@ -35,7 +35,7 @@
 				<div class="box-image blue-background">
 				</div>
 				<div class="text-center team-name">
-					<p> Niklaus Michealson</p>
+					<p class="paddingtop8"> Niklaus Michealson</p>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
@@ -45,11 +45,11 @@
 				<div class="box-image">
 				</div>
 				<div class="text-center team-name">
-					<p>Shivangi verma</p>
+					<p class="paddingtop8">Shivangi verma</p>
 				</div>
 			</div>
 		</div>
-		<div class="row margin-top30">
+	
 			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
 			<div class="image-overlay">
 				<img class="team-image" src="/wp-content/themes/uitheme/assets/images/person3.jpg" alt="image-person" />
@@ -57,7 +57,7 @@
 				<div class="box-image blue-background">
 				</div>
 				<div class="text-center team-name">
-					<p>Ian Somelhalder</p>
+					<p class="paddingtop8">Ian Somelhalder</p>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
@@ -67,7 +67,7 @@
 				<div class="box-image">
 				</div>
 				<div class="text-center team-name">
-					<p> Neil Patrick Harris</p>
+					<p class="paddingtop8"> Neil Patrick Harris</p>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
@@ -77,11 +77,10 @@
 				<div class="box-image blue-background">
 				</div>
 				<div class="text-center team-name">
-					<p>Cobbie Smulders</p>
+					<p class="paddingtop8">Cobbie Smulders</p>
 				</div>
 			</div>
-		</div>
-		<div class="row">
+		
 			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
 			<div class="image-overlay">
 				<img class="team-image" src="/wp-content/themes/uitheme/assets/images/person1.jpg" alt="image-person" />
@@ -89,7 +88,7 @@
 				<div class="box-image">
 				</div>
 				<div class="text-center team-name">
-					<p> Davina Claire</p>
+					<p class="paddingtop8"> Davina Claire</p>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
@@ -99,7 +98,7 @@
 				<div class="box-image blue-background">
 				</div>
 				<div class="text-center team-name">
-					<p> Niklaus Michealson</p>
+					<p class="paddingtop8"> Niklaus Michealson</p>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
@@ -109,11 +108,11 @@
 				<div class="box-image">
 				</div>
 				<div class="text-center team-name">
-					<p>Shivangi verma</p>
+					<p class="paddingtop8">Shivangi verma</p>
 				</div>
 			</div>
 		</div>
 		</div>
-	</div>
+	
 
 <?php get_footer(); ?>

@@ -2,7 +2,7 @@
 body{
 	font-family: centuryFont;
 	/*background-color: #F7F7F7;*/
-	margin-bottom: 60px;
+	padding-bottom: 60px;
 }
 
 /*Horizontal menu of all page start */
@@ -497,6 +497,7 @@ html{
 	margin: 15px 0px;
     font-size: 26px;
     border: 1px solid #FFA500;
+    cursor: pointer;
 }
 .image-overlay{
 	position: absolute;
@@ -508,8 +509,8 @@ html{
 	height: 200px;
 	width: 200px;
 }
-.margin-top30{
-	margin-top: 30px;
+.paddingtop8{
+	padding-top: 8px;
 }
 /*media query*/
 @media screen and (min-width: 767px) and (max-width: 1024px){
