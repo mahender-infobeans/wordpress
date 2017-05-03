@@ -27,8 +27,8 @@
 				<div class="text-center team-name">
 					<p class="paddingtop8">Davina Claire</p>
 				</div>
-				<div class="overlay">
-					<div class="text">Web Designer</div>
+				<div class="overlay-team">
+					<div class="text-designation">Web Designer</div>
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center team-border">
@@ -40,8 +40,8 @@
 				<div class="text-center team-name">
 					<p class="paddingtop8"> Niklaus Michealson</p>
 				</div>
-				<div class="overlay">
-					<div class="text">Senior Designer</div>
+				<div class="overlay-team">
+					<div class="text-designation">Senior Designer</div>
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center team-border">
@@ -53,11 +53,10 @@
 				<div class="text-center team-name">
 					<p class="paddingtop8">Shivangi verma</p>
 				</div>
-				<div class="overlay">
-					<div class="text">UI Developer</div>
+				<div class="overlay-team">
+					<div class="text-designation">UI Developer</div>
 				</div>
 			</div>
-
 			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center team-border">
 				<div class="image-overlay">
 					<img class="team-image" src="/wp-content/themes/uitheme/assets/images/person3.jpg" alt="image-person" />
@@ -67,8 +66,8 @@
 				<div class="text-center team-name">
 					<p class="paddingtop8">Ian Somelhalder</p>
 				</div>
-				<div class="overlay">
-					<div class="text">Senior UI/UX Developer</div>
+				<div class="overlay-team">
+					<div class="text-designation">Senior UI/UX Developer</div>
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center team-border">
@@ -80,8 +79,8 @@
 				<div class="text-center team-name">
 					<p class="paddingtop8"> Neil Patrick Harris</p>
 				</div>
-				<div class="overlay">
-					<div class="text">UX Designer</div>
+				<div class="overlay-team">
+					<div class="text-designation">UX Designer</div>
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center team-border">
@@ -93,11 +92,10 @@
 				<div class="text-center team-name">
 					<p class="paddingtop8">Cobbie Smulders</p>
 				</div>
-				<div class="overlay">
-					<div class="text">Developer</div>
+				<div class="overlay-team">
+					<div class="text-designation">Developer</div>
 				</div>
 			</div>
-
 			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center team-border">
 				<div class="image-overlay">
 					<img class="team-image" src="/wp-content/themes/uitheme/assets/images/person1.jpg" alt="image-person" />
@@ -107,8 +105,8 @@
 				<div class="text-center team-name">
 					<p class="paddingtop8"> Davina Claire</p>
 				</div>
-				<div class="overlay">
-					<div class="text">UX Designer</div>
+				<div class="overlay-team">
+					<div class="text-designation">UX Designer</div>
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center team-border">
@@ -120,8 +118,8 @@
 				<div class="text-center team-name">
 					<p class="paddingtop8"> Niklaus Michealson</p>
 				</div>
-				<div class="overlay">
-					<div class="text">UX Designer</div>
+				<div class="overlay-team">
+					<div class="text-designation">UX Designer</div>
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center team-border">
@@ -133,8 +131,8 @@
 				<div class="text-center team-name">
 					<p class="paddingtop8">Shivangi verma</p>
 				</div>
-				<div class="overlay">
-					<div class="text">UX Designer</div>
+				<div class="overlay-team">
+					<div class="text-designation">UX Designer</div>
 				</div>
 			</div>
 		</div>

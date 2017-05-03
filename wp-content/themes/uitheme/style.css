@@ -131,7 +131,7 @@ body{
 	left: 0px;
 	z-index: 10;
 }
-	
+
 .footer {
 	background-color: #4FD5EE;
 	color: #fff;
@@ -480,30 +480,30 @@ html{
 }
 .team-slogan{
 	font-size: 26px;
-    padding: 20px 0px;
+	padding: 20px 0px;
 }
 .box-image{
 	width: 200px;
-    height: 195px;
-    background-color: #FFA500;
-    position: relative;
-    margin-top: 38px;
-    margin-left: 58px;
-    box-shadow: 1px 2px 16px 0px #d3d3d3;
+	height: 195px;
+	background-color: #FFA500;
+	position: relative;
+	margin-top: 38px;
+	margin-left: 58px;
+	box-shadow: 1px 2px 16px 0px #d3d3d3;
 }
 .blue-background{
 	background-color: #4FD5EE;
 }
 .team-name{
 	margin: 15px 0px;
-    font-size: 22px;
-    cursor: pointer;
+	font-size: 22px;
+	cursor: pointer;
 }
 .image-overlay{
 	position: absolute;
-    z-index: 1;
-    height: 200px;
-    margin-left: 25px;
+	z-index: 1;
+	height: 200px;
+	margin-left: 25px;
 }
 .team-image{
 	height: 200px;
@@ -513,45 +513,58 @@ html{
 	padding-top: 8px;
 }
 .team-border{
-	border: 1px solid #FFA500;
-    padding-top: 25px;
-    padding-left: 0px;
-    cursor: pointer;
-    position: relative;
+	padding-top: 25px;
+	cursor: pointer;
+	position: relative;
 }
 /*team member overlay on hover*/
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .7s ease;
-  background-color: #FFA500;
-  z-index: 10;
+.overlay-team {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .7s ease;
+	background-color: #FFA500;
+	z-index: 10;
 }
-.text {
-  color: #000;
-  font-size: 22px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  z-index: 10;
+.text-designation {
+	color: #000;
+	font-size: 22px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	z-index: 10;
 }
-.team-border:hover .overlay {
-  opacity: 0.7;
+.team-border:hover .overlay-team {
+	opacity: 0.8;
 }
 
 /*media query*/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) { 
+	.box-image{
+		margin-left: 36px;
+	}
+	.image-overlay{
+		    margin-left: 8px;
+	}
+}
 @media screen and (min-width: 767px) and (max-width: 1024px){
 	.we-text {
 		font-weight: bold;
 		font-size: 50px;
+	}
+	.image-overlay{
+		width: 100%;
+		margin-left: 0px;
 	}
 
 }
@@ -588,6 +601,15 @@ html{
 	.we-text {
 		font-weight: bold;
 		font-size: 40px;
+	}
+	.box-image{
+		width: 100%;
+		margin-left: 0px;
+		text-align: center;
+	}
+	.image-overlay{
+		width: 100%;
+		margin-left: 0px;
 	}
 }
 
