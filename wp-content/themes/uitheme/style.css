@@ -82,16 +82,16 @@ body{
 }
 
 /*Vertical menu of all page end*/
-	
+
 /*footer {
 	position: absolute;
 	right: 0;
 	bottom: 0;
 	left: 0;
-}*/
+	}*/
 
 
-/*contact us page css and portfolio page*/
+	/*contact us page css and portfolio page*/
 	.bgcolor-yellow{
 		background-color: #FFFA78;
 	}
@@ -134,38 +134,38 @@ body{
 		text-align: center;
 	}
 
-.pos-r *{
-	color: #6f43d6;
-	text-decoration: none !important;
-}
-/*text animation home page end */
-.home-top-header{
-	display: none;
-}
-.home-side-header{
-	display: block;
-}
-/*home page footer css*/
-.footer-home{
-	padding: 10px;
-	width: 100%;
-	color:#fff;
-	position: absolute;
-	bottom: 0px;
-	left: 0px;
-	z-index: 10;
-}
+	.pos-r *{
+		color: #6f43d6;
+		text-decoration: none !important;
+	}
+	/*text animation home page end */
+	.home-top-header{
+		display: none;
+	}
+	.home-side-header{
+		display: block;
+	}
+	/*home page footer css*/
+	.footer-home{
+		padding: 10px;
+		width: 100%;
+		color:#fff;
+		position: absolute;
+		bottom: 0px;
+		left: 0px;
+		z-index: 10;
+	}
 
-.footer {
-	background-color: #4FD5EE;
-	color: #fff;
-	bottom: 0;
-	left: 0;
-	position: absolute;
-	padding: 10px 0px;
-	right: 0;
-	text-align: center;
-}
+	.footer {
+		background-color: #4FD5EE;
+		color: #fff;
+		bottom: 0;
+		left: 0;
+		position: absolute;
+		padding: 10px 0px;
+		right: 0;
+		text-align: center;
+	}
 	.menu-horizontal li{
 		float: left;
 		padding: 0px 0px 0px 0px;
@@ -201,88 +201,88 @@ body{
 		display: inline-block;
 	}
 
-.aboutus-header{
-	color: #fff;
-	padding-top: 100px;
-	padding-bottom: 100px;
-}
-.about-back-color{
-	background-color: #1DE9B6;
-}
-.text-trans{
-	text-transform: capitalize;
-}
-.about-text{
-	font-weight: bold;
-	font-size: 22px;
-	margin-bottom: -15px;
-}
-.we-text{
-	font-weight: bold;
-	font-size: 80px;
-}
-.img1{
-	position: absolute;
-	right: 40px;
-	top: 35px;
-	background-image: url("/wp-content/themes/uitheme/assets/images/tri-right.png");
-	height: 200px;
-	width: 200px;
-}
-.img2{
-	position: absolute;
-	left: 40px;
-	bottom: 5px;
-	background-image: url("/wp-content/themes/uitheme/assets/images/tri-left.png");
-	height: 190px;
-	width: 150px;
-	z-index: -1;
-}
-.service-left{
-	position: absolute;
-	right: 1px;
-	top: -61px;
-	background-image: url(/wp-content/themes/uitheme/assets/images/circle-left.png);
-	height: 590px;
-	width: 254px;
-}
-.service-right{
-	position: absolute;
-	left: 40px;
-	top: 159px;
-	background-image: url(/wp-content/themes/uitheme/assets/images/circle-right.png);
-	height: 464px;
-	width: 400px;
-}
-.tab-button {
-	width: 698px;
-	margin: 40px auto;
-}
-.tab-button  li a{
-	border-radius: 0px;
-	width: 230px;
-	text-align: center;
-	background-color: #1DE9B6;
-	color: #fff;
-	font-size: 20px;
-}
-.tab-button  ul li{
-	margin-right: -2px;
-}
-.margintop40{
-	margin-top: 40px;
-}
-.tab-button  li.active>a,
-.tab-button  li.active>a:focus,
-.tab-button  li.active>a:hover{
-	background-color: #4FD5EE;
-	color: #fff;
-}
-.tab-button  li>a:focus, 
-.tab-button  li>a:hover{
-	background-color: #1ac69b;
-	color: #fff;	
-}
+	.aboutus-header{
+		color: #fff;
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+	.about-back-color{
+		background-color: #1DE9B6;
+	}
+	.text-trans{
+		text-transform: capitalize;
+	}
+	.about-text{
+		font-weight: bold;
+		font-size: 22px;
+		margin-bottom: -15px;
+	}
+	.we-text{
+		font-weight: bold;
+		font-size: 80px;
+	}
+	.img1{
+		position: absolute;
+		right: 40px;
+		top: 35px;
+		background-image: url("/wp-content/themes/uitheme/assets/images/tri-right.png");
+		height: 200px;
+		width: 200px;
+	}
+	.img2{
+		position: absolute;
+		left: 40px;
+		bottom: 5px;
+		background-image: url("/wp-content/themes/uitheme/assets/images/tri-left.png");
+		height: 190px;
+		width: 150px;
+		z-index: -1;
+	}
+	.service-left{
+		position: absolute;
+		right: 1px;
+		top: -61px;
+		background-image: url(/wp-content/themes/uitheme/assets/images/circle-left.png);
+		height: 590px;
+		width: 254px;
+	}
+	.service-right{
+		position: absolute;
+		left: 40px;
+		top: 159px;
+		background-image: url(/wp-content/themes/uitheme/assets/images/circle-right.png);
+		height: 464px;
+		width: 400px;
+	}
+	.tab-button {
+		width: 698px;
+		margin: 40px auto;
+	}
+	.tab-button  li a{
+		border-radius: 0px;
+		width: 230px;
+		text-align: center;
+		background-color: #1DE9B6;
+		color: #fff;
+		font-size: 20px;
+	}
+	.tab-button  ul li{
+		margin-right: -2px;
+	}
+	.margintop40{
+		margin-top: 40px;
+	}
+	.tab-button  li.active>a,
+	.tab-button  li.active>a:focus,
+	.tab-button  li.active>a:hover{
+		background-color: #4FD5EE;
+		color: #fff;
+	}
+	.tab-button  li>a:focus, 
+	.tab-button  li>a:hover{
+		background-color: #1ac69b;
+		color: #fff;	
+	}
 
 	/*Vertical menu of all page start*/
 	.scroll{
@@ -400,109 +400,109 @@ body{
 	.text-trans{
 		text-transform: capitalize;
 	}
-.work-div{
-	background-color: #F0F0F0;
-	padding: 10px 0px;
-	font-size: 20px;
-	color: #333;
-}
-.margin40{
-	margin-top: 40px;
-	margin-bottom: -40px;
-}
-/*team page css*/
-.team-back{
-	background-color: #FFA500;
-}
-.team-slogan{
-	font-size: 26px;
-	padding: 20px 0px;
-}
-.box-image{
-	width: 200px;
-	height: 195px;
-	background-color: #FFA500;
-	position: relative;
-	margin-top: 38px;
-	margin-left: 58px;
-	box-shadow: 1px 2px 16px 0px #d3d3d3;
-}
-.blue-background{
-	background-color: #4FD5EE;
-}
-.team-name{
-	margin: 15px 0px;
-	font-size: 22px;
-	cursor: pointer;
-}
-.image-overlay{
-	position: absolute;
-	z-index: 1;
-	height: 200px;
-	margin-left: 25px;
-}
-.team-image{
-	height: 200px;
-	width: 200px;
-}
-.paddingtop8{
-	padding-top: 8px;
-}
-.team-border{
-	padding-top: 25px;
-	cursor: pointer;
-	position: relative;
-}
-/*team member overlay on hover*/
-.overlay-team {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	height: 100%;
-	width: 100%;
-	opacity: 0;
-	transition: .7s ease;
-	background-color: #FFA500;
-	z-index: 10;
-}
-.text-designation {
-	color: #000;
-	font-size: 22px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	z-index: 10;
-}
-.team-border:hover .overlay-team {
-	opacity: 0.8;
-}
-
-/*media query*/
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : landscape) { 
+	.work-div{
+		background-color: #F0F0F0;
+		padding: 10px 0px;
+		font-size: 20px;
+		color: #333;
+	}
+	.margin40{
+		margin-top: 40px;
+		margin-bottom: -40px;
+	}
+	/*team page css*/
+	.team-back{
+		background-color: #FFA500;
+	}
+	.team-slogan{
+		font-size: 26px;
+		padding: 20px 0px;
+	}
 	.box-image{
-		margin-left: 36px;
+		width: 200px;
+		height: 195px;
+		background-color: #FFA500;
+		position: relative;
+		margin-top: 38px;
+		margin-left: 58px;
+		box-shadow: 1px 2px 16px 0px #d3d3d3;
+	}
+	.blue-background{
+		background-color: #4FD5EE;
+	}
+	.team-name{
+		margin: 15px 0px;
+		font-size: 22px;
+		cursor: pointer;
 	}
 	.image-overlay{
-		    margin-left: 8px;
+		position: absolute;
+		z-index: 1;
+		height: 200px;
+		margin-left: 25px;
 	}
-}
-@media screen and (min-width: 767px) and (max-width: 1024px){
-	.we-text {
-		font-weight: bold;
-		font-size: 50px;
+	.team-image{
+		height: 200px;
+		width: 200px;
 	}
-	.image-overlay{
+	.paddingtop8{
+		padding-top: 8px;
+	}
+	.team-border{
+		padding-top: 25px;
+		cursor: pointer;
+		position: relative;
+	}
+	/*team member overlay on hover*/
+	.overlay-team {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 100%;
 		width: 100%;
-		margin-left: 0px;
+		opacity: 0;
+		transition: .7s ease;
+		background-color: #FFA500;
+		z-index: 10;
 	}
-}
+	.text-designation {
+		color: #000;
+		font-size: 22px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		z-index: 10;
+	}
+	.team-border:hover .overlay-team {
+		opacity: 0.8;
+	}
+
+	/*media query*/
+	@media only screen 
+	and (min-device-width : 768px) 
+	and (max-device-width : 1024px) 
+	and (orientation : landscape) { 
+		.box-image{
+			margin-left: 36px;
+		}
+		.image-overlay{
+			margin-left: 8px;
+		}
+	}
+	@media screen and (min-width: 767px) and (max-width: 1024px){
+		.we-text {
+			font-weight: bold;
+			font-size: 50px;
+		}
+		.image-overlay{
+			width: 100%;
+			margin-left: 0px;
+		}
+	}
 	.we-text{
 		font-weight: bold;
 		font-size: 80px;
@@ -848,15 +848,15 @@ and (orientation : landscape) {
 			font-weight: bold;
 			font-size: 40px;
 		}
-                .box-image{
-		width: 100%;
-		margin-left: 0px;
-		text-align: center;
-	}
-	.image-overlay{
-		width: 100%;
-		margin-left: 0px;
-	}
+		.box-image{
+			width: 100%;
+			margin-left: 0px;
+			text-align: center;
+		}
+		.image-overlay{
+			width: 100%;
+			margin-left: 0px;
+		}
 	}
 
 	/**shivangi css ends here **/
@@ -905,5 +905,5 @@ and (orientation : landscape) {
 			font-size: 80px;
 		}
 	}
-/*portfolio page css*/
-        
+	/*portfolio page css*/
+	
