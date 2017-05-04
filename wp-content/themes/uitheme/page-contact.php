@@ -1,23 +1,11 @@
 <?php get_header(); ?>
-<style type="text/css">
-	@font-face {
-			font-family: centuryFont;
-			src: url("font/07558_CenturyGothic.ttf");
-		}
-		body{
-			font-family: centuryFont;
-			background-color: #F7F7F7;
-		}
-
-		
-</style>
 <!-- 2nd page header -->
 <div class="aboutus-header bgcolor-green">	
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<h2 class="about-text text-trans title-1">Contact Us</h2>
-				<h1 class="we-text title-1"> Stay Connected... </h1>
+				<h1 class="we-text title-1"> <?php echo get_option("contact_page_title"); ?></h1>
 			</div>
 		</div>
 	</div>
