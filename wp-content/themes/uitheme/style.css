@@ -1,4 +1,4 @@
-
+ 
 body{
 	font-family: centuryFont;
 	background-color: #F7F7F7;
@@ -805,6 +805,14 @@ body{
 	.margin40{
 		margin-top: 40px;
 		margin-bottom: -40px;
+	}
+	.backimg{
+	width: 100%;
+    background-image: url(/wp-content/themes/uitheme/assets/images/bckimage.jpg);
+    height: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
 	}
 	/*media query*/
 	@media screen and (min-width: 767px) and (max-width: 1024px){
