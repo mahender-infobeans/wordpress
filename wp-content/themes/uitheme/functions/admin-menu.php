@@ -16,6 +16,8 @@ function register_my_cool_plugin_settings() {
 	register_setting( 'my-cool-plugin-settings-group', 'contact_page_title' );
 	register_setting( 'my-cool-plugin-settings-group', 'portfolio_page_title' );
 	register_setting( 'my-cool-plugin-settings-group', 'option_etc' );
+    register_setting( 'my-cool-plugin-settings-group', 'team_page_title' );
+    register_setting( 'my-cool-plugin-settings-group', 'team_page_subtitle' );
 }
 
 function my_cool_plugin_settings_page() {
@@ -35,6 +37,16 @@ function my_cool_plugin_settings_page() {
         <tr valign="top">
         <th scope="row">Portfolio Page Title</th>
         <td><input type="text" name="portfolio_page_title" value="<?php echo esc_attr( get_option('portfolio_page_title') ); ?>" /></td>
+        </tr>
+
+        <tr valign="top">
+        <th scope="row">Team Page Title</th>
+        <td><input type="text" name="team_page_title" value="<?php echo esc_attr( get_option('team_page_title') ); ?>" /></td>
+        </tr>
+
+        <tr valign="top">
+        <th scope="row">Team Page Sub Title</th>
+        <td><input type="text" name="team_page_subtitle" value="<?php echo esc_attr( get_option('team_page_subtitle') ); ?>" /></td>
         </tr>
         
         <tr valign="top">
