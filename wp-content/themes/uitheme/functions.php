@@ -22,7 +22,6 @@ add_action( 'init', 'register_my_menu' );
 
 // cpt for projects in portfolio page
 add_theme_support('post-thumbnails');
-post_thumbnail( 'medium' ); // Medium resolution (default 300px x 300px max)
 
 function portfolio_projects() {
     register_post_type('projects', array(
@@ -45,6 +44,15 @@ function team_members() {
 add_action('init', 'team_members');
 
 //cpt ends here for team page
+
+function about_you() {
+    register_post_type('about', array(
+        'label' => __('about'),
+        'supports' => array( 'title', 'editor', 'thumbnail', 'revisions' ),
+        'show_ui' => true,
+    ));
+}
+add_action('init', 'about_you');
 
 
 

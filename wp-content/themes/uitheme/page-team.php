@@ -18,6 +18,17 @@
 	</div>
 	<div class="container">
 		<div class="row">
+<!-- <?php 
+// if ( has_post_thumbnail() ) 
+{
+    // the_post_thumbnail();
+}
+// else 
+{ 
+?>
+<img src="<?php bloginfo('template_directory'); ?>/images/default-thumb-img.png" alt="<?php the_title(); ?>" />
+<?php } ?> -->
+		
 			<?php $args = array( 'post_type' => 'Team' ); $loop = new WP_Query( $args );?>
 			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
