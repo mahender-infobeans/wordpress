@@ -22,6 +22,7 @@ add_action( 'init', 'register_my_menu' );
 
 // cpt for projects in portfolio page
 add_theme_support('post-thumbnails');
+
 function portfolio_projects() {
     register_post_type('projects', array(
         'label' => __('projects'),
@@ -30,14 +31,28 @@ function portfolio_projects() {
     ));
 }
 add_action('init', 'portfolio_projects');
+//cpt ends here for portfolio page
 
+//cpt for team page
+function team_members() {
+    register_post_type('Team', array(
+        'label' => __('Team'),
+        'supports' => array( 'title', 'editor', 'thumbnail', 'revisions' ),
+        'show_ui' => true,
+    ));
+}
+add_action('init', 'team_members');
 
+//cpt ends here for team page
 
-
-
-
-
-
+function about_you() {
+    register_post_type('about', array(
+        'label' => __('about'),
+        'supports' => array( 'title', 'editor', 'thumbnail', 'revisions' ),
+        'show_ui' => true,
+    ));
+}
+add_action('init', 'about_you');
 
 
 
@@ -71,4 +86,16 @@ function wpt_register_css() {
 }
 add_action( 'wp_enqueue_scripts', 'wpt_register_css' );
 
+
+// theme panel option
+// function theme_settings_page(){}
+ 
+// function add_theme_menu_item()
+// {
+//     add_menu_page("Theme Panel", "Theme Panel", "manage_options", "theme-panel", "theme_settings_page", null, 99);
+// }
+
+// add_action("admin_menu", "add_theme_menu_item");
+
 ?>
+

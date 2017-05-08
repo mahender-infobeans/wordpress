@@ -2,74 +2,74 @@
 $(document).ready(function(){
 	addAnimation();
 			// vertical-navigation hover effect
-			$("#menu-primary li").on('mouseover', function(){
-				var color1 = getRandomColor();
-				var color2 = shadeColor1(color1, 10);
+			// $("#menu-primary li").on('mouseover', function(){
+			// 	var color1 = getRandomColor();
+			// 	var color2 = shadeColor1(color1, 10);
 
-				$(".scroll").css("background-color", color1);
-				if(color1 == "#FEFB7A"){
-					$("#menu-primary *").css("color", "#000");
-				}
+			// 	$(".scroll").css("background-color", color1);
+			// 	if(color1 == "#FEFB7A"){
+			// 		$("#menu-primary *").css("color", "#000");
+			// 	}
 
-				$("#menu-primary").css("background-color", color1);
-				$("#menu-primary *").css("background-color", color1);
+			// 	$("#menu-primary").css("background-color", color1);
+			// 	$("#menu-primary *").css("background-color", color1);
 
-				$(this).css("background-color", color2);
-				$(this).children().css("background-color", color2);
-			});
-			$("#menu-primary li").on('mouseout', function(){
-				var color1 = "#6F43D6";
+			// 	$(this).css("background-color", color2);
+			// 	$(this).children().css("background-color", color2);
+			// });
+			// $("#menu-primary li").on('mouseout', function(){
+			// 	var color1 = "#6F43D6";
 
-				$(".scroll").css("background-color", color1);
+			// 	$(".scroll").css("background-color", color1);
 
-				$("#menu-primary *").css("color", "#FFF");
-				$(".header-background").css("background-color", color1);
+			// 	$("#menu-primary *").css("color", "#FFF");
+			// 	$(".header-background").css("background-color", color1);
 				
 
-				$("#menu-primary *").css("background-color", color1);
-				$("#menu-primary").css("background-color", color1);
+			// 	$("#menu-primary *").css("background-color", color1);
+			// 	$("#menu-primary").css("background-color", color1);
 
-				$(this).css("background-color", color1);
-				$(this).children().css("background-color", color1);
+			// 	$(this).css("background-color", color1);
+			// 	$(this).children().css("background-color", color1);
 
 
-			});
+			// });
 			// vertical-navigation hover effect end
 
 
-			// horizontal-navigation hover effect
-			$("#menu-header-horizontal li").on('mouseover', function(){
-				var color1 = getRandomColor();
-				if(color1 == "#FEFB7A"){
-					$("#menu-header-horizontal *").css("color", "#000");
-				}
-				var color2 = shadeColor1(color1, 10);
+			// // horizontal-navigation hover effect
+			// $("#menu-header-horizontal li").on('mouseover', function(){
+			// 	var color1 = getRandomColor();
+			// 	if(color1 == "#FEFB7A"){
+			// 		$("#menu-header-horizontal *").css("color", "#000");
+			// 	}
+			// 	var color2 = shadeColor1(color1, 10);
 
-				$(".header-background").css("background-color", color1);
+			// 	$(".header-background").css("background-color", color1);
 
-				$("#menu-header-horizontal").css("background-color", color1);
-				$("#menu-header-horizontal *").css("background-color", color1);
+			// 	$("#menu-header-horizontal").css("background-color", color1);
+			// 	$("#menu-header-horizontal *").css("background-color", color1);
 
-				$(this).css("background-color", color2);
-				$(this).children().css("background-color", color2);
+			// 	$(this).css("background-color", color2);
+			// 	$(this).children().css("background-color", color2);
 
 
-			});
-			$("#menu-header-horizontal li").on('mouseout', function(){
-				var color1 = "#6F43D6";
+			// });
+			// $("#menu-header-horizontal li").on('mouseout', function(){
+			// 	var color1 = "#6F43D6";
 
-				$("#menu-header-horizontal *").css("color", "#FFF");
-				$(".header-background").css("background-color", color1);
+			// 	$("#menu-header-horizontal *").css("color", "#FFF");
+			// 	$(".header-background").css("background-color", color1);
 				
 
-				$("#menu-header-horizontal *").css("background-color", color1);
-				$("#menu-header-horizontal").css("background-color", color1);
+			// 	$("#menu-header-horizontal *").css("background-color", color1);
+			// 	$("#menu-header-horizontal").css("background-color", color1);
 
-				$(this).css("background-color", color1);
-				$(this).children().css("background-color", color1);
+			// 	$(this).css("background-color", color1);
+			// 	$(this).children().css("background-color", color1);
 
 
-			});
+			// });
 			// horizontal-navigation hover effect end
 
  // shivangi js 

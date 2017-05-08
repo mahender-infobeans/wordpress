@@ -1,4 +1,4 @@
-
+ 
 body{
 	font-family: centuryFont;
 	background-color: #F7F7F7;
@@ -79,16 +79,16 @@ body{
 }
 
 /*Vertical menu of all page end*/
-	
+
 /*footer {
 	position: absolute;
 	right: 0;
 	bottom: 0;
 	left: 0;
-}*/
+	}*/
 
 
-/*contact us page css and portfolio page*/
+	/*contact us page css and portfolio page*/
 	.bgcolor-yellow{
 		background-color: #FFFA78;
 	}
@@ -450,109 +450,111 @@ body{
 	.text-trans{
 		text-transform: capitalize;
 	}
-.work-div{
-	background-color: #F0F0F0;
-	padding: 10px 0px;
-	font-size: 20px;
-	color: #333;
-}
-.margin40{
-	margin-top: 40px;
-	margin-bottom: -40px;
-}
-/*team page css*/
-.team-back{
-	background-color: #FFA500;
-}
-.team-slogan{
-	font-size: 26px;
-	padding: 20px 0px;
-}
-.box-image{
-	width: 200px;
-	height: 195px;
-	background-color: #FFA500;
-	position: relative;
-	margin-top: 38px;
-	margin-left: 58px;
-	box-shadow: 1px 2px 16px 0px #d3d3d3;
-}
-.blue-background{
-	background-color: #4FD5EE;
-}
-.team-name{
-	margin: 15px 0px;
-	font-size: 22px;
-	cursor: pointer;
-}
-.image-overlay{
-	position: absolute;
-	z-index: 1;
-	height: 200px;
-	margin-left: 25px;
-}
-.team-image{
-	height: 200px;
-	width: 200px;
-}
-.paddingtop8{
-	padding-top: 8px;
-}
-.team-border{
-	padding-top: 25px;
-	cursor: pointer;
-	position: relative;
-}
-/*team member overlay on hover*/
-.overlay-team {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	height: 100%;
-	width: 100%;
-	opacity: 0;
-	transition: .7s ease;
-	background-color: #FFA500;
-	z-index: 10;
-}
-.text-designation {
-	color: #000;
-	font-size: 22px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	z-index: 10;
-}
-.team-border:hover .overlay-team {
-	opacity: 0.8;
-}
-
-/*media query*/
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : landscape) { 
+	.work-div{
+		background-color: #F0F0F0;
+		padding: 10px 0px;
+		font-size: 20px;
+		color: #333;
+	}
+	.margin40{
+		margin-top: 40px;
+		margin-bottom: -40px;
+	}
+	/*team page css*/
+	.team-back{
+		background-color: #FFA500;
+	}
+	.team-slogan{
+		font-size: 26px;
+		padding: 20px 0px;
+	}
 	.box-image{
-		margin-left: 36px;
+		width: 200px;
+		height: 195px;
+		background-color: #FFA500;
+		position: relative;
+		opacity: 0.7;
+		margin-top: 20px;
+		margin-left: 40px;
+		box-shadow: 1px 2px 16px 0px #d3d3d3;
+	}
+	.blue-background{
+		background-color: #4FD5EE;
+	}
+	.team-name{
+		margin: 15px 0px;
+		font-size: 22px;
+		cursor: pointer;
 	}
 	.image-overlay{
-		    margin-left: 8px;
+		position: absolute;
+		z-index: 1;
+		height: 200px;
+		margin-left: 25px;
 	}
-}
-@media screen and (min-width: 767px) and (max-width: 1024px){
-	.we-text {
-		font-weight: bold;
-		font-size: 50px;
+	.team-image{
+		height: 200px;
+		width: 200px;
 	}
-	.image-overlay{
+	.paddingtop8{
+		padding-top: 8px;
+	}
+	.team-border{
+		padding-top: 25px;
+		cursor: pointer;
+		position: relative;
+	}
+	/*team member overlay on hover*/
+	.overlay-team {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 100%;
 		width: 100%;
-		margin-left: 0px;
+		opacity: 0;
+		transition: .7s ease;
+		background-color: #FFA500;
+		z-index: 10;
+		overflow: hidden;
 	}
-}
+	.text-designation {
+		color: #000;
+		font-size: 22px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		z-index: 10;
+	}
+	.team-border:hover .overlay-team {
+		opacity: 0.8;
+	}
+
+	/*media query*/
+	@media only screen 
+	and (min-device-width : 768px) 
+	and (max-device-width : 1024px) 
+	and (orientation : landscape) { 
+		.box-image{
+			margin-left: 36px;
+		}
+		.image-overlay{
+			margin-left: 8px;
+		}
+	}
+	@media screen and (min-width: 767px) and (max-width: 1024px){
+		.we-text {
+			font-weight: bold;
+			font-size: 50px;
+		}
+		.image-overlay{
+			width: 100%;
+			margin-left: 0px;
+		}
+	}
 	.we-text{
 		font-weight: bold;
 		font-size: 80px;
@@ -856,6 +858,14 @@ and (orientation : landscape) {
 		margin-top: 40px;
 		margin-bottom: -40px;
 	}
+	.backimg{
+		width: 100%;
+		background-image: url(/wp-content/themes/uitheme/assets/images/bckimage.jpg);
+		height: 100%;
+		position: absolute;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
 	/*media query*/
 	@media screen and (min-width: 767px) and (max-width: 1024px){
 		.we-text {
@@ -898,15 +908,15 @@ and (orientation : landscape) {
 			font-weight: bold;
 			font-size: 40px;
 		}
-                .box-image{
-		width: 100%;
-		margin-left: 0px;
-		text-align: center;
-	}
-	.image-overlay{
-		width: 100%;
-		margin-left: 0px;
-	}
+		.box-image{
+			width: 100%;
+			margin-left: 0px;
+			text-align: center;
+		}
+		.image-overlay{
+			width: 100%;
+			margin-left: 0px;
+		}
 	}
 
 	/**shivangi css ends here **/
@@ -955,5 +965,5 @@ and (orientation : landscape) {
 			font-size: 80px;
 		}
 	}
-/*portfolio page css*/
-        
+	/*portfolio page css*/
+	
