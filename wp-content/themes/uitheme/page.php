@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 <!-- 2nd page header -->
 <style type="text/css">
-<?php $page_background = get_post_custom_values("header-background")[0] == ""? '#fff': get_post_custom_values("header-background")[0]; ?>
-<?php $page_font = get_post_custom_values("header-font")[0] == ""? '#000': get_post_custom_values("header-font")[0]; ?>
+<?php $page_background = get_post_custom_values("header-background")[0] == ""? '#abcdef': get_post_custom_values("header-background")[0]; ?>
+<?php $page_font = get_post_custom_values("header-font")[0] == ""? '#333': get_post_custom_values("header-font")[0]; ?>
 	.header-background-custom{
 		background-color: <?php echo $page_background; ?>;
 		color: <?php echo $page_font; ?>;
