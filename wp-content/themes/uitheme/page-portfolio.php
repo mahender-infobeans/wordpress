@@ -1,4 +1,22 @@
 <?php get_header(); ?>
+<style type="text/css">
+<?php $page_background = get_post_custom_values("page-background")[0] == ""? '#FFFA78': get_post_custom_values("page-background")[0]; ?>
+<?php $page_font = get_post_custom_values("header-font")[0] == ""? '#333': get_post_custom_values("header-font")[0]; ?>
+	.header-background-custom{
+		background-color: <?php echo $page_background; ?>;
+		color: <?php echo $page_font; ?>;
+	}
+	.header-background{
+		background-color: <?php echo $page_background; ?>;
+	}
+	.menu-horizontal li a{
+		color: <?php echo $page_font; ?>;	
+	}
+	.footer{
+		background-color: <?php echo $page_background; ?>;
+		color: <?php echo $page_font; ?>;
+	}
+</style>
 <!-- 2nd page header -->
 <div class="aboutus-header bgcolor-yellow">	
 	<div class="container">
@@ -10,7 +28,13 @@
 		</div>
 	</div>
 </div>
-
+<div class="container-fluid">
+	<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center work-div">
+				<p> <?php echo get_option("team_page_subtitle"); ?></p>
+			</div>
+		</div>
+</div>
 <div class="aboutus-header">	
 	<div class="container">
 		<div class="row">

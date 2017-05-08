@@ -1,6 +1,23 @@
 <?php get_header(); ?>
 
-
+<style type="text/css">
+<?php $page_background = get_post_custom_values("page-background")[0] == ""? '#1DE9B6': get_post_custom_values("page-background")[0]; ?>
+<?php $page_font = get_post_custom_values("header-font")[0] == ""? '#fff': get_post_custom_values("header-font")[0]; ?>
+	.header-background-custom{
+		background-color: <?php echo $page_background; ?>;
+		color: <?php echo $page_font; ?>;
+	}
+	.header-background{
+		background-color: <?php echo $page_background; ?>;
+	}
+	.menu-horizontal li a{
+		color: <?php echo $page_font; ?>;	
+	}
+	.footer{
+		background-color: <?php echo $page_background; ?>;
+		color: <?php echo $page_font; ?>;
+	}
+</style>
 	<div class="aboutus-header about-back-color">	
 		<div class="container">
 			<div class="row">

@@ -1,7 +1,7 @@
  
 body{
 	font-family: centuryFont;
-	background-color: #F7F7F7;
+	background-color: #fff;
 	padding-bottom: 60px;
 }
 
@@ -15,7 +15,7 @@ body{
 
 .menu-horizontal li{
 	float: left;
-	padding: 0px 0px 0px 0px;
+	padding: 0px 15px 0px 15px;
 }
 
 /*Horizontal menu of all page end*/
@@ -59,8 +59,11 @@ body{
 }
 
 .header-background{
-	padding-bottom: 10px;
-	background-color: #6F43D6;
+	padding-bottom: 0px;
+	background-color: #f7f7f7;
+	box-shadow: 0px 0px 10px 1px #d3d3d3;
+}
+
 }
 
 .menu{
@@ -223,11 +226,11 @@ body{
 }
 	.menu-horizontal li{
 		float: left;
-		padding: 0px 0px 0px 0px;
+		padding: 0px 15px 0px 15px;
 	}
 
 	.menu-horizontal li a{
-		color: #fff;
+		color: #333;
 	}
 	/*Horizontal menu of all page end*/
 
@@ -952,9 +955,9 @@ body{
 	}
 
 	@media screen and (min-width: 768px){
-		.right-768up{
+	/*	.right-768up{
 			float: right;
-		}
+		}*/
 	}
 
 	@media screen and (min-width: 992px) and (max-width: 1024px){

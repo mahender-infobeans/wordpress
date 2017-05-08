@@ -1,6 +1,6 @@
 
 $(document).ready(function(){
-	addAnimation();
+	// addAnimation();
 			// vertical-navigation hover effect
 			// $("#menu-primary li").on('mouseover', function(){
 			// 	var color1 = getRandomColor();
@@ -86,6 +86,7 @@ $(document).ready(function(){
           fakewaffle.responsiveTabs( [ 'xs', 'sm' ] );
       } )( jQuery );
 		});
+
 function getRandomInt(min, max) {
 	return Math.floor(Math.random() * (max - min + 1)) + min;
 }

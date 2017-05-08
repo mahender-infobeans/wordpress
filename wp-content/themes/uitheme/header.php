@@ -30,11 +30,11 @@
 	?>
 	<header>
 		
-		<div class="header-background <?php echo is_front_page()?'home-top-header':''?>">
-
-			<div class="container">
-				<div class="col-lg-4 col-md-4 col-sm-3 col-xs-12">
-					<div class="logo pull-left col-lg-12 col-md-12 col-sm-12 col-xs-6">
+		<div class="header-background">
+<!-- <?php echo is_front_page()?'home-top-header':''?> -->
+			<div class="container-fluid">
+				<div class="col-lg-3 col-md-3 col-sm-2 col-xs-4">
+					<div class="logo pull-left">
 
 						<!-- <a href="JavaScript:void(0)"><img src="https://unity3d.com/profiles/unity3d/themes/unity/images/company/brand/logos/primary/unity-logo.png"></a> -->
 						<a href="<?php echo get_site_url(); ?>"><img src="<?php echo $image[0]; ?>"></a>
@@ -50,7 +50,7 @@
 					</div>
 				</div>
 
-				<div class="col-lg-8 col-md-8 col-sm-9 col-xs-12">
+				<div class="col-lg-9 col-md-9 col-sm-10 col-xs-8">
 
 					<nav class="header-menu">
 						<!-- <?php wp_nav_menu( array('menu' => 'header-horizontal',
@@ -85,7 +85,7 @@
 				</div>
 			</div>
 
-			<div class="scroll  <?php echo is_front_page()?'home-side-header':'hidden'?>">
+			<!-- <div class="scroll  <?php echo is_front_page()?'home-side-header':'hidden'?>">
 				<div class="logo1">
 					<a href="JavaScript:void(0)"><img src="<?php echo $image[0]; ?>"></a>
 				</div>
@@ -95,7 +95,7 @@
 						) );
 						?>
 					</nav>
-				<!-- <ul class="navigation-hide-onscroll">
+				<ul class="navigation-hide-onscroll">
 					<li class="v-nav">
 						<strike><a href="JavaScript:void(0);">Home</a></strike>
 					</li>
@@ -108,8 +108,8 @@
 					<li class="v-nav">
 						<a href="JavaScript:void(0);">Portfolio</a>
 					</li>
-				</ul> -->
-			</div>
+				</ul>
+			</div> -->
 
 		</header>
 
