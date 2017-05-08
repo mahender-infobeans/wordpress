@@ -17,6 +17,7 @@
 	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222599/canvas-pointer.js?v=20150516"></script>
 
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/custom.css">
 	
 	<script src="<?php bloginfo('template_directory'); ?>/assets/js/responsive-tabs.js"></script>
 	<script src="<?php bloginfo('template_directory'); ?>/assets/js/script.js"></script>
