@@ -467,6 +467,7 @@ body{
 		transition: .7s ease;
 		background-color: #FFA500;
 		z-index: 10;
+		overflow: hidden;
 	}
 	.text-designation {
 		color: #000;
