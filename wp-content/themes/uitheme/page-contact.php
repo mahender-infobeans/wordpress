@@ -17,6 +17,15 @@
 		color: <?php echo $page_font; ?>;
 	}
 </style>
+<script type="text/javascript">
+	var colorx = shadeColor1("<?php echo $page_background; ?>",91);
+	console.log(colorx);
+	var element ="<style>.menu-horizontal li a:hover{"+
+		"background-color: "+ colorx +";"+
+		"box-shadow: 0px 0px 13px 0px "+ colorx +" inset;" +
+	"}</style>";
+	$("head").append(element);
+</script>
 <!-- 2nd page header -->
 <div class="aboutus-header bgcolor-green">	
 	<div class="container">
