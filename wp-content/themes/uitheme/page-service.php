@@ -114,26 +114,59 @@
 			</div>
 		</div>
 		<div class="container">	
+		<?php $args = array( 'post_type' => 'servicestab' ); $loop = new WP_Query( $args );?>
+		<?php $ab = wp_count_posts( "servicestab" ); ?>
+				<?php if ( $ab->publish == 0 ) :?>
 			<ul class="nav nav-tabs responsive tab-button" id="myTab">
-				<li class="head-class active"><a class="deco-none red-class" href="#resp-tab1"> Our Approach</a></li>
-				<li class="head-class"><a href="#resp-tab2">Vision</a></li>
-				<li class="head-class"><a class="deco-none" href="#resp-tab3"> Mission</a></li>
+				<li class="head-class active"><a class="deco-none red-class" href="#resp-tab1"> Heading 1</a></li>
+				<li class="head-class"><a href="#resp-tab2">Heading 2</a></li>
+				<li class="head-class"><a class="deco-none" href="#resp-tab3"> Heading 3</a></li>
 			</ul>
 
 			<div class="tab-content responsive col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1 tab-box">
 				<div class="tab-pane active" id="resp-tab1">
-					<h3>Our Approach</h3>
+					<h3>Add your Content here</h3>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 				</div>
 				<div class="tab-pane" id="resp-tab2">
-					<h3>Vision</h3>
+					<h3>Add your Content here</h3>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 				</div>
 				<div class="tab-pane" id="resp-tab3">
-					<h3>Mission</h3>
+					<h3>Add your Content here</h3>
 					<p> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 				</div>
 			</div>
+<?php endif; ?>
+
+<div class="row">
+			<div id="tab-service">
+				<ul class="nav nav-tabs responsive tab-button" role="tablist">
+					<?php $loop = new WP_Query( array( 'post_type' => 'servicestab', 'posts_per_page' => -1 ) ); ?>
+					<?php 
+					$counter = 0;
+					while ( $loop->have_posts() ) : $loop->the_post(); 
+					$counter++;
+					?>
+					<li role="presentation" class="post-<?php the_ID(); ?> <?=($counter == 1) ? 'active' : ''?> head-class"><a href="#post-<?php the_ID(); ?>" aria-controls="home" role="tab" data-toggle="tab" class="deco-none red-class"><?php the_title();?></a></li>
+				<?php endwhile; wp_reset_query(); ?>
+			</ul>
+			<div class="tab-content">
+				<?php
+				$counter = 0;
+				$loop = new WP_Query( array( 'post_type' => 'servicestab', 'posts_per_page' => -1 ) );
+				while ( $loop->have_posts() ) : $loop->the_post(); 
+				$counter++;
+				?>
+				<div role="tabpanel" class="tab-pane tab-content responsive col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1 tab-box <?=($counter == 1) ? 'active' : ''?>" id="post-<?php the_ID(); ?>">
+					<?php the_content();?>
+					
+				</div>
+			<?php endwhile; ?>
+		</div>
+	</div>
+</div>
+
 		</div>
 	</div>
 

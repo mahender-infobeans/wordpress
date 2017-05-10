@@ -18,19 +18,19 @@
 
 
 
-<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/canva-home.css">
+<!-- <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/canva-home.css">
 <script src="<?php bloginfo('template_directory'); ?>/assets/js/particles.min.js"></script>
-<script src="<?php bloginfo('template_directory'); ?>/assets/js/app.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/assets/js/app.js"></script> -->
 
 
 
-<div class="pos-r">
+<!-- <div class="pos-r">
 	<h1 class="btm-text">
 		<a href="" class="typewrite" data-period="2000" data-type='["We Create WOW :)" ]'>
 			<span class="wrap"></span>
 		</a>
 	</h1>
-</div>
+</div> -->
 
 <script type="text/javascript">
 	// var TxtType = function(el, toRotate, period) {

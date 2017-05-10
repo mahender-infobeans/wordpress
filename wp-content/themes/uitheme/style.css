@@ -475,13 +475,14 @@ body{
 	}
 	.box-image{
 		width: 200px;
-		height: 195px;
-		background-color: #FFA500;
-		position: relative;
-		opacity: 0.7;
-		margin-top: 20px;
-		margin-left: 40px;
-		box-shadow: 1px 2px 16px 0px #d3d3d3;
+    height: 195px;
+    background-color: #fff;
+    position: relative;
+    opacity: 0.7;
+    margin-top: 20px;
+    margin-left: 40px;
+    border: 2px solid #FFA500;
+    box-shadow: 1px 2px 16px 0px #d3d3d3;
 	}
 	.blue-background{
 		background-color: #4FD5EE;
@@ -500,6 +501,8 @@ body{
 	.team-image{
 		height: 200px;
 		width: 200px;
+		border: 2px solid #ffc04c;
+		background-color: #fff;
 	}
 	.paddingtop8{
 		padding-top: 8px;

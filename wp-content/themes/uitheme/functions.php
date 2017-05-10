@@ -25,7 +25,7 @@ add_theme_support('post-thumbnails');
 
 function portfolio_projects() {
     register_post_type('projects', array(
-        'label' => __('projects'),
+        'label' => __('Projects'),
         'supports' => array( 'title', 'editor', 'thumbnail', 'revisions' ),
         'show_ui' => true,
     ));
@@ -35,7 +35,7 @@ add_action('init', 'portfolio_projects');
 
 //cpt for team page
 function team_members() {
-    register_post_type('Team', array(
+    register_post_type('team', array(
         'label' => __('Team'),
         'supports' => array( 'title', 'editor', 'thumbnail', 'revisions' ),
         'show_ui' => true,
@@ -45,15 +45,25 @@ add_action('init', 'team_members');
 
 //cpt ends here for team page
 
+//cpt for about us page tabs
 function about_you() {
     register_post_type('about', array(
-        'label' => __('about'),
+        'label' => __('About-Tabs'),
         'supports' => array( 'title', 'editor', 'thumbnail', 'revisions' ),
         'show_ui' => true,
     ));
 }
 add_action('init', 'about_you');
 
+//cpt for services page tabs
+function service_tabs() {
+    register_post_type('servicestab', array(
+        'label' => __('Service-Tabs'),
+        'supports' => array( 'title', 'editor', 'thumbnail', 'revisions' ),
+        'show_ui' => true,
+    ));
+}
+add_action('init', 'service_tabs');
 
 
 
