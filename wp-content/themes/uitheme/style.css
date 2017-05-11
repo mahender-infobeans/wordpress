@@ -60,7 +60,7 @@ body{
 
 .header-background{
 	padding-bottom: 0px;
-	background-color: #f7f7f7;
+	background-color: #FDD7E4;
 	box-shadow: 0px 0px 10px 1px #d3d3d3;
 }
 
@@ -231,7 +231,6 @@ body{
 
 	.menu-horizontal li a{
 		color: #333;
-		font-weight: 700;
 		font-size: 18px;
 	}
 	/*Horizontal menu of all page end*/

@@ -27,3 +27,16 @@
 .font16{
 	font-size: 16px;
 }
+/* home page css*/
+  .img-back{
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    	
+  }
+  .default-img{
+  	background-image: url(/wp-content/themes/uitheme/assets/images/slider-img1.jpg);
+  }
+  .arrows{
+  	background-image: linear-gradient(to right,rgba(0,0,0,0) 0,rgba(0,0,0,.0001) 100%) !important;
+  }
