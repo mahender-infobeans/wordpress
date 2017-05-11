@@ -66,11 +66,9 @@ function service_tabs() {
 add_action('init', 'service_tabs');
 
 //cpt for home page slider
-add_action( 'init', 'custom_bootstrap_slider' );
-/**
- * Register a Custom post type for.
- */
-function custom_bootstrap_slider() {
+add_action( 'init', 'bootstrap_slider' );
+
+function bootstrap_slider() {
     $labels = array(
         'name'               => _x( 'Slider', 'post type general name'),
         'singular_name'      => _x( 'Slide', 'post type singular name'),

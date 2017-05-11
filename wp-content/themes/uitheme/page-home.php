@@ -17,6 +17,9 @@
 		color: <?php echo $page_font; ?>;
 	}
 </style>
+<!-- default slider if no slider block has been added by the admin -->
+<div class="container-fluid">
+<div class="row">
 <div id="mycarousel" class="carousel slide" data-ride="carousel">
  <?php $args = array( 'post_type' => 'slider' ); $loop = new WP_Query( $args );?>
 		<?php $ab = wp_count_posts( "slider" ); ?>
@@ -47,7 +50,7 @@
     </div>
 	<?php endif; ?>
 
-  <!-- Wrapper for slides -->
+  <!--dynamic slider slides posted by admin -->
   <div class="carousel-inner" role="listbox">
     <?php $slider = get_posts(array('post_type' => 'slider','order'=> 'ASC')); ?>
       <?php $count = 0; ?>
@@ -65,7 +68,7 @@
     <?php endforeach; ?>
   </div>
 
-  <!-- Controls -->
+  <!-- left and right arrows control -->
   <a class="left carousel-control arrows" href="#mycarousel" role="button" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
@@ -75,5 +78,52 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center work-div">
+				How Do We Work?
+			</div>
+</div>
+</div>
 
+
+<div class="container">
+<div class="row wrapper-box">
+	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 home-box">
+	<div class="box-img">
+		<img src="/wp-content/themes/uitheme/assets/images/box1.jpg">
+		<div class="home-overlay"></div>
+	</div>
+	</div>
+	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 home-box">
+		<div class="box-img">
+		<img src="/wp-content/themes/uitheme/assets/images/box2.jpg">
+		<div class="home-overlay"></div>
+	</div>
+	</div>
+	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 home-box">
+		<div class="box-img">
+		<img src="/wp-content/themes/uitheme/assets/images/box3.jpg">
+		<div class="home-overlay"></div>
+	</div>
+	</div>
+	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 home-box">
+		<div class="box-img">
+		<img src="/wp-content/themes/uitheme/assets/images/box2.jpg">
+		<div class="home-overlay"></div>
+	</div>
+	</div>
+	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 home-box">
+	<div class="box-img">
+		<img src="/wp-content/themes/uitheme/assets/images/box1.jpg">
+		<div class="home-overlay"></div>
+	</div>
+	</div>
+	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 home-box">
+		<div class="box-img">
+		<img src="/wp-content/themes/uitheme/assets/images/box3.jpg">
+		<div class="home-overlay"></div>
+	</div>
+	</div>
+</div>
+	
+</div>
 <?php get_footer(); ?>

@@ -34,7 +34,8 @@
 	<!-- this is start -->
 	<?php 
 	$temp = $wp_query; $wp_query= null;
-	$wp_query = new WP_Query(); $wp_query->query('posts_per_page=5' . '&paged='.$paged);
+	$wp_query = new WP_Query(); $wp_query->query('posts_per_page=-1' . '&paged='.$paged);
+	// $wp_query = new WP_Query(); $wp_query->query('posts_per_page=5' . '&paged='.$paged);
 	while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 
 	<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2 blog-wrapper">
