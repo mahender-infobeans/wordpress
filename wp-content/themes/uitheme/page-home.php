@@ -78,9 +78,6 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center work-div">
-				How Do We Work?
-			</div>
 </div>
 </div>
 
