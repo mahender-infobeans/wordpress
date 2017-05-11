@@ -38,7 +38,8 @@
 					<div class="logo pull-left">
 
 						<!-- <a href="JavaScript:void(0)"><img src="https://unity3d.com/profiles/unity3d/themes/unity/images/company/brand/logos/primary/unity-logo.png"></a> -->
-						<a href="<?php echo get_site_url(); ?>"><img src="<?php echo $image[0]; ?>"></a>
+							<a href="<?php echo get_site_url(); ?>"><img alt="logo" src="<?php echo $image[0] == null ? bloginfo('template_directory').'/assets/images/logo.png'  : $image[0] ; ?>"></a>
+
 
 					</div>
 					<div class="col-xs-6 hidden-lg hidden-md hidden-sm pull-right">
