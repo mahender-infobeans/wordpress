@@ -28,127 +28,41 @@
 	$("head").append(element);
 </script>
 
-<body>
-	<div class="container">
-		
-			<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2 blog-wrapper">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<img class="blog-img" src="/wp-content/themes/uitheme/assets/images/blog-1.jpg" alt="blog-image" />
-				</div>
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 date-col font16">
-					<p class="text-center"> 12-12-2012</p>
-				</div>
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<strong><h2 class="text-center"> BEST MATCH DETECTED: WOOD & WHITE</h2></strong>
-				</div>
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margintop10 font16">
-					<p class="text-center"> By Username</p>
-				</div>
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-					<strong><h3 class="text-left"> Pretty Heading </h3></strong>
-				</div>
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-					<p>Et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor, sit amet consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.
-					Et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor, sit amet consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
-				</div>
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<strong><h3 class="text-left"> Pretty Heading 2 </h3></strong>
-				</div>
-				
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-					<p>Et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla.</p>
-					<ul>
-						<li>Some content 1</li>
-						<li>Some content 2</li>
-						<li>Some content 3</li>
-						<li>Some content 4</li>
-					</ul>
-				</div>
+<!-- <body> -->
 
-				<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 text-center col-lg-offset-2 col-md-offset-2">
-					<button type="button" class="btn btn-lg btn-block continue-button">Continue Reading</button>
-				</div>
-			</div>
+	
 
-			<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2 blog-wrapper">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<img class="blog-img" src="/wp-content/themes/uitheme/assets/images/blog-1.jpg" alt="blog-image" />
-				</div>
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 date-col font16">
-					<p class="text-center"> 12-12-2012</p>
-				</div>
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<strong><h2 class="text-center"> BEST MATCH DETECTED: WOOD & WHITE</h2></strong>
-				</div>
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margintop10 font16">
-					<p class="text-center"> By Username</p>
-				</div>
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-					<strong><h3 class="text-left"> Pretty Heading </h3></strong>
-				</div>
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-					<p>Et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor, sit amet consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.
-					Et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor, sit amet consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
-				</div>
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<strong><h3 class="text-left"> Pretty Heading 2 </h3></strong>
-				</div>
-				
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-					<p>Et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla.</p>
-					<ul>
-						<li>Some content 1</li>
-						<li>Some content 2</li>
-						<li>Some content 3</li>
-						<li>Some content 4</li>
-					</ul>
-				</div>
 
-				<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 text-center col-lg-offset-2 col-md-offset-2">
-					<button type="button" class="btn btn-lg btn-block continue-button">Continue Reading</button>
-				</div>
-			</div>
 
-			<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2 blog-wrapper">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<img class="blog-img" src="/wp-content/themes/uitheme/assets/images/blog-1.jpg" alt="blog-image" />
-				</div>
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 date-col font16">
-					<p class="text-center"> 12-12-2012</p>
-				</div>
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<strong><h2 class="text-center"> BEST MATCH DETECTED: WOOD & WHITE</h2></strong>
-				</div>
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margintop10 font16">
-					<p class="text-center"> By Username</p>
-				</div>
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-					<strong><h3 class="text-left"> Pretty Heading </h3></strong>
-				</div>
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-					<p>Et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor, sit amet consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.
-					Et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor, sit amet consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
-				</div>
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<strong><h3 class="text-left"> Pretty Heading 2 </h3></strong>
-				</div>
-				
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-					<p>Et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla.</p>
-					<ul>
-						<li>Some content 1</li>
-						<li>Some content 2</li>
-						<li>Some content 3</li>
-						<li>Some content 4</li>
-					</ul>
-				</div>
 
-				<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 text-center col-lg-offset-2 col-md-offset-2">
-					<button type="button" class="btn btn-lg btn-block continue-button">Continue Reading</button>
-				</div>
-			</div>
-		
+
+
+<!-- the blog page content will show with this code -->
+
+<div class="container">
+	<div class="row color-darkgray">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 20px 15px;">
+			<?php while ( have_posts() ) : the_post(); ?> <!--Because the_content() works only inside a WP Loop -->
+				<div class="entry-content-page">
+					<?php the_content(); ?> <!-- Page Content -->
+				</div><!-- .entry-content-page -->
+
+				<?php
+    				endwhile; //resetting the page loop
+    				wp_reset_query(); //resetting the page query
+    			?>
+		</div>
+
 	</div>
-</body>
+</div>
+
+<!-- </body> -->
+
+
+
+
+
+
+	
 
 <?php get_footer(); ?>
