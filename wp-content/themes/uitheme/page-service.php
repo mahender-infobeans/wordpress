@@ -46,65 +46,65 @@
 		<div class="service-right hidden-xs"></div>
 		<div class="container">
 			<div class="row margintop40">
-				<div class="col-lg-1 col-md-1 col-sm-6 col-xs-12">
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 					<p class="marginleft10 resp-text-center">Definition</p>
 					<div class="image-box borderbox">
 						<img src="/wp-content/themes/uitheme/assets/images/definition-icon.png" alt="definition-image">
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
+				<!-- <div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
 					<div class="circle"></div>
 					<img class="top-image" src="/wp-content/themes/uitheme/assets/images/bdr-right.png" alt="top-border">
-				</div>
-				<div class="col-lg-1 col-md-1 col-sm-6 col-xs-12">
+				</div> -->
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 					<p class="marginleft10 resp-text-center">Conception</p>
 					<div class="image-box">
 						<img src="/wp-content/themes/uitheme/assets/images/conception-icon.png" alt="conception-icon">
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
+				<!-- <div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
 					<div class="circle3"></div>
 					<img class="top-image" src="/wp-content/themes/uitheme/assets/images/bdr-right.png" alt="top-border">
-				</div>
-				<div class="col-lg-1 col-md-1 col-sm-6 col-xs-12">
+				</div> -->
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 					<p class="resp-text-center">Development</p>
 					<div class="image-box">
 						<img src="/wp-content/themes/uitheme/assets/images/development-icon.png" alt="development-icon">
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
+				<!-- <div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
 					<div class="circle5"></div>
 					<img class="top-image" src="/wp-content/themes/uitheme/assets/images/bdr-right.png" alt="top-border">
-				</div>
+				</div> -->
 
-				<div class="col-lg-1 col-lg-offset-2 col-md-offset-2 col-md-1 col-sm-6 col-xs-12 resp-bottom-30">
-					<p class="block-title visible-xs visible-sm hidden-md hidden-lg resp-text-center">Research</p>
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 resp-bottom-30">
+					<p class="block-title resp-text-center">Research</p>
 					<div class="image-box border-color">
 						<img src="/wp-content/themes/uitheme/assets/images/research-icon.png" alt="research-icon">
 					</div>
-					<div class="visible-lg visible-md hidden-sm hidden-xs"><p class="block-title">Research</p></div>
+					<!-- <div class="visible-lg visible-md hidden-sm hidden-xs"><p class="block-title">Research</p></div> -->
 				</div>
-				<div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
+				<!-- <div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
 					<div class="circle2"></div>
 					<img class="bottom-image" src="/wp-content/themes/uitheme/assets/images/bdr-right-bottom.png" alt="bottom-border">
-				</div>
-				<div class="col-lg-1 col-md-1 col-sm-6 col-xs-12">
-					<p class="block-title visible-xs visible-sm hidden-md hidden-lg resp-text-center">Selection</p>
+				</div> -->
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+					<p class="block-title resp-text-center">Selection</p>
 					<div class="image-box ">
 						<img src="/wp-content/themes/uitheme/assets/images/selection-icon.png" alt="selection-icon">
 					</div>
-					<div class="visible-lg visible-md hidden-sm hidden-xs"><p class="block-title">Selection</p></div>
+					<!-- <div class="visible-lg visible-md hidden-sm hidden-xs"><p class="block-title">Selection</p></div> -->
 				</div>
-				<div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
+				<!-- <div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
 					<div class="circle4"></div>
 					<img class="bottom-image" src="/wp-content/themes/uitheme/assets/images/bdr-right-bottom.png" alt="bottom-border">
-				</div>
-				<div class="col-lg-1 col-md-1 col-sm-6 col-xs-12">
-					<p class="block-title visible-xs visible-sm hidden-md hidden-lg resp-text-center">Delivery</p>
+				</div> -->
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+					<p class="block-title resp-text-center">Delivery</p>
 					<div class="image-box ">
 						<img src="/wp-content/themes/uitheme/assets/images/delivery-icon.png" alt="delivery-icon">
 					</div>
-					<div class="visible-lg visible-md hidden-sm hidden-xs"><p class="block-title">Delivery</p></div>
+					<!-- <div class="visible-lg visible-md hidden-sm hidden-xs"><p class="block-title">Delivery</p></div> -->
 				</div>
 			</div>
 		</div>
@@ -138,19 +138,20 @@
 				</div>
 			</div>
 <?php endif; ?>
-
+</div>
+<div class="container">
 <div class="row">
-			<div id="tab-service">
-				<ul class="nav nav-tabs responsive tab-button" role="tablist">
+			<div id="tab-services">
+				<div class="nav nav-tabs responsive owl-carousel owl-theme" role="tablist">
 					<?php $loop = new WP_Query( array( 'post_type' => 'servicestab', 'posts_per_page' => -1 ) ); ?>
 					<?php 
 					$counter = 0;
 					while ( $loop->have_posts() ) : $loop->the_post(); 
 					$counter++;
 					?>
-					<li role="presentation" class="post-<?php the_ID(); ?> <?=($counter == 1) ? 'active' : ''?> head-class"><a href="#post-<?php the_ID(); ?>" aria-controls="home" role="tab" data-toggle="tab" class="deco-none red-class"><?php the_title();?></a></li>
+					<div role="presentation" class="tab-button item post-<?php the_ID(); ?> <?=($counter == 1) ? 'active' : ''?> head-class"><a href="#post-<?php the_ID(); ?>" aria-controls="home" role="tab" data-toggle="tab" class="deco-none red-class"><?php the_title();?></a></div>
 				<?php endwhile; wp_reset_query(); ?>
-			</ul>
+			</div>
 			<div class="tab-content">
 				<?php
 				$counter = 0;
@@ -160,7 +161,7 @@
 				?>
 				<div role="tabpanel" class="tab-pane tab-content responsive col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1 tab-box <?=($counter == 1) ? 'active' : ''?>" id="post-<?php the_ID(); ?>">
 					<?php the_content();?>
-					
+
 				</div>
 			<?php endwhile; ?>
 		</div>
@@ -170,4 +171,24 @@
 		</div>
 	</div>
 
+
+<script type="text/javascript">
+	$('.owl-carousel').owlCarousel({
+		loop:false,
+		margin:10,
+		nav:true,
+		responsive:{
+			0:{
+				items:2
+			},
+			600:{
+				items:3
+			},
+			1000:{
+				items:3
+			}
+		}
+	})
+
+</script>
 <?php get_footer(); ?>

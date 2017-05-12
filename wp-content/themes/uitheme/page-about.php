@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<style type="text/css">
+<style type="text/css"> 
 	<?php $page_background = get_post_custom_values("page-background")[0] == ""? '#1DE9B6': get_post_custom_values("page-background")[0]; ?>
 	<?php $page_font = get_post_custom_values("header-font")[0] == ""? '#fff': get_post_custom_values("header-font")[0]; ?>
 	.header-background-custom{
@@ -76,16 +76,16 @@
 
 		<div class="row">
 			<div id="tab">
-				<ul class="nav nav-tabs responsive tab-button" role="tablist">
+				<div class="nav nav-tabs responsive owl-carousel owl-theme" role="tablist">
 					<?php $loop = new WP_Query( array( 'post_type' => 'about', 'posts_per_page' => -1 ) ); ?>
 					<?php 
 					$counter = 0;
 					while ( $loop->have_posts() ) : $loop->the_post(); 
 					$counter++;
 					?>
-					<li role="presentation" class="post-<?php the_ID(); ?> <?=($counter == 1) ? 'active' : ''?> head-class"><a href="#post-<?php the_ID(); ?>" aria-controls="home" role="tab" data-toggle="tab" class="deco-none red-class"><?php the_title();?></a></li>
+					<div role="presentation" class="tab-button item post-<?php the_ID(); ?> <?=($counter == 1) ? 'active' : ''?> head-class"><a href="#post-<?php the_ID(); ?>" aria-controls="home" role="tab" data-toggle="tab" class="deco-none red-class"><?php the_title();?></a></div>
 				<?php endwhile; wp_reset_query(); ?>
-			</ul>
+			</div>
 			<div class="tab-content">
 				<?php
 				$counter = 0;
@@ -105,4 +105,23 @@
 </div>
 
 
+<script type="text/javascript">
+	$('.owl-carousel').owlCarousel({
+		loop:false,
+		margin:10,
+		nav:true,
+		responsive:{
+			0:{
+				items:2
+			},
+			600:{
+				items:4
+			},
+			1000:{
+				items:3
+			}
+		}
+	})
+
+</script>
 <?php get_footer(); ?>

@@ -78,14 +78,15 @@ $(document).ready(function(){
 			$( this ).tab( 'show' );
 		} );
 
-		( function( $ ) {
-          // Test for making sure event are maintained
-          $( '.js-alert-test' ).click( function () {
-          	alert( 'Button Clicked: Event was maintained' );
-          } );
-          fakewaffle.responsiveTabs( [ 'xs', 'sm' ] );
-      } )( jQuery );
+		// ( function( $ ) {
+  //         // Test for making sure event are maintained
+  //         $( '.js-alert-test' ).click( function () {
+  //         	alert( 'Button Clicked: Event was maintained' );
+  //         } );
+  //         fakewaffle.responsiveTabs( [ 'xs', 'sm' ] );
+  //     } )( jQuery );
 		});
+
 
 function getRandomInt(min, max) {
 	return Math.floor(Math.random() * (max - min + 1)) + min;

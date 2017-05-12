@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <style type="text/css">
-	<?php $page_background = get_post_custom_values("page-background")[0] == ""? '#F778A1': get_post_custom_values("page-background")[0]; ?>
-	<?php $page_font = get_post_custom_values("header-font")[0] == ""? '#fff': get_post_custom_values("header-font")[0]; ?>
+	<?php $page_background = get_post_custom_values("page-background")[0] == ""? '#97ffe1': get_post_custom_values("page-background")[0]; ?>
+	<?php $page_font = get_post_custom_values("header-font")[0] == ""? '#000': get_post_custom_values("header-font")[0]; ?>
 	.header-background-custom{
 		background-color: <?php echo $page_background; ?>;
 		color: <?php echo $page_font; ?>;
@@ -81,7 +81,7 @@
 </div>
 </div>
 
-
+<!-- 
 <div class="container">
 <div class="row wrapper-box">
 	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 home-box">
@@ -122,5 +122,5 @@
 	</div>
 </div>
 	
-</div>
+</div> -->
 <?php get_footer(); ?>
