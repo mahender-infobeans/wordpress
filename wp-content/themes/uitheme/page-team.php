@@ -19,7 +19,6 @@
 </style>
 <script type="text/javascript">
 	var colorx = shadeColor1("<?php echo $page_background; ?>",70);
-	console.log(colorx);
 	var element ="<style>.menu-horizontal li a:hover{"+
 	"background-color: "+ colorx +";"+ 
 	"box-shadow: 0px 0px 13px 0px "+ colorx +" inset;" +
@@ -45,35 +44,73 @@
 </div>
 <div class="container">
 	<div class="row">
-<!-- <?php 
-// if ( has_post_thumbnail() ) 
-{
-    // the_post_thumbnail();
-}
-// else 
-{ 
-?>
-<img src="<?php bloginfo('template_directory'); ?>/images/default-thumb-img.png" alt="<?php the_title(); ?>" />
-<?php } ?> -->
 
-<?php $args = array( 'post_type' => 'Team' ); $loop = new WP_Query( $args );?>
-<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+		<?php $args = array( 'post_type' => 'team' ); $loop = new WP_Query( $args );?>
+		<?php $ab = wp_count_posts( "team" ); ?>
+				<?php if ( $ab->publish == 0 ) :?>
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center team-border">
+				<div class="image-overlay">
+					<img class="team-image" src="/wp-content/themes/uitheme/assets/images/team-default.png" alt="image-person" />
+				</div>
+				<div class="box-image">
+				</div>
+				<div class="text-center team-name">
+					<p class="paddingtop8">Add Name</p>
+				</div>
+				<div class="overlay-team">
+					<div class="text-designation">Add Designation</div>
+				</div>
+				</div>
+				<?php endif; ?>
 
-	<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center team-border">
-		<div class="image-overlay">
-			<img class="team-image" src="<?php the_post_thumbnail_url(); ?>" alt="image-person" />
-		</div>
-		<div class="box-image">
-		</div>
-		<div class="text-center team-name">
-			<p class="paddingtop8"><?php the_title(); ?></p>
-		</div>
-		<div class="overlay-team">
-			<div class="text-designation"><?php the_content(); ?></div>
-		</div>
+		<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
+			
+				<?php if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it. ?>
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center team-border">
+				<div class="image-overlay">
+					<img class="team-image" src="<?php the_post_thumbnail_url(); ?>" alt="image-person" />
+				</div>
+				<div class="box-image">
+				</div>
+				<div class="text-center team-name">
+					<p class="paddingtop8"><?php the_title(); ?></p>
+				</div>
+				<div class="overlay-team">
+					<div class="text-designation"><?php the_content(); ?></div>
+				</div>
+				</div>
+				<?php } ?>
+
+				<?php if ( !has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it. ?>
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center team-border">
+				<div class="image-overlay">
+					<img class="team-image" src="/wp-content/themes/uitheme/assets/images/team-default.png" alt="image-person" />
+				</div>
+				<div class="box-image">
+				</div>
+				<div class="text-center team-name">
+					<p class="paddingtop8"><?php the_title(); ?></p>
+				</div>
+				<div class="overlay-team">
+					<div class="text-designation"><?php the_content(); ?></div>
+				</div>
+				</div>
+				<?php } ?>
+			
+
+		<?php endwhile; ?>
 	</div>
-<?php endwhile; ?>
-</div>
 </div>
 
 <?php get_footer(); ?>
+
+
+
+
+
+
+
+
+
+

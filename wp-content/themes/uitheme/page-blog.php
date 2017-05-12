@@ -30,13 +30,6 @@
 
 <!-- <body> -->
 
-	
-
-
-
-
-
-
 <!-- the blog page content will show with this code -->
 
 <div class="container">
