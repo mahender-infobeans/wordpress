@@ -26,73 +26,159 @@
 	"box-shadow: 0px 0px 13px 0px "+ colorx +" inset;" +
 	"}</style>";
 	$("head").append(element);
-</script>
-
-
-
-<div class="container">
-	<!-- this is start -->
-	<?php 
-	$temp = $wp_query; $wp_query= null;
-	$wp_query = new WP_Query(); $wp_query->query('posts_per_page=-1' . '&paged='.$paged);
-	// $wp_query = new WP_Query(); $wp_query->query('posts_per_page=5' . '&paged='.$paged);
-	while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
-
-	<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2 blog-wrapper">
-		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-			
-			<?php if ( has_post_thumbnail() ) { ?>
-				<img class="blog-img" src="<?php echo the_post_thumbnail_url(); ?>" alt="blog-image" />
-			<?php } 
-			if ( !has_post_thumbnail() ) { ?>
-				<img class="blog-img" src="/wp-content/themes/uitheme/assets/images/blog-1.jpg" alt="blog-image" />
-		<?php } ?>
-
-
-	</div>
-	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 date-col font16">
-		<p class="text-center"> <?php the_date(); ?></p>
-	</div>
-	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-		<strong>
-			<h2 class="text-center">
-				<a href="<?php the_permalink(); ?>" class="blog-link" title="Read more"><?php the_title(); ?></a>
-			</h2></strong>
-		</div>
-		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margintop10 font16">
-			<p class="text-center">Posted By: <span class="capitalize-blg"><?php the_author(); ?></span></p>
-		</div>
-
-		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-			<p><?php the_excerpt(); ?></p>
-		</div>
-		<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 text-center col-lg-offset-2 col-md-offset-2">
-			<button type="button" class="btn btn-lg btn-block continue-button"><a class="blog-link-btn" href="<?php the_permalink(); ?>" title="Read more">Continue Reading</a></button>
-		</div>
-	</div>
 
 	
+</script>
 
-<?php endwhile; ?>
+<style type="text/css">
+	/*Masonry css start	*/
+	/* ---- grid ---- */
 
-<?php if ($paged > 1) { ?>
+	.grid {
+		background: #EEE;
+		/* center */
+		margin: 15px auto;
+		padding: 15px 15px;
+	}
 
-<nav id="nav-posts">
-	<div class="prev"><?php next_posts_link('&laquo; Previous Posts'); ?></div>
-	<div class="next"><?php previous_posts_link('Newer Posts &raquo;'); ?></div>
-</nav>
+	/* clearfix */
+	.grid:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
 
-<?php } else { ?>
+	/* ---- grid-item ---- */
 
-<nav id="nav-posts">
-	<div class="prev"><?php next_posts_link('&laquo; Previous Posts'); ?></div>
-</nav>
+	.grid-item {
+		width: 250px;
+		min-height: 120px;
+		float: left;
+		/*background: #D26;*/
+		/*border: 2px solid #333;*/
+		/*border-color: hsla(0, 0%, 0%, 0.5);*/
+		border-radius: 5px;
+	}
+	/*Masonry css end */
+</style>
 
-<?php } ?>
+<div class="container">
+	<!-- start of Masonry -->
+	<div class="grid">
+		<?php 
+		$temp = $wp_query; $wp_query= null;
+		$wp_query = new WP_Query(); $wp_query->query('posts_per_page=-1' . '&paged='.$paged);
+	// $wp_query = new WP_Query(); $wp_query->query('posts_per_page=5' . '&paged='.$paged);
+		while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
+		<div class="grid-item">
+			<div class="abc">
+				<?php if ( has_post_thumbnail() ) { ?>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<img class="blog-img" src="<?php echo the_post_thumbnail_url(); ?>" alt="blog-image" />
+				</div>
+				<?php }  ?>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 date-col font16">
+					<p class="text-center"> <?php the_date(); ?></p>
+				</div>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<strong>
+						<h2 class="text-center">
+							<a href="<?php the_permalink(); ?>" class="blog-link" title="Read more"><?php the_title(); ?></a>
+						</h2></strong>
+					</div>
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margintop10 font16">
+						<p class="text-center">Posted By: <span class="capitalize-blg"><?php the_author(); ?></span></p>
+					</div>
 
-<?php wp_reset_postdata(); ?>
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+						<p><?php the_excerpt(); ?></p>
+					</div>
+					<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 text-center col-lg-offset-2 col-md-offset-2">
+						<button type="button" class="btn btn-lg btn-block continue-button"><a class="blog-link-btn" href="<?php the_permalink(); ?>" title="Read more">Continue Reading</a></button>
+					</div>
+				</div>
+			</div>
+		<?php endwhile; ?>
+	</div>
 
-<!-- this is end -->	
-</div>
 
-<?php get_footer(); ?>
+	<!-- end of Masonry -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- this is start -->
+	
+
+	<!-- <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2 blog-wrapper">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			
+			<?php //if ( has_post_thumbnail() ) { ?>
+			<img class="blog-img" src="<?php //echo the_post_thumbnail_url(); ?>" alt="blog-image" />
+			<?php // }  ?>
+			
+		</div>
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 date-col font16">
+			<p class="text-center"> <?php //the_date(); ?></p>
+		</div>
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<strong>
+				<h2 class="text-center">
+					<a href="<?php //the_permalink(); ?>" class="blog-link" title="Read more">
+					// <?php //the_title(); ?></a>
+				</h2></strong>
+			</div>
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margintop10 font16">
+				<p class="text-center">Posted By: <span class="capitalize-blg"><?php //the_author(); ?></span></p>
+			</div>
+
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+				<p><?php //the_excerpt(); ?></p>
+			</div>
+			<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 text-center col-lg-offset-2 col-md-offset-2">
+				<button type="button" class="btn btn-lg btn-block continue-button"><a class="blog-link-btn" href="<?php //the_permalink(); ?>" title="Read more">Continue Reading</a></button>
+			</div>
+		</div> -->
+
+
+
+		<!-- <?php //endwhile; ?> -->
+
+		<?php if ($paged > 1) { ?>
+
+		<nav id="nav-posts">
+			<div class="prev"><?php next_posts_link('&laquo; Previous Posts'); ?></div>
+			<div class="next"><?php previous_posts_link('Newer Posts &raquo;'); ?></div>
+		</nav>
+
+		<?php } else { ?>
+
+		<nav id="nav-posts">
+			<div class="prev"><?php next_posts_link('&laquo; Previous Posts'); ?></div>
+		</nav>
+
+		<?php } ?>
+
+		<?php wp_reset_postdata(); ?>
+
+		<!-- this is end -->	
+	</div>
+
+
+
+	<?php get_footer(); ?>
