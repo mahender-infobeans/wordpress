@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <style type="text/css">
-<?php $page_background = get_post_custom_values("page-background")[0] == ""? '#FFFA78': get_post_custom_values("page-background")[0]; ?>
-<?php $page_font = get_post_custom_values("header-font")[0] == ""? '#333': get_post_custom_values("header-font")[0]; ?>
+	<?php $page_background = get_post_custom_values("page-background")[0] == ""? '#FFFA78': get_post_custom_values("page-background")[0]; ?>
+	<?php $page_font = get_post_custom_values("header-font")[0] == ""? '#333': get_post_custom_values("header-font")[0]; ?>
 	.header-background-custom{
 		background-color: <?php echo $page_background; ?>;
 		color: <?php echo $page_font; ?>;
@@ -20,8 +20,8 @@
 <script type="text/javascript">
 	var colorx = shadeColor1("<?php echo $page_background; ?>",85);
 	var element ="<style>.menu-horizontal li a:hover{"+
-		"background-color: "+ colorx +";"+
-		"box-shadow: 0px 0px 13px 0px "+ colorx +" inset;" +
+	"background-color: "+ colorx +";"+
+	"box-shadow: 0px 0px 13px 0px "+ colorx +" inset;" +
 	"}</style>";
 	$("head").append(element);
 </script>
@@ -38,10 +38,10 @@
 </div>
 <div class="container-fluid">
 	<div class="row">
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center work-div">
-				<p> <?php echo get_option("team_page_subtitle"); ?></p>
-			</div>
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center work-div">
+			<p> <?php echo get_option("team_page_subtitle"); ?></p>
 		</div>
+	</div>
 </div>
 <div class="aboutus-header">	
 	<div class="container">

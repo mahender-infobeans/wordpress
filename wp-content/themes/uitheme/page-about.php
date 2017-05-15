@@ -45,15 +45,15 @@
 	<div class="img2">
 	</div>
 	<div class="container">	
-	
-<?php $args = array( 'post_type' => 'about' ); $loop = new WP_Query( $args );?>
+
+		<?php $args = array( 'post_type' => 'about' ); $loop = new WP_Query( $args );?>
 		<?php $ab = wp_count_posts( "about" ); ?>
-				<?php if ( $ab->publish == 0 ) :?>
-			<ul class="nav nav-tabs responsive tab-button" id="myTab">
-				<li class="head-class active"><a class="deco-none red-class" href="#resp-tab1"> Heading 1</a></li>
-				<li class="head-class"><a href="#resp-tab2">Heading 2</a></li>
-				<li class="head-class"><a class="deco-none" href="#resp-tab3"> Heading 3</a></li>
-			</ul>
+		<?php if ( $ab->publish == 0 ) :?>
+			<div class="nav nav-tabs responsive owl-carousel owl-theme" id="myTab">
+				<div class="tab-button item"><a role="tab" data-toggle="tab" class="deco-none red-class" href="#resp-tab1"> Heading 1</a></div>
+				<div class="tab-button item"><a role="tab" data-toggle="tab" href="#resp-tab2">Heading 2</a></div>
+				<div class="tab-button item"><a role="tab" data-toggle="tab" class="deco-none" href="#resp-tab3"> Heading 3</a></div>
+			</div>
 
 			<div class="tab-content responsive col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1 tab-box">
 				<div class="tab-pane active" id="resp-tab1">
@@ -69,9 +69,7 @@
 					<p> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 				</div>
 			</div>
-<?php endif; ?>
-
-
+		<?php endif; ?>
 
 
 		<div class="row">
