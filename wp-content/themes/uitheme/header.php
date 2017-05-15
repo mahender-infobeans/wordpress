@@ -39,7 +39,7 @@
 		<div class="header-background">
 <!-- <?php echo is_front_page()?'home-top-header':''?> -->
 			<div class="container-fluid">
-				<div class="col-lg-3 col-md-3 col-sm-2 col-xs-4">
+				<div class="col-lg-3 col-md-3 col-sm-2 col-xs-12">
 					<div class="logo pull-left">
 
 						<!-- <a href="JavaScript:void(0)"><img src="https://unity3d.com/profiles/unity3d/themes/unity/images/company/brand/logos/primary/unity-logo.png"></a> -->

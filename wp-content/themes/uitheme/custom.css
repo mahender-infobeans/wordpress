@@ -68,6 +68,7 @@
 		background-color: #000;
 		z-index: 2;
 		overflow: hidden;
+		width: 100%;
 	}
 	.box-img:hover .home-overlay{
 		opacity: 0.5;
@@ -80,3 +81,12 @@
 		display: table-cell;
 		margin-top: 25px;
 	}
+		.owl-carousel{
+			display: block;
+		}
+		.owl-prev,
+		.owl-next,
+		.owl-dots,
+		.owl-nav{
+			display: none;
+		}

@@ -74,8 +74,7 @@
 				<?php endif; ?>
 				
 				<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mt15">
 						<?php if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it. ?>
 
 						<div class="box portfolio-box-hover" 
