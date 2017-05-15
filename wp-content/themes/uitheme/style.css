@@ -676,6 +676,7 @@ body{
 		vertical-align: middle;
 		-webkit-animation: border-pulsate 2s infinite;
 		animation: border-pulsate 2s infinite;
+		padding-top: 30px;
 	}
 	.border-color{
 		/*-webkit-animation: border-pulsate 2s infinite;*/
@@ -854,6 +855,7 @@ body{
 	.resp-text-center{
 		text-align: center;
 		margin-top: 10px;
+		font-size: 20px;
 	}
 	/*media query*/
 	@media screen and (min-width: 767px) and (max-width: 1024px){
