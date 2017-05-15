@@ -61,6 +61,16 @@
 							</div>
 						</div>
 					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+						<div class="box  portfolio-box-hover" style="background-image: url( /wp-content/themes/uitheme/assets/images/port-img.png );">
+							<div class="overlay overlay-projects">
+								<div class="text">
+									<h3 class="fade-in-out" >ADD PROJECTS...</h3>
+									<p class="show-hover"> The added projects will be appear here!</p>
+								</div>
+							</div>
+						</div>
+					</div>
 				<?php endif; ?>
 				
 				<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
