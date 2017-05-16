@@ -36,7 +36,6 @@
 
 	.grid {
 		background: #EEE;
-		/* center */
 		margin: 15px auto;
 		padding: 15px 15px;
 	}
@@ -51,13 +50,9 @@
 	/* ---- grid-item ---- */
 
 	.grid-item {
-		width: 250px;
+		width: 350px;
 		min-height: 120px;
 		float: left;
-		/*background: #D26;*/
-		/*border: 2px solid #333;*/
-		/*border-color: hsla(0, 0%, 0%, 0.5);*/
-		border-radius: 5px;
 	}
 	/*Masonry css end */
 </style>
@@ -71,29 +66,29 @@
 	// $wp_query = new WP_Query(); $wp_query->query('posts_per_page=5' . '&paged='.$paged);
 		while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 		<div class="grid-item">
-			<div class="abc">
+			<div class="row masonry-body">
 				<?php if ( has_post_thumbnail() ) { ?>
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
 					<img class="blog-img" src="<?php echo the_post_thumbnail_url(); ?>" alt="blog-image" />
 				</div>
 				<?php }  ?>
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 date-col font16">
-					<p class="text-center"> <?php the_date(); ?></p>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font16">
+					<p class="text-center date-col"> <?php the_date(); ?></p>
 				</div>
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 					<strong>
-						<h2 class="text-center">
+						<h3 class="text-center capitalize-blg">
 							<a href="<?php the_permalink(); ?>" class="blog-link" title="Read more"><?php the_title(); ?></a>
-						</h2></strong>
+						</h3></strong>
 					</div>
-					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margintop10 font16">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font16">
 						<p class="text-center">Posted By: <span class="capitalize-blg"><?php the_author(); ?></span></p>
 					</div>
 
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
 						<p><?php the_excerpt(); ?></p>
 					</div>
-					<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 text-center col-lg-offset-2 col-md-offset-2">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
 						<button type="button" class="btn btn-lg btn-block continue-button"><a class="blog-link-btn" href="<?php the_permalink(); ?>" title="Read more">Continue Reading</a></button>
 					</div>
 				</div>

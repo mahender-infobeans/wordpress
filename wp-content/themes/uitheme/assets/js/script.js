@@ -3,7 +3,7 @@ $(document).ready(function(){
 	/*Masonry js start	*/	
 	$('.grid').masonry({
 		itemSelector: '.grid-item',
-		columnWidth: 250,
+		columnWidth: 350,
 		isFitWidth: true
 	});
 	/*Masonry js end	*/

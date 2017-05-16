@@ -16,7 +16,7 @@
 </style>
 <div class="aboutus-header header-background-custom">	
 	<div class="container">
-		<div class="row">
+		<div class="row"> 
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<h2 class="about-text text-trans color-darkgray"><?php echo get_post_custom_values("page_tag")[0] == ""? 'Enter Page Tag': get_post_custom_values("page_tag")[0]; ?></h2>
 				<h1 class="we-text color-darkgray"> <?php echo get_post_custom_values("title_page")[0] == ""? 'Enter some Title': get_post_custom_values("title_page")[0]; ?></h1>
