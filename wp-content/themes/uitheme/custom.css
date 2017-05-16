@@ -64,7 +64,6 @@
 	height: 400px;
 	background-repeat: no-repeat;
 	background-size: cover;
-	
 }
 .default-img{
 	background-image: url(/wp-content/themes/uitheme/assets/images/slider-img1.jpg);
@@ -104,10 +103,7 @@
 .owl-carousel{
 	display: block;
 }
-.owl-prev,
-.owl-next,
-.owl-dots,
-.owl-nav{
+.responsive .owl-dots{
 	display: none;
 }
 .service-tab{
@@ -115,4 +111,25 @@
 }
 .ico-services{
 	color: #4FD5EE;
+}
+.responsive .owl-prev{
+	float: left !important;
+    margin-top: -91px !important;
+    margin-left: -1px !important;
+    background-color: #10a983 !important;
+    border-radius: 0px !important;
+    position: relative !important;
+    color: #fff !important;
+    
+}
+.responsive .owl-next{
+	float: right;
+    margin-top: -91px !important;
+    position: relative !important;
+    margin-right: 0px !important;
+    background-color: #10a983 !important;
+    border-radius: 0px !important;
+    position: relative !important;
+    z-index: 2 !important;
+    color: #fff !important;
 }

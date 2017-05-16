@@ -8,6 +8,9 @@ $(document).ready(function(){
 	});
 	/*Masonry js end	*/
 
+	// tabs arrows
+ $( ".owl-prev").html('<i class="fa fa-chevron-left"></i>');
+ $( ".owl-next").html('<i class="fa fa-chevron-right"></i>');
 
 	
 	// addAnimation();
