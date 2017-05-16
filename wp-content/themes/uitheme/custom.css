@@ -105,3 +105,6 @@
 .owl-nav{
 	display: none;
 }
+.service-tab{
+	overflow: auto;
+}

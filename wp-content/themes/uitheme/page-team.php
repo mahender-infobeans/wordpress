@@ -47,10 +47,10 @@
 
 		<?php $args = array( 'post_type' => 'team' ); $loop = new WP_Query( $args );?>
 		<?php $ab = wp_count_posts( "team" ); ?>
-				<?php if ( $ab->publish == 0 ) :?>
-					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center team-border">
+		<?php if ( $ab->publish == 0 ) :?>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center team-border">
 				<div class="image-overlay">
-					<img class="team-image" src="/wp-content/themes/uitheme/assets/images/team-default.png" alt="image-person" />
+					<img class="team-image" src="/wp-content/themes/uitheme/assets/images/person1.jpg" alt="image-person" />
 				</div>
 				<div class="box-image">
 				</div>
@@ -60,14 +60,53 @@
 				<div class="overlay-team">
 					<div class="text-designation">Add Designation</div>
 				</div>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center team-border">
+				<div class="image-overlay">
+					<img class="team-image" src="/wp-content/themes/uitheme/assets/images/person2.png" alt="image-person" />
 				</div>
-				<?php endif; ?>
+				<div class="box-image">
+				</div>
+				<div class="text-center team-name">
+					<p class="paddingtop8">Add Name</p>
+				</div>
+				<div class="overlay-team">
+					<div class="text-designation">Add Designation</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center team-border">
+				<div class="image-overlay">
+					<img class="team-image" src="/wp-content/themes/uitheme/assets/images/person3.jpg" alt="image-person" />
+				</div>
+				<div class="box-image">
+				</div>
+				<div class="text-center team-name">
+					<p class="paddingtop8">Add Name</p>
+				</div>
+				<div class="overlay-team">
+					<div class="text-designation">Add Designation</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center team-border">
+				<div class="image-overlay">
+					<img class="team-image" src="/wp-content/themes/uitheme/assets/images/person4.jpg" alt="image-person" />
+				</div>
+				<div class="box-image">
+				</div>
+				<div class="text-center team-name">
+					<p class="paddingtop8">Add Name</p>
+				</div>
+				<div class="overlay-team">
+					<div class="text-designation">Add Designation</div>
+				</div>
+			</div>
+		<?php endif; ?>
 
 		<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
 			
-				<?php if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it. ?>
-				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center team-border">
+			<?php if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it. ?>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center team-border">
 				<div class="image-overlay">
 					<img class="team-image" src="<?php the_post_thumbnail_url(); ?>" alt="image-person" />
 				</div>
@@ -79,11 +118,11 @@
 				<div class="overlay-team">
 					<div class="text-designation"><?php the_content(); ?></div>
 				</div>
-				</div>
-				<?php } ?>
+			</div>
+			<?php } ?>
 
-				<?php if ( !has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it. ?>
-				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center team-border">
+			<?php if ( !has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it. ?>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center team-border">
 				<div class="image-overlay">
 					<img class="team-image" src="/wp-content/themes/uitheme/assets/images/team-default.png" alt="image-person" />
 				</div>
@@ -95,8 +134,8 @@
 				<div class="overlay-team">
 					<div class="text-designation"><?php the_content(); ?></div>
 				</div>
-				</div>
-				<?php } ?>
+			</div>
+			<?php } ?>
 			
 
 		<?php endwhile; ?>

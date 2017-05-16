@@ -66,6 +66,16 @@ function service_tabs() {
 }
 add_action('init', 'service_tabs');
 
+//cpt for services block
+function service_blocks() {
+    register_post_type('services', array(
+        'label' => __('Services'),
+        'supports' => array( 'title', 'editor', 'thumbnail', 'revisions' ),
+        'show_ui' => true,
+    ));
+}
+add_action('init', 'service_blocks');
+
 //cpt for home page slider
 add_action( 'init', 'bootstrap_slider' );
 
