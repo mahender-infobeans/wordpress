@@ -54,6 +54,11 @@
 .padding0{
 	padding: 0px;
 }
+.blog-image:hover{
+	background-color: #000;
+    z-index: 20;
+    opacity: 0.5;
+}
 /* home page css*/
 .img-back{
 	height: 400px;

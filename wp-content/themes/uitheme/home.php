@@ -68,7 +68,7 @@
 		<div class="grid-item">
 			<div class="row masonry-body">
 				<?php if ( has_post_thumbnail() ) { ?>
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0 blog-image">
 					<img class="blog-img" src="<?php echo the_post_thumbnail_url(); ?>" alt="blog-image" />
 				</div>
 				<?php }  ?>

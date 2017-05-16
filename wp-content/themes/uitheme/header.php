@@ -57,7 +57,7 @@
 					</div>
 				</div>
 
-				<div class="col-lg-9 col-md-9 col-sm-10 col-xs-8">
+				<div class="col-lg-9 col-md-9 col-sm-10 col-xs-12">
 
 					<nav class="header-menu">
 						<!-- <?php wp_nav_menu( array('menu' => 'header-horizontal',
