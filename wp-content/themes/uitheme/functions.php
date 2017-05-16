@@ -29,6 +29,7 @@ function portfolio_projects() {
         'supports' => array( 'title', 'editor', 'thumbnail', 'revisions' ),
         'show_ui' => true,
     ));
+    
 }
 add_action('init', 'portfolio_projects');
 //cpt ends here for portfolio page

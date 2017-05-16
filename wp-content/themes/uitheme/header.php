@@ -24,9 +24,9 @@
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/owl.theme.default.css">
 	
 	<script src="<?php bloginfo('template_directory'); ?>/assets/js/responsive-tabs.js"></script>
-	<script src="<?php bloginfo('template_directory'); ?>/assets/js/script.js"></script>
 	<script src="<?php bloginfo('template_directory'); ?>/assets/js/owl.carousel.min.js"></script>
-
+	<script src="<?php bloginfo('template_directory'); ?>/assets/js/masonry.pkgd.js"></script>
+	<script src="<?php bloginfo('template_directory'); ?>/assets/js/script.js"></script>
 
 </head>
 <body>

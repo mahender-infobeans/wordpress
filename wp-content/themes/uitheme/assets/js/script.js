@@ -1,5 +1,15 @@
 
 $(document).ready(function(){
+	/*Masonry js start	*/	
+	$('.grid').masonry({
+		itemSelector: '.grid-item',
+		columnWidth: 350,
+		isFitWidth: true
+	});
+	/*Masonry js end	*/
+
+
+	
 	// addAnimation();
 			// vertical-navigation hover effect
 			// $("#menu-primary li").on('mouseover', function(){
