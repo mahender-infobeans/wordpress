@@ -99,7 +99,7 @@ body{
 		color: #333;
 	}
 	.box{
-		height: 380px;
+		min-height: 580px;
 		width: 100%;
 		background-color: #ddd;
 	}
@@ -115,6 +115,7 @@ body{
 		text-align: center;
 		display: table-cell;
 		vertical-align: middle;
+		color: #fff;
 	}
 	.portfolio-box-hover{
 		position: relative;

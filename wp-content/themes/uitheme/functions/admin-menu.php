@@ -16,6 +16,7 @@ function register_my_cool_plugin_settings() {
     register_setting('my-cool-plugin-settings-group', 'portfolio_page_title');
     register_setting('my-cool-plugin-settings-group', 'option_etc');
     register_setting('my-cool-plugin-settings-group', 'mobile');
+     register_setting('my-cool-plugin-settings-group', 'address');
     register_setting('my-cool-plugin-settings-group', 'map');
     register_setting('my-cool-plugin-settings-group', 'team_page_title');
     register_setting('my-cool-plugin-settings-group', 'team_page_subtitle');
@@ -35,6 +36,11 @@ function my_cool_plugin_settings_page() {
                 <tr valign="top">
                     <th scope="row">Email :</th>
                     <td><input type="text" name="emailid" value="<?php echo esc_attr(get_option('emailid')); ?>" /></td>
+                </tr>
+
+                 <tr valign="top">
+                    <th scope="row">Address :</th>
+                    <td><input type="text" name="address" value="<?php echo esc_attr(get_option('address')); ?>" /></td>
                 </tr>
 
                 <tr valign="top">
