@@ -18,7 +18,7 @@
 	}
 </style>
 <script type="text/javascript">
-	var colorx = shadeColor1("<?php echo $page_background; ?>",91);
+	var colorx = shadeColor1("<?php echo $page_background; ?>",64);
 	console.log(colorx);
 	var element ="<style>.menu-horizontal li a:hover{"+
 	"background-color: "+ colorx +";"+
@@ -76,7 +76,7 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding0">
-			<div class="box contact-box">
+			<div class="box-contact contact-box">
 				<div class="center-vertical-box bgcolor-darkblue">
 					<p class="text-center font28">CONTACT US</p>
 					<hr class="contact-hr">
@@ -94,7 +94,7 @@
 			</div>
 		</div>
 		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding0">
-			<div class="box contact-box">
+			<div class="box-contact contact-box">
 				<div id="googleMap" style="width:100%;height:580px;"></div>
 			</div>
 		</div>

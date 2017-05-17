@@ -98,8 +98,13 @@ body{
 	.color-darkgray{
 		color: #333;
 	}
-	.box{
+	.box-contact{
 		min-height: 580px;
+		width: 100%;
+		background-color: #ddd;
+	}
+	.box-portfolio{
+		min-height: 420px;
 		width: 100%;
 		background-color: #ddd;
 	}

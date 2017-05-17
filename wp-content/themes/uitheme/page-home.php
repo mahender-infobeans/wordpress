@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <style type="text/css">
-	<?php $page_background = get_post_custom_values("page-background")[0] == ""? '#97ffe1': get_post_custom_values("page-background")[0]; ?>
-	<?php $page_font = get_post_custom_values("header-font")[0] == ""? '#000': get_post_custom_values("header-font")[0]; ?>
+	<?php $page_background = get_post_custom_values("page-background")[0] == ""? '#0ABBB5': get_post_custom_values("page-background")[0]; ?>
+	<?php $page_font = get_post_custom_values("header-font")[0] == ""? '#fff': get_post_custom_values("header-font")[0]; ?>
 	.header-background-custom{
 		background-color: <?php echo $page_background; ?>;
 		color: <?php echo $page_font; ?>;
@@ -19,6 +19,33 @@
 </style>
 <!-- default slider if no slider block has been added by the admin -->
 <div class="container-fluid">
+<div class="row">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 parallax-1">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+		<h1 class="home-text">Creative Circle</h1>
+	</div>
+</div>
+</div>
+</div>
+<div class="container home-background">
+	<div class="row">
+	<div class="col-lg-4 col-md-4 padding30">
+		<h2><b>WHAT WE CREATE</b></h2>
+	</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-4 col-md-4 pull-right padding30">
+			<h4 class="text-center"><b>Production</b></h4>
+			<p class="pull-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		</div>
+		<div class="col-lg-4 col-md-4 pull-right padding30">
+			<h4 class="text-center"><b>Design</b></h4>
+			<p class="pull-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid home-background">
 	<div class="row">
 		<div id="mycarousel" class="carousel slide" data-ride="carousel">
 			<?php $args = array( 'post_type' => 'slider' ); $loop = new WP_Query( $args );?>
@@ -56,7 +83,7 @@
 				<?php $count = 0; ?>
 				<?php foreach($slider as $slide): ?>
 					
-					<div class="item  img-back <?php echo ($count == 0) ? 'active' : ''; ?>"
+					<div class="item  img-back parallex-slider <?php echo ($count == 0) ? 'active' : ''; ?>"
 						style="background-image: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id($slide->ID)) ?> )">
 						
 						<div class="carousel-caption">
@@ -80,7 +107,29 @@
 		</div>
 	</div>
 </div>
-
+<div class="container home-background">
+	<div class="row">
+	<div class="col-lg-4 col-md-4 padding30">
+		<h2><b>OUR CONCERN</b></h2>
+	</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-4 col-md-4 pull-right padding30">
+			<h4 class="text-center"><b>Creativity</b></h4>
+			<p class="pull-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		</div>
+		<div class="col-lg-4 col-md-4 pull-right padding30">
+			<h4 class="text-center"><b>Quality</b></h4>
+			<p class="pull-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		</div>
+	</div>
+</div>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 parallax-2">
+		</div>
+	</div>
+</div>
 <!-- 
 <div class="container">
 <div class="row wrapper-box">
