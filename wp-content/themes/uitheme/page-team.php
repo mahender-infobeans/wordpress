@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <style type="text/css">
-	<?php $page_background = get_post_custom_values("page-background")[0] == ""? '#00aaaa': get_post_custom_values("page-background")[0]; ?>
+	<?php $page_background = get_post_custom_values("page-background")[0] == ""? '#D4E157': get_post_custom_values("page-background")[0]; ?>
 	<?php $page_font = get_post_custom_values("header-font")[0] == ""? '#fff': get_post_custom_values("header-font")[0]; ?>
 	.header-background-custom{
 		background-color: <?php echo $page_background; ?>;
