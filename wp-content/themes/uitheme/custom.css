@@ -223,8 +223,14 @@
 	background-size: cover;
 }
 .home-text{
-	color: #0ABBB5;
+	color: #fff;
 	font-weight: 700;
-	font-size: 60px;
-	padding-top: 10%;
+	font-size: 70px;
+	padding-top: 15%;
+}
+.divheight{
+	min-height: 700px; 
+}
+#home *{
+	transition: 4.0s ease;
 }

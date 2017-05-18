@@ -98,7 +98,9 @@ $(document).ready(function(){
   //         } );
   //         fakewaffle.responsiveTabs( [ 'xs', 'sm' ] );
   //     } )( jQuery );
-		});
+
+
+  });
 
 
 function getRandomInt(min, max) {
@@ -159,3 +161,25 @@ function getRandomColor() {
 		}
 
 
+//color change home
+     colors = new Array('#42A5F5', '#29B6F6', '#26C6DA', '#26A69A', '#9CCC65');
+
+            function annoyingEffect(tic){
+                tic %= colors.length;
+                document.bgColor = colors[tic];
+                setTimeout("annoyingEffect("+(tic+1)+")", 4000);
+            }
+
+            function annoyingEffectOnDiv(tic, divId){
+                tic %= colors.length;
+                divVar = document.getElementById(divId);
+                divVar.style.background = colors[tic];
+                setTimeout("annoyingEffectOnDiv("+(tic+1)+", '"+divId+"')", 4000);
+            }
+
+$(document).ready(function(){
+$( "#home" ).ready(function() {
+ annoyingEffect(0); annoyingEffectOnDiv(2, 'divtest');
+});
+
+});
