@@ -52,7 +52,7 @@
 			<img src="/wp-content/themes/uitheme/assets/images/contact-image.jpg">
 		</div>
 	</div>
-	<div class="row">
+	<div class="row marginbtm30">
 		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 pull-left">
 			<h3 class="text-center bottom-contact"><strong>ART DIRECTION</strong></h3>
 		</div>

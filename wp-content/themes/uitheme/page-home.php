@@ -17,12 +17,23 @@
 		color: <?php echo $page_font; ?>;
 	}
 </style>
+<script type="text/javascript">
+	var colorx = shadeColor1("<?php echo $page_background; ?>",68);
+	var element ="<style>.menu-horizontal li a:hover{"+
+	"background-color: "+ colorx +";"+ 
+	"box-shadow: 0px 0px 13px 0px "+ colorx +" inset;" +
+	"}</style>";
+	$("head").append(element);
+</script>
 <!-- default slider if no slider block has been added by the admin -->
 <div class="container-fluid">
 <div class="row">
 	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0" id="home">
 	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center divheight" id="divtest">
-		<h1 class="home-text">Creative Circle</h1>
+		<p class="home-text"  style="margin-top: 250px;"><span class="font48">Thème ordinaire</span>
+		<p class="home-text">
+		Welcome to the world of WOW
+	</p>
 	</div>
 </div>
 </div>
@@ -52,25 +63,24 @@
 			<?php $ab = wp_count_posts( "slider" ); ?>
 			<?php if ( $ab->publish == 0 ) :?>
 				<div class="carousel-inner">
-
-					<div class="item active img-back default-img">
+					<div class="item active img-back default-img parallex-slider">
 						<div class="carousel-caption">
-							<h3>Los Angeles</h3>
-							<p>LA is always so much fun!</p>
+							<h3 class="font36">Los Angeles</h3>
+							<p class="font26">LA is always so much fun! LA is always so much fun! LA is always so much fun! LA is always so much fun! LA is always so much fun! LA is always so much fun!</p>
 						</div>
 					</div>
 
-					<div class="item img-back default-img">
+					<div class="item img-back default-img parallex-slider">
 						<div class="carousel-caption">
-							<h3>Chicago</h3>
-							<p>Thank you, Chicago!</p>
+							<h3 class="font36">Chicago</h3>
+							<p class="font26">Thank you, Chicago! LA is always so much fun! LA is always so much fun!</p>
 						</div>
 					</div>
 					
-					<div class="item img-back default-img">
+					<div class="item img-back default-img parallex-slider">
 						<div class="carousel-caption">
-							<h3>New York</h3>
-							<p>We love the Big Apple!</p>
+							<h3 class="font36">New York</h3>
+							<p class="font26">We love the Big Apple! LA is always so much fun! LA is always so much fun!</p>
 						</div>
 					</div>
 					
@@ -87,8 +97,8 @@
 						style="background-image: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id($slide->ID)) ?> )">
 						
 						<div class="carousel-caption">
-							<h3><?php  echo $slider[$count]->post_title; ?></h3>
-							<p><?php  echo $slider[$count]->post_content; ?></p>
+							<h3 class="font36"><?php  echo $slider[$count]->post_title; ?></h3>
+							<p class="font26"><?php  echo $slider[$count]->post_content; ?></p>
 						</div>
 					</div>
 					<?php $count++; ?>
@@ -130,46 +140,6 @@
 		</div>
 	</div>
 </div>
-<!-- 
-<div class="container">
-<div class="row wrapper-box">
-	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 home-box">
-	<div class="box-img">
-		<img src="/wp-content/themes/uitheme/assets/images/box1.jpg">
-		<div class="home-overlay"></div>
-	</div>
-	</div>
-	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 home-box">
-		<div class="box-img">
-		<img src="/wp-content/themes/uitheme/assets/images/box2.jpg">
-		<div class="home-overlay"></div>
-	</div>
-	</div>
-	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 home-box">
-		<div class="box-img">
-		<img src="/wp-content/themes/uitheme/assets/images/box3.jpg">
-		<div class="home-overlay"></div>
-	</div>
-	</div>
-	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 home-box">
-		<div class="box-img">
-		<img src="/wp-content/themes/uitheme/assets/images/box2.jpg">
-		<div class="home-overlay"></div>
-	</div>
-	</div>
-	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 home-box">
-	<div class="box-img">
-		<img src="/wp-content/themes/uitheme/assets/images/box1.jpg">
-		<div class="home-overlay"></div>
-	</div>
-	</div>
-	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 home-box">
-		<div class="box-img">
-		<img src="/wp-content/themes/uitheme/assets/images/box3.jpg">
-		<div class="home-overlay"></div>
-	</div>
-	</div>
-</div>
-	
-</div> -->
+
 <?php get_footer(); ?>
+

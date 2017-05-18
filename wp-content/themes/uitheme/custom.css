@@ -224,13 +224,28 @@
 }
 .home-text{
 	color: #fff;
-	font-weight: 700;
-	font-size: 70px;
-	padding-top: 15%;
+  font-size: 54px;
+   /* font-weight: 700;
+  
+    text-transform: capitalize;
+   
+    left: 25%;*/
 }
 .divheight{
-	min-height: 700px; 
+	min-height: 800px; 
+	 
 }
 #home *{
 	transition: 4.0s ease;
+}
+.font36{
+	font-size: 36px;
+	text-transform: capitalize;
+	font-weight: 700;
+}
+.font26{
+	font-size: 26px;
+}
+.marginbtm30{
+	margin-bottom: 30px;
 }
