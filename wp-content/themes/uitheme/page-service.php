@@ -52,38 +52,38 @@
 				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 					<p class="marginleft10 resp-text-center">Definition</p>
 					<div class="image-box borderbox">
-						<img src="/wp-content/themes/uitheme/assets/images/definition-icon.png" alt="definition-image">
+					<span class="ico-services"><i class="fa fa-book fa-5x" aria-hidden="true"></i></span>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 					<p class="marginleft10 resp-text-center">Conception</p>
 					<div class="image-box">
-						<img src="/wp-content/themes/uitheme/assets/images/conception-icon.png" alt="conception-icon">
+						<span class="ico-services"><i class="fa fa-lightbulb-o fa-5x" aria-hidden="true"></i></span>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 					<p class="resp-text-center">Development</p>
 					<div class="image-box">
-						<img src="/wp-content/themes/uitheme/assets/images/development-icon.png" alt="development-icon">
+					<span class="ico-services"><i class="fa fa-desktop fa-5x" aria-hidden="true"></i></span>
 					</div>
 				</div>
 
 				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 					<p class="block-title resp-text-center">Research</p>
 					<div class="image-box border-color">
-						<img src="/wp-content/themes/uitheme/assets/images/research-icon.png" alt="research-icon">
+						<span class="ico-services"><i class="fa fa-search fa-5x" aria-hidden="true"></i></span>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 					<p class="block-title resp-text-center">Selection</p>
 					<div class="image-box ">
-						<img src="/wp-content/themes/uitheme/assets/images/selection-icon.png" alt="selection-icon">
+						<span class="ico-services"><i class="fa fa-hand-pointer-o fa-5x" aria-hidden="true"></i></span>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 					<p class="block-title resp-text-center">Delivery</p>
 					<div class="image-box ">
-						<img src="/wp-content/themes/uitheme/assets/images/delivery-icon.png" alt="delivery-icon">
+						<span class="ico-services"><i class="fa fa-cogs fa-5x" aria-hidden="true"></i></span>
 					</div>
 				</div>
 			<?php endif; ?>
@@ -91,7 +91,7 @@
 				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 					<p class="block-title resp-text-center"><?php the_title(); ?></p>
 					<div class="image-box ">
-						<img src="<?php the_post_thumbnail_url(); ?>" alt="delivery-icon">
+						<span class="ico-services"><i class="<?php  ?> fa-5x" aria-hidden="true"></i></span>
 					</div>
 				</div>
 			<?php endwhile; ?>
@@ -157,7 +157,6 @@
 		</div>
 	</div>
 </div>
-
 </div>
 </div>
 

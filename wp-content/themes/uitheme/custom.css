@@ -54,12 +54,17 @@
 .padding0{
 	padding: 0px;
 }
+.blog-image:hover{
+	background-color: #000;
+	z-index: 20;
+	opacity: 0.6;
+	transition: .7s ease;
+}
 /* home page css*/
 .img-back{
 	height: 400px;
 	background-repeat: no-repeat;
 	background-size: cover;
-	
 }
 .default-img{
 	background-image: url(/wp-content/themes/uitheme/assets/images/slider-img1.jpg);
@@ -99,12 +104,127 @@
 .owl-carousel{
 	display: block;
 }
-.owl-prev,
-.owl-next,
-.owl-dots,
-.owl-nav{
+.responsive .owl-dots{
 	display: none;
 }
 .service-tab{
 	overflow: auto;
+}
+.ico-services{
+	color: #4FD5EE;
+}
+.responsive .owl-prev{
+	float: left !important;
+	margin-top: -91px !important;
+	margin-left: -1px !important;
+	background-color: #10a983 !important;
+	border-radius: 0px !important;
+	position: relative !important;
+	color: #fff !important;
+
+}
+.responsive .owl-next{
+	float: right;
+	margin-top: -91px !important;
+	position: relative !important;
+	margin-right: 0px !important;
+	background-color: #10a983 !important;
+	border-radius: 0px !important;
+	position: relative !important;
+	z-index: 2 !important;
+	color: #fff !important;
+}
+.bgcolor-darkblue{
+	background-color: #3d60d0;
+}
+.padding0{
+	padding-left: 0;
+	padding-right: 0;
+}
+.font28{
+	font-size: 28px;
+}
+.font48{
+	font-size: 48px;
+}
+.contact-image{
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+.contact-hr{
+	width: 70px;
+	padding-top: 40px;
+}
+.social-ico{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.social-ico li a{
+	position: absolute;
+	display: block;
+	font-size: 20px;
+	color: #fff;
+	line-height: 35px !important;
+   /* width: 35px;
+   height: 35px;*/
+   margin: 0 0px 0px 0;
+   font-size: 20px;
+   line-height: 35px !important;
+   text-decoration: none;
+   text-align: center;
+   color: #fff;
+}
+.social-ico li{
+	margin: 0 10px;
+	height: 36px;
+	width: 36px;
+	overflow: hidden;
+	position: relative;
+	display: inline-block;
+	overflow: visible !important;
+	padding-top: 60px;
+}
+.paddingtop30{
+	padding-top: 20px;
+}
+.bottom-contact{
+	border-bottom: 2px solid #3d60d0;
+	padding: 5px;
+}
+.home-background{
+	background-color: #0ABBB5;
+	color: #fff;
+}
+.parallax-2{
+	background-image: url("/wp-content/themes/uitheme/assets/images/studio2.jpg");
+	min-height: 500px; 
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.parallax-1 {
+	background-image: url("/wp-content/themes/uitheme/assets/images/studio.jpg");
+	min-height: 700px; 
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.padding30{
+	padding: 30px;
+}
+.parallex-slider{
+	min-height: 600px; 
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.home-text{
+	color: #0ABBB5;
+	font-weight: 700;
+	font-size: 60px;
+	padding-top: 10%;
 }

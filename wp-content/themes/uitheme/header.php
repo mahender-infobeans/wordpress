@@ -27,6 +27,7 @@
 	<script src="<?php bloginfo('template_directory'); ?>/assets/js/owl.carousel.min.js"></script>
 	<script src="<?php bloginfo('template_directory'); ?>/assets/js/masonry.pkgd.js"></script>
 	<script src="<?php bloginfo('template_directory'); ?>/assets/js/script.js"></script>
+	
 
 </head>
 <body>
@@ -57,7 +58,7 @@
 					</div>
 				</div>
 
-				<div class="col-lg-9 col-md-9 col-sm-10 col-xs-8">
+				<div class="col-lg-9 col-md-9 col-sm-10 col-xs-8 col-offset-xs-2">
 
 					<nav class="header-menu">
 						<!-- <?php wp_nav_menu( array('menu' => 'header-horizontal',
