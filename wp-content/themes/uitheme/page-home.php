@@ -40,16 +40,16 @@
 </div>
 <div class="container home-background">
 	<div class="row">
-	<div class="col-lg-4 col-md-4 padding30">
+	<div class="col-lg-4 col-md-4 b-head">
 		<h2><b>WHAT WE CREATE</b></h2>
 	</div>
 	</div>
 	<div class="row">
-		<div class="col-lg-4 col-md-4 pull-right padding30">
+		<div class="col-lg-4 col-md-4 pull-right b-block">
 			<h4 class="text-center"><b>Production</b></h4>
 			<p class="pull-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 		</div>
-		<div class="col-lg-4 col-md-4 pull-right padding30">
+		<div class="col-lg-4 col-md-4 pull-right b-block">
 			<h4 class="text-center"><b>Design</b></h4>
 			<p class="pull-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 		</div>
@@ -117,24 +117,24 @@
 		</div>
 	</div>
 </div>
+<div class="container-fluid">
 <div class="container home-background">
 	<div class="row">
-	<div class="col-lg-4 col-md-4 padding30">
+	<div class="col-lg-4 col-md-4 b-head">
 		<h2><b>OUR CONCERN</b></h2>
 	</div>
 	</div>
 	<div class="row">
-		<div class="col-lg-4 col-md-4 pull-right padding30">
-			<h4 class="text-center"><b>Creativity</b></h4>
-			<p class="pull-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		<div class="col-lg-12 col-md-12 b-block">
+			<!-- <h4 class="text-center"><b>Creativity</b></h4> -->
+			<p class="pull-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 		</div>
-		<div class="col-lg-4 col-md-4 pull-right padding30">
+		<!-- <div class="col-lg-4 col-md-4 pull-right padding30">
 			<h4 class="text-center"><b>Quality</b></h4>
 			<p class="pull-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-		</div>
+		</div> -->
 	</div>
 </div>
-<div class="container-fluid">
 	<div class="row">
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 parallax-2">
 		</div>

@@ -77,6 +77,17 @@ function service_blocks() {
 }
 add_action('init', 'service_blocks');
 
+//cpt for services block
+function home_block() {
+
+    register_post_type('homeblock', array(
+        'label' => __('Home-Parallex'),
+        'supports' => array( 'title', 'editor', 'thumbnail', 'revisions','custom-fields'),
+        'show_ui' => true,
+    ));
+}
+add_action('init', 'home_block');
+
 
 function custom_meta_box_markup($object)
 {
