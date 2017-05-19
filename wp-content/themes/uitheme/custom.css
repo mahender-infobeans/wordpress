@@ -223,7 +223,7 @@
 }
 .home-text{
 	color: #fff;
-  font-size: 54px;
+	font-size: 54px;
    /* font-weight: 700;
   
     text-transform: capitalize;
@@ -232,7 +232,7 @@
 }
 .divheight{
 	min-height: 700px; 
-	 
+
 }
 #home *{
 	transition: 4.0s ease;
@@ -249,9 +249,18 @@
 	margin-bottom: 30px;
 }
 .b-head{
-        padding-top: 15px;
+	padding-top: 15px;
 }
 .b-block{
 	font-size: 16px;
-    padding: 10px 15px;
+	padding: 10px 15px;
+}
+.padding15{
+	padding: 15px;
+}
+@media screen and (min-width: 320px) and (max-width: 570px){
+	.logo {
+		max-width: 130px;
+		margin: 14px 0px 3px 0px;
+	}
 }

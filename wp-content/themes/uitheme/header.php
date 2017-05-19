@@ -40,7 +40,7 @@
 		<div class="header-background">
 <!-- <?php echo is_front_page()?'home-top-header':''?> -->
 			<div class="container-fluid">
-				<div class="col-lg-3 col-md-3 col-sm-2 col-xs-12">
+				<div class="col-lg-3 col-md-3 col-sm-2 col-xs-12 padding15">
 					<div class="logo pull-left">
 							<a href="<?php echo get_site_url(); ?>"><img alt="logo" src="<?php echo $image[0] == null ? bloginfo('template_directory').'/assets/images/logo.png'  : $image[0] ; ?>"></a>
 					</div>
@@ -53,7 +53,7 @@
 					</div>
 				</div>
 
-				<div class="col-lg-9 col-md-9 col-sm-10 col-xs-8 col-offset-xs-2">
+				<div class="col-lg-9 col-md-9 col-sm-10 col-xs-12">
 					<nav class="header-menu">
 					
 						<?php 

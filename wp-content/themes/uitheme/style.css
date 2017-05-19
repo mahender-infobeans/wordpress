@@ -22,7 +22,7 @@ body{
 
 /*logo start*/
 .logo{
-	margin: 23px 0px 3px 0px;
+	margin: 20px 0px 3px 0px;
 	max-width: 200px;
 	color: #fff;
 }
@@ -372,14 +372,14 @@ body{
 	/*toggle navigation responsive btn start*/
 	.button-toggle-menu{
 		margin: 25px 0px 0px 0px;
-		background-color: #fff;
+		/*background-color: #fff;*/
 		color: #6f43d6;
 	}
 
 	.button-toggle-menu .icon-bar{
 		height: 2px;
 		width: 20px;
-		background-color: #f60;
+		background-color: #fff;
 		color: #fff;
 	}
 	/*toggle navigation responsive btn end*/
@@ -884,6 +884,9 @@ body{
 		.resp-bottom-30{
 			margin-bottom: 30px;
 		}
+			.logo {
+				margin: 12px 0px 3px 0px;
+			}
 	}
 	@media screen and (min-width: 320px) and (max-width: 767px){
 		.we-text {
@@ -916,7 +919,7 @@ body{
 			text-align: center;
 		}
 		.button-toggle-menu{
-			margin: 15px 0px 0px 0px;
+			margin: 10px 0px 0px 0px;
 		}
 		.home-top-header{
 			display: block;
