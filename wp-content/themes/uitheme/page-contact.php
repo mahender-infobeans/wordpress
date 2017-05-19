@@ -45,7 +45,6 @@
 		</div>
 
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-			<!-- <h3 class="text-center">We would love to talk to you about any new projects</h3> -->
 			<h3 class="text-center">You may have or any of the services that we offer.</h3>
 		</div>
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center contact-image">

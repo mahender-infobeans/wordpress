@@ -22,7 +22,7 @@ body{
 
 /*logo start*/
 .logo{
-	margin: 12px 0px 3px 0px;
+	margin: 23px 0px 3px 0px;
 	max-width: 200px;
 	color: #fff;
 }
@@ -239,15 +239,7 @@ body{
 	/*Horizontal menu of all page end*/
 
 	/*logo start*/
-	.logo{
-		margin: 12px 0px 3px 0px;
-		max-width: 200px;
-		color: #fff;
-	}
-	.logo img{
-		width:100%; 
-	}
-
+	
 	.logo1 img{
 		padding: 50px;
 		margin-bottom: 50px;
