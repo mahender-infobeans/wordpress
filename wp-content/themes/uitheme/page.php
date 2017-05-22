@@ -13,6 +13,10 @@
 	.menu-horizontal li a{
 		color: <?php echo $page_font; ?>;	
 	}
+	.footer{
+		background-color: <?php echo $page_background; ?>;
+		color: <?php echo $page_font; ?>;
+	}
 </style>
 <div class="aboutus-header header-background-custom">	
 	<div class="container">

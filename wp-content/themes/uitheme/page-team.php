@@ -18,7 +18,7 @@
 	}
 </style>
 <script type="text/javascript">
-	var colorx = shadeColor1("<?php echo $page_background; ?>",70);
+	var colorx = shadeColor1("<?php echo $page_background; ?>",84);
 	var element ="<style>.menu-horizontal li a:hover{"+
 	"background-color: "+ colorx +";"+ 
 	"box-shadow: 0px 0px 13px 0px "+ colorx +" inset;" +

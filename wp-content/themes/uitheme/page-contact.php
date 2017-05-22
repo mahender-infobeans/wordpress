@@ -45,14 +45,13 @@
 		</div>
 
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-			<!-- <h3 class="text-center">We would love to talk to you about any new projects</h3> -->
 			<h3 class="text-center">You may have or any of the services that we offer.</h3>
 		</div>
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center contact-image">
 			<img src="/wp-content/themes/uitheme/assets/images/contact-image.jpg">
 		</div>
 	</div>
-	<div class="row">
+	<div class="row marginbtm30">
 		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 pull-left">
 			<h3 class="text-center bottom-contact"><strong>ART DIRECTION</strong></h3>
 		</div>

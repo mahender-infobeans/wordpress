@@ -8,9 +8,10 @@ add_theme_support( 'custom-logo', array(
 	'width'       => 400,
 	'flex-height' => true,
 	'flex-width'  => true,
-	'header-text' => array( 'site-title', 'site-description' ),
-	'container_class' => array( 'navigation-hide-onscroll' ),
-) );
+    'public'  => true,
+    'header-text' => array( 'site-title', 'site-description' ),
+    'container_class' => array( 'navigation-hide-onscroll' ),
+    ) );
 add_theme_support( 'custom-logo' );
 
 
@@ -28,7 +29,8 @@ function portfolio_projects() {
         'label' => __('Projects'),
         'supports' => array( 'title', 'editor', 'thumbnail', 'revisions' ),
         'show_ui' => true,
-    ));
+        'public'  => true,
+        ));
     
 }
 add_action('init', 'portfolio_projects');
@@ -40,7 +42,8 @@ function team_members() {
         'label' => __('Team'),
         'supports' => array( 'title', 'editor', 'thumbnail', 'revisions' ),
         'show_ui' => true,
-    ));
+        'public'  => true,
+        ));
 }
 add_action('init', 'team_members');
 
@@ -52,7 +55,8 @@ function about_you() {
         'label' => __('About-Tabs'),
         'supports' => array( 'title', 'editor', 'thumbnail', 'revisions' ),
         'show_ui' => true,
-    ));
+        'public'  => true,
+        ));
 }
 add_action('init', 'about_you');
 
@@ -62,7 +66,8 @@ function service_tabs() {
         'label' => __('Service-Tabs'),
         'supports' => array( 'title', 'editor', 'thumbnail', 'revisions' ),
         'show_ui' => true,
-    ));
+        'public'  => true,
+        ));
 }
 add_action('init', 'service_tabs');
 
@@ -73,9 +78,23 @@ function service_blocks() {
         'label' => __('Services'),
         'supports' => array( 'title', 'editor', 'thumbnail', 'revisions','custom-fields'),
         'show_ui' => true,
-    ));
+        'public'  => true,
+        ));
 }
 add_action('init', 'service_blocks');
+
+//cpt for services block
+function home_block() {
+
+    register_post_type('homeblock', array(
+        'label' => __('Home-Parallex'),
+        'supports' => array( 'title', 'editor', 'thumbnail', 'revisions'),
+        'show_ui' => true,
+        'show_in_menu'  => true,
+        'public'  => true,
+        ));
+}
+add_action('init', 'home_block');
 
 
 function custom_meta_box_markup($object)
@@ -83,10 +102,10 @@ function custom_meta_box_markup($object)
     wp_nonce_field(basename(__FILE__), "meta-box-nonce");
 
     ?>
-        <div>
-            <label for="meta-box-text">Font Awesome Ico</label>
-            <input name="meta-box-text" type="text" value="<?php echo get_post_meta($object->ID, "meta-box-text", true); ?>">
-        </div>
+    <div>
+        <label for="meta-box-text">Font Awesome Ico</label>
+        <input name="meta-box-text" type="text" value="<?php echo get_post_meta($object->ID, "meta-box-text", true); ?>">
+    </div>
     <?php  
 }
 
@@ -147,7 +166,7 @@ function bootstrap_slider() {
         'parent_item_colon'  => __( 'Parent Slide:'),
         'not_found'          => __( 'No Slide found.'),
         'not_found_in_trash' => __( 'No Slide found in Trash.'),
-    );
+        );
 
     $args = array(
         'labels'             => $labels,
@@ -164,7 +183,7 @@ function bootstrap_slider() {
         'hierarchical'       => true,
         'menu_position'      => null,
         'supports'           => array('title','editor','thumbnail','revisions')
-    );
+        );
 
     register_post_type( 'slider', $args );
 }
@@ -180,7 +199,7 @@ function wpt_register_js() {
         'jquery.bootstrap.min', 
         get_template_directory_uri() . 'assets/js/bootstrap.min.js', 
         'jquery'
-    );
+        );
     wp_enqueue_script('jquery.bootstrap.min');
 }
 
@@ -194,21 +213,10 @@ function wpt_register_css() {
     wp_register_style(
         'bootstrap.min', 
         get_template_directory_uri() . 'assets/css/bootstrap.min.css'
-    );
+        );
     wp_enqueue_style( 'bootstrap.min' );
 }
 add_action( 'wp_enqueue_scripts', 'wpt_register_css' );
-
-
-// theme panel option
-// function theme_settings_page(){}
- 
-// function add_theme_menu_item()
-// {
-//     add_menu_page("Theme Panel", "Theme Panel", "manage_options", "theme-panel", "theme_settings_page", null, 99);
-// }
-
-// add_action("admin_menu", "add_theme_menu_item");
 
 ?>
 

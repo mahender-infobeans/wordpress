@@ -205,8 +205,7 @@
 	background-size: cover;
 }
 .parallax-1 {
-	background-image: url("/wp-content/themes/uitheme/assets/images/studio.jpg");
-	min-height: 700px; 
+	min-height: 500px; 
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -224,13 +223,44 @@
 }
 .home-text{
 	color: #fff;
-	font-weight: 700;
-	font-size: 70px;
-	padding-top: 15%;
+	font-size: 54px;
+   /* font-weight: 700;
+  
+    text-transform: capitalize;
+   
+    left: 25%;*/
 }
 .divheight{
 	min-height: 700px; 
+
 }
 #home *{
 	transition: 4.0s ease;
+}
+.font36{
+	font-size: 36px;
+	text-transform: capitalize;
+	font-weight: 700;
+}
+.font26{
+	font-size: 26px;
+}
+.marginbtm30{
+	margin-bottom: 30px;
+}
+.b-head{
+	padding-top: 15px;
+}
+.b-block{
+	font-size: 16px;
+	padding: 10px 15px;
+}
+.padding15{
+	padding: 15px;
+}
+@media screen and (min-width: 320px) and (max-width: 570px){
+	.logo {
+		max-width: 130px;
+		margin: 14px 0px 3px 0px;
+	}
 }
