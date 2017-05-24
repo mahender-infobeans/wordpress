@@ -13,10 +13,7 @@
 	<!-- Latest compiled JavaScript -->
 	<script src="<?php bloginfo('template_directory'); ?>/assets/js/bootstrap.min.js"></script>
 	<!-- font awesome -->
-	<script src="https://use.fontawesome.com/8793d315f5.js"></script>
-
-
-	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222599/canvas-pointer.js?v=20150516"></script>
+	<script src="<?php bloginfo('template_directory'); ?>/assets/js/fa.js"></script>
 
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/owl.carousel.css">
