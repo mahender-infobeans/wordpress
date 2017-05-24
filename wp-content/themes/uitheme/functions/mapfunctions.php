@@ -26,7 +26,7 @@ function mapSettings() {
 	<div class="wrap">
 		<h1>Your Plugin Name</h1>
 
-		<form method="post" action="options.php">
+		<form method="post" action="options.php" class="mapSectionAdmin">
 			<?php settings_fields( 'my-cool-plugin-settings-group' ); ?>
 			<?php do_settings_sections( 'my-cool-plugin-settings-group' ); ?>
 			<table class="form-table">
@@ -166,31 +166,31 @@ function mapSettings() {
 
 <?php } ?>
 <style type="text/css">
-	#map {
+	.mapSectionAdmin #map {
 		height: 350px;
 		width: 75%;
 	}
 	/* Optional: Makes the sample page fill the window. */
 	
-	#description {
+	.mapSectionAdmin #description {
 		font-family: Roboto;
 		font-size: 15px;
 		font-weight: 300;
 	}
 
-	#infowindow-content .title {
+	.mapSectionAdmin #infowindow-content .title {
 		font-weight: bold;
 	}
 
-	#infowindow-content {
+	.mapSectionAdmin #infowindow-content {
 		display: none;
 	}
 
-	#map #infowindow-content {
+	.mapSectionAdmin #map #infowindow-content {
 		display: inline;
 	}
 
-	.pac-card {
+	.mapSectionAdmin .pac-card {
 		margin: 10px 10px 0 0;
 		border-radius: 2px 0 0 2px;
 		box-sizing: border-box;
@@ -201,23 +201,23 @@ function mapSettings() {
 		font-family: Roboto;
 	}
 
-	#pac-container {
+	.mapSectionAdmin #pac-container {
 		padding-bottom: 12px;
 		margin-right: 12px;
 	}
 
-	.pac-controls {
+	.mapSectionAdmin .pac-controls {
 		display: inline-block;
 		padding: 5px 11px;
 	}
 
-	.pac-controls label {
+	.mapSectionAdmin .pac-controls label {
 		font-family: Roboto;
 		font-size: 13px;
 		font-weight: 300;
 	}
 
-	#pac-input {
+	.mapSectionAdmin #pac-input {
 		background-color: #fff;
 		font-family: Roboto;
 		font-size: 15px;
@@ -228,11 +228,11 @@ function mapSettings() {
 		width: 400px;
 	}
 
-	#pac-input:focus {
+	.mapSectionAdmin #pac-input:focus {
 		border-color: #4d90fe;
 	}
 
-	#title {
+	.mapSectionAdmin #title {
 		color: #fff;
 		background-color: #4d90fe;
 		font-size: 25px;
