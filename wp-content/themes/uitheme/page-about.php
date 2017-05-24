@@ -24,7 +24,11 @@
 	var element ="<style>.menu-horizontal li a:hover{"+
 	"background-color: "+ colorx +";"+
 	"box-shadow: 0px 0px 13px 0px "+ colorx +" inset;" +
-	"}</style>";
+	"}"+
+	".current-menu-item{"+
+	"background-color: "+ colorx+
+	"}" +
+	"</style>";
 	$("head").append(element);
 </script>
 <div class="aboutus-header about-back-color">	

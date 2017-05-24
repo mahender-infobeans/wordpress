@@ -8,7 +8,7 @@ body{
 /*Horizontal menu of all page start */
 .menu-horizontal{
 	padding: 0;
-	margin: 2.9375rem 0.3125rem 0;
+	margin: 0.9375rem 0.3125rem 0;
 	list-style: none;
 	text-align: center;
 }
@@ -22,7 +22,7 @@ body{
 
 /*logo start*/
 .logo{
-	margin: 20px 0px 3px 0px;
+	/*margin: 20px 0px 3px 0px;*/
 	max-width: 200px;
 	color: #fff;
 }
@@ -30,62 +30,8 @@ body{
 	width:100%; 
 }
 
-.logo1 img{
-	margin-top: 100px;
-	margin-bottom: 50px;
-	padding: 50px;
-	width: 100%;
-}
-.logo1{
-	width: 100%;
-	text-align: center;
-}
-.logo1 a{
-	display: inline-block;
-	max-width: 300px;
-}
-
 /*logo end*/
 
-/*Vertical menu of all page start*/
-.scroll{
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 1;
-	height: 100%;
-	width: 32%;
-	background-color: #6F43D6;
-}
-
-.header-background{
-	padding-bottom: 0px;
-	background-color: #FDD7E4;
-	box-shadow: 0px 0px 10px 1px #d3d3d3;
-}
-.menu{
-	margin: 0px;
-	padding: 0px;
-	list-style: none;
-	text-align: center;
-}
-.menu-item{
-	padding: 5px;
-}
-.menu li a ,.menu li {
-	color: #fff;
-	text-decoration: none;
-	font-size: 26px;
-}
-
-/*Vertical menu of all page end*/
-
-/*footer {
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	}*/
 
 
 	/*contact us page css and portfolio page*/
@@ -190,7 +136,7 @@ body{
 	/*Horizontal menu of all page start */
 	.menu-horizontal{
 		padding: 0;
-		margin: 2.9375rem 0.3125rem 0;
+		margin: 0.9375rem 0.3125rem 0;
 		text-align: center;
 		list-style: none;
 	}
@@ -240,26 +186,6 @@ body{
 
 	/*logo start*/
 	
-	.logo1 img{
-		padding: 50px;
-		margin-bottom: 50px;
-		margin-top: 100px;
-		width: 100%;
-	}
-	.logo1{
-		width: 100%;
-		text-align: center;
-	}
-	.logo1 a{
-		display: inline-block;
-		max-width: 300px;
-	}
-
-	.aboutus-header{
-		padding-bottom: 100px;
-		padding-top: 100px;
-		color: #fff;
-	}
 	.about-back-color{
 		background-color: #1DE9B6;
 	}
@@ -324,7 +250,6 @@ body{
 		color: #fff;
 		display: block;
 		width: 100%;
-		height: 100%;
 		padding: 11px;
 	}
 	.tab-button a:hover{
@@ -332,7 +257,8 @@ body{
 		color: #fff;	
 		text-decoration: none;
 	}
-	.tab-button a:focus,.tab-button a:active{
+	.tab-button a:focus,
+	.tab-button a:active{
 		background-color: #4FD5EE;
 		color: #fff;
 		text-decoration: none;
@@ -340,34 +266,6 @@ body{
 	.margintop40{
 		margin-top: 40px;
 	}
-
-	/*Vertical menu of all page start*/
-	.scroll{
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: 1;
-		height: 100%;
-		width: 32%;
-		background-color: #6F43D6;
-	}
-
-	.menu{
-		padding: 0px;
-		margin: 0px;
-		list-style: none;
-		text-align: center;
-	}
-	.menu-item{
-		padding: 5px;
-	}
-	.menu li a ,.menu li {
-		color: #fff;
-		text-decoration: none;
-		font-size: 26px;
-	}
-
-	/*Vertical menu of all page end*/
 
 	/*toggle navigation responsive btn start*/
 	.button-toggle-menu{
@@ -384,23 +282,7 @@ body{
 	}
 	/*toggle navigation responsive btn end*/
 
-	/*text animation home page start*/
-	.btm-text{
-		position: absolute;
-		bottom: 25px;
-		right: 0;
-		z-index: 11;
-		width: 65%;
-		color: #6f43d6;
-		font-weight: bold;
-		font-size: 90px;
-	}
 
-	.pos-r *{
-		text-decoration: none !important;
-		color: #6f43d6;
-	}
-	/*text animation home page end */
 	.home-top-header{
 		display: none;
 	}
@@ -408,15 +290,7 @@ body{
 		display: block;
 	}
 	/*home page footer css*/
-	.footer-home{
-		position: absolute;
-		bottom: 0px;
-		left: 0px;
-		z-index: 10;
-		padding: 10px;
-		width: 100%;
-		color:#fff;
-	}
+	
 	.footer{
 		position: absolute;
 		bottom: 0;
@@ -427,8 +301,17 @@ body{
 		text-align: center;
 		color: #fff;
 	}
+	.footer a.infobeans-footer,
+	.footer a.infobeans-footer:active,
+	.footer a.infobeans-footer:focus{
+		color: #fff;
+	}
+
 	.mt15{
 		margin-top: 15px;
+	}
+	.margin-top10{
+		margin-top: 10px;
 	}
 	/*shivangi css*/
 	/*about us*/
@@ -603,7 +486,9 @@ body{
 		width: 400px;
 	}
 	
-
+	.home-text-margin{
+		margin-top: 250px;
+	}
 	.head-class.panel-default>.panel-heading{
 		text-align: center;
 		background-color: #1DE9B6;
@@ -672,10 +557,7 @@ body{
 		animation: border-pulsate 2s infinite;
 		padding-top: 30px;
 	}
-	.border-color{
-		/*-webkit-animation: border-pulsate 2s infinite;*/
-		/*animation: border-pulsate 2s infinite;*/
-	}
+	
 	@keyframes border-pulsate {
 		0%   { border-color: rgba(0, 255, 255, 1); }
 		50%  { border-color: rgba(0, 255, 255, 0); }
@@ -703,130 +585,7 @@ body{
 		margin-top: -84px;
 		margin-left: 9px;
 	}
-	.circle{
-		border-radius: 50%;
-		height: 20px;
-		width: 20px;
-		background-color: #f00;
-		position: absolute;
-		top: 67px;
-		-webkit-animation: mymove 8s; /* Safari 4.0 - 8.0 */
-		animation: mymove 8s;
-		animation-delay: 1s;
-		-moz-animation-delay: 1s;
-		-webkit-animation-delay: 1s; 
-		-o-animation-delay: 1s;
-		visibility: hidden;
-	}
-
-	/*first block*/
-	@-webkit-keyframes mymove {
-		0%   {top: 67px; right: 250px;  visibility: visible;}
-		25%  {top: 67px; right: 117px;}
-		75%  {top: 200px; right:117px;}
-		100% {top: 200px; right:117px;}
-	}
-
-	/* Standard syntax */
-	@keyframes mymove {
-		0%   {top: 67px; right: 250px;  visibility: visible;}
-		25%  {top: 67px; right: 117px;}
-		75%  {top: 200px; right:117px;}
-		100% {top: 200px; right:117px;}
-	}
-
-
-	.circle2{
-		border-radius: 50%;
-		height: 20px;
-		width: 20px;
-		background-color: #f00;
-		position: absolute;
-		top: 46px;
-		-webkit-animation: mymove1 8s; /* Safari 4.0 - 8.0 */
-		animation: mymove1 8s;
-		animation-delay: 9s;
-		-moz-animation-delay: 9s;
-		-webkit-animation-delay: 9s; 
-		-o-animation-delay: 9s;
-		visibility: hidden;
-	}
-	/*second block*/
-	@-webkit-keyframes mymove1 {
-		0%   {top: 46px; right: 250px;  visibility: visible;}
-		25%  {top: 46px; right: 117px; }
-		75%  {top: -100px; right:117px; }
-		100% {top: -100px; right:117px; }
-	}
-
-	@keyframes mymove1 {
-		0%   {top: 46px; right: 250px;  visibility: visible;}
-		25%  {top: 46px; right: 117px;}
-		75%  {top: -100px; right:117px;}
-		100% {top: -100px; right:117px;}
-	}
-
-	.circle3{
-		border-radius: 50%;
-		height: 20px;
-		width: 20px;
-		background-color: #f00;
-		position: absolute;
-		top: 67px;
-		-webkit-animation: mymove 8s; /* Safari 4.0 - 8.0 */
-		animation: mymove 8s;
-		animation-delay: 18s;
-		-moz-animation-delay: 18s;
-		-webkit-animation-delay: 18s; 
-		-o-animation-delay: 18s;
-		visibility: hidden;
-	}
-	.circle4{
-		border-radius: 50%;
-		height: 20px;
-		width: 20px;
-		background-color: #f00;
-		position: absolute;
-		top: 46px;
-		-webkit-animation: mymove1 8s; /* Safari 4.0 - 8.0 */
-		animation: mymove1 8s;
-		animation-delay: 26s;
-		-moz-animation-delay: 26s;
-		-webkit-animation-delay: 26s; 
-		-o-animation-delay: 26s;
-		visibility: hidden;
-	}
-	.circle5{
-		border-radius: 50%;
-		height: 20px;
-		width: 20px;
-		background-color: #f00;
-		position: absolute;
-		top: 67px;
-		-webkit-animation: mymovelast 8s; /* Safari 4.0 - 8.0 */
-		animation: mymovelast 8s;
-		animation-delay: 34s;
-		-moz-animation-delay: 34s;
-		-webkit-animation-delay: 34s; 
-		-o-animation-delay: 34s;
-		-webkit-animation-fill-mode: forwards;
-		animation-fill-mode: forwards;
-		visibility: hidden;
-	}
-	@-webkit-keyframes mymovelast {
-		0%   {top: 67px; right: 250px;  visibility: visible;}
-		25%  {top: 67px; right: 117px; visibility: visible;}
-		75%  {top: 200px; right:117px; visibility: visible;}
-		100% {top: 200px; right:117px; visibility: visible; opacity: 1;}
-	}
-
-	/* Standard syntax */
-	@keyframes mymovelast {
-		0%   {top: 67px; right: 250px;  visibility: visible;}
-		25%  {top: 67px; right: 117px; visibility: visible;}
-		75%  {top: 200px; right:117px; visibility: visible;}
-		100% {top: 200px; right:117px; visibility: visible;  opacity: 1;}
-	}
+	
 
 	.work-div{
 		background-color: #F0F0F0;
@@ -902,6 +661,10 @@ body{
 			width: 100%;
 			margin-left: 0px;
 		}
+		
+		.home-text-margin{
+			margin-top: 50px;
+		}
 	}
 
 	/**shivangi css ends here **/
@@ -936,11 +699,7 @@ body{
 		}
 	}
 
-	@media screen and (min-width: 768px){
-	/*	.right-768up{
-			float: right;
-			}*/
-		}
+	
 
 		@media screen and (min-width: 992px) and (max-width: 1024px){
 			.menu li a{

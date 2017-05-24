@@ -24,7 +24,11 @@
 	var element ="<style>.menu-horizontal li a:hover{"+
 	"background-color: "+ colorx +";"+
 	"box-shadow: 0px 0px 13px 0px "+ colorx +" inset;" +
-	"}</style>";
+	"}"+
+	".current-menu-item{"+
+	"background-color: "+ colorx+
+	"}" +
+	"</style>";
 	$("head").append(element);
 
 	
@@ -103,77 +107,26 @@
 
 
 
+	<?php if ($paged > 1) { ?>
+
+	<nav id="nav-posts">
+		<div class="prev"><?php next_posts_link('&laquo; Previous Posts'); ?></div>
+		<div class="next"><?php previous_posts_link('Newer Posts &raquo;'); ?></div>
+	</nav>
+
+	<?php } else { ?>
+
+	<nav id="nav-posts">
+		<div class="prev"><?php next_posts_link('&laquo; Previous Posts'); ?></div>
+	</nav>
+
+	<?php } ?>
+
+	<?php wp_reset_postdata(); ?>
+
+	<!-- this is end -->	
+</div>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-	<!-- this is start -->
-	
-
-	<!-- <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2 blog-wrapper">
-		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-			
-			<?php //if ( has_post_thumbnail() ) { ?>
-			<img class="blog-img" src="<?php //echo the_post_thumbnail_url(); ?>" alt="blog-image" />
-			<?php // }  ?>
-			
-		</div>
-		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 date-col font16">
-			<p class="text-center"> <?php //the_date(); ?></p>
-		</div>
-		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-			<strong>
-				<h2 class="text-center">
-					<a href="<?php //the_permalink(); ?>" class="blog-link" title="Read more">
-					// <?php //the_title(); ?></a>
-				</h2></strong>
-			</div>
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margintop10 font16">
-				<p class="text-center">Posted By: <span class="capitalize-blg"><?php //the_author(); ?></span></p>
-			</div>
-
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-				<p><?php //the_excerpt(); ?></p>
-			</div>
-			<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 text-center col-lg-offset-2 col-md-offset-2">
-				<button type="button" class="btn btn-lg btn-block continue-button"><a class="blog-link-btn" href="<?php //the_permalink(); ?>" title="Read more">Continue Reading</a></button>
-			</div>
-		</div> -->
-
-
-
-		<!-- <?php //endwhile; ?> -->
-
-		<?php if ($paged > 1) { ?>
-
-		<nav id="nav-posts">
-			<div class="prev"><?php next_posts_link('&laquo; Previous Posts'); ?></div>
-			<div class="next"><?php previous_posts_link('Newer Posts &raquo;'); ?></div>
-		</nav>
-
-		<?php } else { ?>
-
-		<nav id="nav-posts">
-			<div class="prev"><?php next_posts_link('&laquo; Previous Posts'); ?></div>
-		</nav>
-
-		<?php } ?>
-
-		<?php wp_reset_postdata(); ?>
-
-		<!-- this is end -->	
-	</div>
-
-
-
-	<?php get_footer(); ?>
+<?php get_footer(); ?>

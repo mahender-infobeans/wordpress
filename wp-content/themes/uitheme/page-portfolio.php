@@ -22,7 +22,11 @@
 	var element ="<style>.menu-horizontal li a:hover{"+
 	"background-color: "+ colorx +";"+
 	"box-shadow: 0px 0px 13px 0px "+ colorx +" inset;" +
-	"}</style>";
+	"}"+
+	".current-menu-item{"+
+	"background-color: "+ colorx+
+	"}" +
+	"</style>";
 	$("head").append(element);
 </script>
 <!-- 2nd page header -->
@@ -116,44 +120,9 @@
 
 			<?php endwhile; ?>
 
-			
-
-
-
-				<!-- <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-					<div class="box  portfolio-box-hover">
-						<div class="overlay overlay-projects">
-							<div class="text">
-								<span class="fade-in-out" >Project Name2</span>
-								<p class="show-hover"> abc def ghi jkl mno pqr stu vwx yza bcd def ghi jkl mno pqr stu vwx</p>
-							</div>
-						</div>
-					</div>
-				</div> -->
 				<!-- repeat block end -->
 			</div>
-			<!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-					<div class="box  portfolio-box-hover">
-						<div class="overlay overlay-projects">
-							<div class="text">
-								<span class="fade-in-out" >Project Name3</span>
-								<p class="show-hover"> abc def ghi jkl mno pqr stu vwx yza bcd def ghi jkl mno pqr stu vwx</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-					<div class="box  portfolio-box-hover">
-						<div class="overlay overlay-projects">
-							<div class="text">
-								<span class="fade-in-out" >Project Name4</span>
-								<p class="show-hover"> abc def ghi jkl mno pqr stu vwx yza bcd def ghi jkl mno pqr stu vwx</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div> -->
+			
 
 		</div>
 	</div>

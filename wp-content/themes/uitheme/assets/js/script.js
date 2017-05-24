@@ -59,22 +59,25 @@ function getRandomColor() {
 
 //color change home
     var colors = new Array('#00b3b3', '#218b8d', '#286476', '#26a2b0', '#3acead');
-            function annoyingEffect(tic){
+            function colorChange(tic){
                 tic %= colors.length;
                 document.bgColor = colors[tic];
-                setTimeout("annoyingEffect("+(tic+1)+")", 4000);
+                setTimeout("colorChange("+(tic+1)+")", 4000);
             }
 
-            function annoyingEffectOnDiv(tic, divId){
+            function colorChangeOnDiv(tic, divId){
                 tic %= colors.length;
                 divVar = document.getElementById(divId);
                 divVar.style.background = colors[tic];
-                setTimeout("annoyingEffectOnDiv("+(tic+1)+", '"+divId+"')", 4000);
+                setTimeout("colorChangeOnDiv("+(tic+1)+", '"+divId+"')", 4000);
             }
 
 $(document).ready(function(){
 $( "#home" ).ready(function() {
- annoyingEffect(0); annoyingEffectOnDiv(2, 'divtest');
+    if($("#divtest").length == 1){
+        colorChange(0); colorChangeOnDiv(2, 'divtest');
+    }
+ 
 });
 
 });

@@ -15,14 +15,18 @@
 	.footer{
 		background-color: <?php echo $page_background; ?>;
 		color: <?php echo $page_font; ?>;
-	}
+	}	
 </style>
 <script type="text/javascript">
 	var colorx = shadeColor1("<?php echo $page_background; ?>",68);
 	var element ="<style>.menu-horizontal li a:hover{"+
 	"background-color: "+ colorx +";"+ 
 	"box-shadow: 0px 0px 13px 0px "+ colorx +" inset;" +
-	"}</style>";
+	"}"+
+	".current-menu-item{"+
+	"background-color: "+ colorx+
+	"}" +
+	"</style>";
 	$("head").append(element);
 </script>
 <!-- default slider if no slider block has been added by the admin -->
@@ -30,7 +34,7 @@
 	<div class="row">
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0" id="home">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center divheight" id="divtest">
-				<p class="home-text"  style="margin-top: 250px;"><span class="font48">Thème ordinaire</span>
+				<p class="home-text home-text-margin"><span class="font48">Thème ordinaire</span>
 					<p class="home-text">
 						Welcome to the world of WOW
 					</p>
@@ -40,14 +44,6 @@
 	</div>
 	<div class="container">
 		<div class="row">
-			<!-- <div class="col-lg-4 col-md-4 pull-right b-block">
-				<h4 class="text-center"><b>Production</b></h4>
-				<p class="pull-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-			</div>
-			<div class="col-lg-4 col-md-4 pull-right b-block">
-				<h4 class="text-center"><b>Design</b></h4>
-				<p class="pull-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-			</div> -->
 			
 			<?php
 			while ( have_posts() ) : the_post(); ?> 

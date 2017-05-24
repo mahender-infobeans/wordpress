@@ -1,6 +1,7 @@
 <?php 
 // custom fields added in this file.
 require_once(TEMPLATEPATH . '/functions/admin-menu.php');
+require_once(TEMPLATEPATH . '/functions/mapfunctions.php');
 
 // logo image
 add_theme_support( 'custom-logo', array(
@@ -96,54 +97,6 @@ function home_block() {
 }
 add_action('init', 'home_block');
 
-
-function custom_meta_box_markup($object)
-{
-    wp_nonce_field(basename(__FILE__), "meta-box-nonce");
-
-    ?>
-    <div>
-        <label for="meta-box-text">Font Awesome Ico</label>
-        <input name="meta-box-text" type="text" value="<?php echo get_post_meta($object->ID, "meta-box-text", true); ?>">
-    </div>
-    <?php  
-}
-
-function save_custom_meta_box($post_id, $post, $update)
-{
-    if (!isset($_POST["meta-box-nonce"]) || !wp_verify_nonce($_POST["meta-box-nonce"], basename(__FILE__)))
-        return $post_id;
-
-    if(!current_user_can("edit_post", $post_id))
-        return $post_id;
-
-    if(defined("DOING_AUTOSAVE") && DOING_AUTOSAVE)
-        return $post_id;
-
-    $slug = "post";
-    if($slug != $post->post_type)
-        return $post_id;
-
-    $meta_box_text_value = "";
-
-    if(isset($_POST["meta-box-text"]))
-    {
-        $meta_box_text_value = $_POST["meta-box-text"];
-    }   
-    update_post_meta($post_id, "meta-box-text", $meta_box_text_value);
-
-}
-
-add_action("save_post", "save_custom_meta_box", 10, 3);
-
-
-
-function add_custom_meta_box()
-{
-    add_meta_box("demo-meta-box", "Custom Meta Box", "custom_meta_box_markup", "services", "side", "high", null);
-}
-
-add_action("add_meta_boxes", "add_custom_meta_box");
 
 
 //cpt for home page slider

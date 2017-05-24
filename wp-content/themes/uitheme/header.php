@@ -41,7 +41,7 @@
 <!-- <?php echo is_front_page()?'home-top-header':''?> -->
 			<div class="container-fluid">
 				<div class="col-lg-3 col-md-3 col-sm-2 col-xs-12 padding15">
-					<div class="logo pull-left">
+					<div class="col-xs-6 col-sm-12 col-md-12 logo pull-left margin-top10">
 							<a href="<?php echo get_site_url(); ?>"><img alt="logo" src="<?php echo $image[0] == null ? bloginfo('template_directory').'/assets/images/logo.png'  : $image[0] ; ?>"></a>
 					</div>
 					<div class="col-xs-6 hidden-lg hidden-md hidden-sm pull-right">
