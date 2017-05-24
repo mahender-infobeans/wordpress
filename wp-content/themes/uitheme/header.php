@@ -4,30 +4,27 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
 	<title><?php the_title(); ?></title>
-	
-	<script src="<?php bloginfo('template_directory'); ?>/assets/js/tether.min.js"></script>
 	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 	<!-- jQuery library -->
-	<script src="<?php bloginfo('template_directory'); ?>/assets/js/jquery-3.2.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 
 	<!-- Latest compiled JavaScript -->
-	<script src="<?php bloginfo('template_directory'); ?>/assets/js/bootstrap.min.js"></script>
-
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<!-- font awesome -->
-	<script src="<?php bloginfo('template_directory'); ?>/assets/js/fa.js"></script>
+	<script src="https://use.fontawesome.com/8793d315f5.js"></script>
 
+
+	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/222599/canvas-pointer.js?v=20150516"></script>
 
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/owl.carousel.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/owl.theme.default.css">
-	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/tether.min.css">
 	
 	<script src="<?php bloginfo('template_directory'); ?>/assets/js/owl.carousel.min.js"></script>
 	<script src="<?php bloginfo('template_directory'); ?>/assets/js/masonry.pkgd.js"></script>
 	<script src="<?php bloginfo('template_directory'); ?>/assets/js/script.js"></script>
-	
 
 </head>
 <body>

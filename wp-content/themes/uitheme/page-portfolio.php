@@ -12,7 +12,7 @@
     .menu-horizontal li a{
         color: <?php echo $page_font; ?>;	
     }
-    .footer{
+    .footer,.footer a.infobeans-footer{
         background-color: <?php echo $page_background; ?>;
         color: <?php echo $page_font; ?>;
     }

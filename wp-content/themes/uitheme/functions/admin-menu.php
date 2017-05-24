@@ -12,9 +12,11 @@ function my_cool_plugin_create_menu() {
 
 function register_my_cool_plugin_settings() {
     //register our settings
+    register_setting('my-cool-plugin-settings-group', 'homeheading');
+    register_setting('my-cool-plugin-settings-group', 'homesubheading');
     register_setting('my-cool-plugin-settings-group', 'emailid');
     register_setting('my-cool-plugin-settings-group', 'mobile');
-     register_setting('my-cool-plugin-settings-group', 'address');
+    register_setting('my-cool-plugin-settings-group', 'address');
 }
 
 function my_cool_plugin_settings_page() {
@@ -27,6 +29,14 @@ function my_cool_plugin_settings_page() {
             <?php do_settings_sections('my-cool-plugin-settings-group'); ?>
 
             <table class="form-table">
+            <tr valign="top">
+                    <th scope="row">Home Heading :</th>
+                    <td><input type="text" name="homeheading" value="<?php echo esc_attr(get_option('homeheading')); ?>" /></td>
+                </tr>
+                <tr valign="top">
+                    <th scope="row">Home Sub-heading :</th>
+                    <td><input type="text" name="homesubheading" value="<?php echo esc_attr(get_option('homesubheading')); ?>" /></td>
+                </tr>
                 <tr valign="top">
                     <th scope="row">Email :</th>
                     <td><input type="text" name="emailid" value="<?php echo esc_attr(get_option('emailid')); ?>" /></td>

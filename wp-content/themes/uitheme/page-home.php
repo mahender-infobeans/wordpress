@@ -12,7 +12,7 @@
 	.menu-horizontal li a{
 		color: <?php echo $page_font; ?>;	
 	}
-	.footer{
+	.footer,.footer a.infobeans-footer{
 		background-color: <?php echo $page_background; ?>;
 		color: <?php echo $page_font; ?>;
 	}	
@@ -34,9 +34,9 @@
 	<div class="row">
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0" id="home">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center divheight" id="divtest">
-				<p class="home-text home-text-margin"><span class="font48">Thème ordinaire</span>
+				<p class="home-text home-text-margin"><span class="font48"><?php echo (get_option("homeheading")==""?"Thème ordinaire":get_option("homeheading")); ?></span>
 					<p class="home-text">
-						Welcome to the world of WOW
+						<?php echo (get_option("homesubheading")==""?"Welcome to the world of WOW":get_option("homesubheading")); ?>
 					</p>
 				</div>
 			</div>
