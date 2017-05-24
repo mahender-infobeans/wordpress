@@ -13,14 +13,8 @@ function my_cool_plugin_create_menu() {
 function register_my_cool_plugin_settings() {
     //register our settings
     register_setting('my-cool-plugin-settings-group', 'emailid');
-    register_setting('my-cool-plugin-settings-group', 'portfolio_page_title');
-    register_setting('my-cool-plugin-settings-group', 'option_etc');
     register_setting('my-cool-plugin-settings-group', 'mobile');
      register_setting('my-cool-plugin-settings-group', 'address');
-    register_setting('my-cool-plugin-settings-group', 'map');
-    register_setting('my-cool-plugin-settings-group', 'team_page_title');
-    register_setting('my-cool-plugin-settings-group', 'team_page_subtitle');
-     register_setting('my-cool-plugin-settings-group', 'home-page-image');
 }
 
 function my_cool_plugin_settings_page() {
@@ -37,44 +31,13 @@ function my_cool_plugin_settings_page() {
                     <th scope="row">Email :</th>
                     <td><input type="text" name="emailid" value="<?php echo esc_attr(get_option('emailid')); ?>" /></td>
                 </tr>
-
                  <tr valign="top">
                     <th scope="row">Address :</th>
                     <td><input type="text" name="address" value="<?php echo esc_attr(get_option('address')); ?>" /></td>
                 </tr>
-
-                <tr valign="top">
-                    <th scope="row">Portfolio Page Title</th>
-                    <td><input type="text" name="portfolio_page_title" value="<?php echo esc_attr(get_option('portfolio_page_title')); ?>" /></td>
-                </tr>
-
-                <tr valign="top">
-                    <th scope="row">Team Page Title</th>
-                    <td><input type="text" name="team_page_title" value="<?php echo esc_attr(get_option('team_page_title')); ?>" /></td>
-                </tr>
-
-                <tr valign="top">
-                    <th scope="row">Team Page Sub Title</th>
-                    <td><input type="text" name="team_page_subtitle" value="<?php echo esc_attr(get_option('team_page_subtitle')); ?>" /></td>
-                </tr>
-
-                <tr valign="top">
-                    <th scope="row">Options, Etc.</th>
-                    <td><input type="text" name="option_etc" value="<?php echo esc_attr(get_option('option_etc')); ?>" /></td>
-                </tr>
-
                 <tr valign="top">
                     <th scope="row">Mobile Number</th>
                     <td><input type="text" name="mobile" value="<?php echo esc_attr(get_option('mobile')); ?>" /></td>
-                </tr>
-
-                <tr valign="top">
-                    <th scope="row">MAP</th>
-                    <td><input type="text" name="map" value="<?php echo esc_attr(get_option('map')); ?>" /></td>
-                </tr>
-                <tr valign="top">
-                    <th scope="row">home-featured-image</th>
-                    <td> <input type="file" name="home-page-image" accept="image/*" value="<?php echo esc_attr(get_option('home-page-image')); ?>"></td>
                 </tr>
             </table>
 
