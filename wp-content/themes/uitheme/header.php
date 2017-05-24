@@ -11,7 +11,7 @@
 	<script src="<?php bloginfo('template_directory'); ?>/assets/js/jquery.min.js"></script>
 
 	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="<?php bloginfo('template_directory'); ?>/assets/js/bootstrap.min.js"></script>
 	<!-- font awesome -->
 	<script src="https://use.fontawesome.com/8793d315f5.js"></script>
 
