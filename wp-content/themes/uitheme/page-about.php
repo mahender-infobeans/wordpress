@@ -36,7 +36,7 @@
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<h2 class="about-text text-trans">about us</h2>
-				<h1 class="we-text"> We're a Creative Team </h1>
+				<h1 class="we-text"><?php echo get_post_custom_values("title_page")[0] == ""? "We're a Creative Team": get_post_custom_values("title_page")[0]; ?></h1>
 			</div>
 		</div>
 	</div>
