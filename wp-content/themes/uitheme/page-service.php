@@ -31,7 +31,7 @@
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<h3 class="about-text text-trans">services</h3>
-				<h2 class="we-text"> We Focus on UI and UX</h2>
+				<h2 class="we-text"><?php echo get_post_custom_values("title_page")[0] == ""? ' We Focus on UI and UX': get_post_custom_values("title_page")[0]; ?></h2>
 			</div>
 		</div>
 	</div>

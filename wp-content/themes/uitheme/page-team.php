@@ -22,7 +22,7 @@
 	var element ="<style>.menu-horizontal li a:hover{"+
 	"background-color: "+ colorx +";"+ 
 	"box-shadow: 0px 0px 13px 0px "+ colorx +" inset;" +
-	"}</style>";
+	"}</style>"; 
 	$("head").append(element);
 </script>
 <div class="aboutus-header team-back">	
@@ -30,7 +30,7 @@
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<h2 class="about-text text-trans">Our Team</h2>
-				<h1 class="we-text"><?php echo get_option("team_page_title"); ?></h1>
+				<h1 class="we-text"><?php echo get_post_custom_values("title_page")[0] == ""? 'Our Team': get_post_custom_values("title_page")[0]; ?></h1>
 			</div>
 		</div>
 	</div>
