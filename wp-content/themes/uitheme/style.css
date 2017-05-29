@@ -1,4 +1,17 @@
-
+/*
+Theme Name: Thème ordinaire
+Theme URI: https://wordpress.org/themes/theme-ordinaire/
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Description: This is our first theme which is made for the learning purpose. Hope You All like it.
+Version: 0.0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: themeordinaire
+Tags: one-column, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images,  post-formats, theme-options,  translation-ready
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
 body{
 	font-family: centuryFont;
 	background-color: #fff;
