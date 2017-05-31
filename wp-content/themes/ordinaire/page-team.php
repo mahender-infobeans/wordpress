@@ -54,7 +54,7 @@
 		<?php if ( $ab->publish == 0 ) :?>
 			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center team-border">
 				<div class="image-overlay">
-					<img class="team-image" src="/wp-content/themes/uitheme/assets/images/person1.jpg" alt="image-person" />
+					<img class="team-image" src="/wp-content/themes/ordinaire/assets/images/person1.jpg" alt="image-person" />
 				</div>
 				<div class="box-image">
 				</div>
@@ -67,7 +67,7 @@
 			</div>
 			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center team-border">
 				<div class="image-overlay">
-					<img class="team-image" src="/wp-content/themes/uitheme/assets/images/person2.png" alt="image-person" />
+					<img class="team-image" src="/wp-content/themes/ordinaire/assets/images/person2.png" alt="image-person" />
 				</div>
 				<div class="box-image">
 				</div>
@@ -80,7 +80,7 @@
 			</div>
 			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center team-border">
 				<div class="image-overlay">
-					<img class="team-image" src="/wp-content/themes/uitheme/assets/images/person3.jpg" alt="image-person" />
+					<img class="team-image" src="/wp-content/themes/ordinaire/assets/images/person3.jpg" alt="image-person" />
 				</div>
 				<div class="box-image">
 				</div>
@@ -93,7 +93,7 @@
 			</div>
 			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center team-border">
 				<div class="image-overlay">
-					<img class="team-image" src="/wp-content/themes/uitheme/assets/images/person4.jpg" alt="image-person" />
+					<img class="team-image" src="/wp-content/themes/ordinaire/assets/images/person4.jpg" alt="image-person" />
 				</div>
 				<div class="box-image">
 				</div>

@@ -1,14 +1,13 @@
 /*
-Theme Name: Theme ordinaire
-Theme URI: https://wordpress.org/themes/theme-ordinaire/
-Author: the WordPress team
-Author URI: https://wordpress.org/
+Theme Name: ordinaire
+Author: PUNE UI TEAM INFOBEANS
+Author URI: https://infobeans.com/
 Description: This is our first theme which is made for the learning purpose. Hope You All like it.
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: theme-ordinaire
-Tags: one-column, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images,  post-formats, theme-options,  translation-ready
+Text Domain: ordinaire
+Tags: one-column
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
@@ -113,7 +112,7 @@ body{
 }
 .overlay-projects{
 	background-color:  #FFFA78;
-	background-image: url(/wp-content/themes/uitheme/assets/images/port-img-hover.png);
+	background-image: url(/wp-content/themes/ordinaire/assets/images/port-img-hover.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 }
@@ -221,7 +220,7 @@ body{
 	top: 35px;
 	height: 200px;
 	width: 200px;
-	background-image: url("/wp-content/themes/uitheme/assets/images/tri-right.png");
+	background-image: url("/wp-content/themes/ordinaire/assets/images/tri-right.png");
 }
 .img2{
 	position: absolute;
@@ -230,7 +229,7 @@ body{
 	z-index: -1;
 	height: 190px;
 	width: 150px;
-	background-image: url("/wp-content/themes/uitheme/assets/images/tri-left.png");
+	background-image: url("/wp-content/themes/ordinaire/assets/images/tri-left.png");
 }
 .service-left{
 	position: absolute;
@@ -238,7 +237,7 @@ body{
 	top: -61px;
 	height: 590px;
 	width: 254px;
-	background-image: url(/wp-content/themes/uitheme/assets/images/circle-left.png);
+	background-image: url(/wp-content/themes/ordinaire/assets/images/circle-left.png);
 }
 .service-right{
 	position: absolute;
@@ -246,7 +245,7 @@ body{
 	top: 159px;
 	height: 464px;
 	width: 400px;
-	background-image: url(/wp-content/themes/uitheme/assets/images/circle-right.png);
+	background-image: url(/wp-content/themes/ordinaire/assets/images/circle-right.png);
 }
 .tab-button {
 	/*width: 698px;*/
@@ -337,7 +336,7 @@ html{
 
 @font-face {
 	font-family: centuryFont;
-	src: url("/wp-content/themes/uitheme/assets/font/CenturyGothic/07558_CenturyGothic.ttf");
+	src: url("/wp-content/themes/ordinaire/assets/font/CenturyGothic/07558_CenturyGothic.ttf");
 }
 
 .aboutus-header{
@@ -449,7 +448,7 @@ html{
 	position: absolute;
 	right: 40px;
 	top: 35px;
-	background-image: url("/wp-content/themes/uitheme/assets/images/tri-right.png");
+	background-image: url("/wp-content/themes/ordinaire/assets/images/tri-right.png");
 	height: 200px;
 	width: 200px;
 }
@@ -457,7 +456,7 @@ html{
 	position: absolute;
 	left: 40px;
 	bottom: 5px;
-	background-image: url("/wp-content/themes/uitheme/assets/images/tri-left.png");
+	background-image: url("/wp-content/themes/ordinaire/assets/images/tri-left.png");
 	height: 190px;
 	width: 150px;
 	z-index: -1;
@@ -466,7 +465,7 @@ html{
 	position: absolute;
 	right: 1px;
 	top: -61px;
-	background-image: url(/wp-content/themes/uitheme/assets/images/circle-left.png);
+	background-image: url(/wp-content/themes/ordinaire/assets/images/circle-left.png);
 	height: 590px;
 	width: 254px;
 }
@@ -474,7 +473,7 @@ html{
 	position: absolute;
 	left: 40px;
 	top: 159px;
-	background-image: url(/wp-content/themes/uitheme/assets/images/circle-right.png);
+	background-image: url(/wp-content/themes/ordinaire/assets/images/circle-right.png);
 	height: 464px;
 	width: 400px;
 }
@@ -592,7 +591,7 @@ html{
 }
 .backimg{
 	width: 100%;
-	background-image: url(/wp-content/themes/uitheme/assets/images/bckimage.jpg);
+	background-image: url(/wp-content/themes/ordinaire/assets/images/bckimage.jpg);
 	height: 100%;
 	position: absolute;
 	background-repeat: no-repeat;
@@ -674,7 +673,7 @@ html{
 	background-size: cover;
 }
 .default-img{
-	background-image: url(/wp-content/themes/uitheme/assets/images/slider-img1.jpg);
+	background-image: url(/wp-content/themes/ordinaire/assets/images/slider-img1.jpg);
 }
 .arrows{
 	background-image: linear-gradient(to right,rgba(0,0,0,0) 0,rgba(0,0,0,.0001) 100%) !important;
@@ -804,7 +803,7 @@ html{
 	color: #fff;
 }
 .parallax-2{
-	background-image: url("/wp-content/themes/uitheme/assets/images/studio2.jpg");
+	background-image: url("/wp-content/themes/ordinaire/assets/images/studio2.jpg");
 	min-height: 500px; 
 	background-attachment: fixed;
 	background-position: center;

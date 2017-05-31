@@ -8,7 +8,7 @@
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
  * @package WordPress
- * @subpackage Theme ordinaire
+ * @subpackage ordinaire
  * @since 1.0
  * @version 1.0
  */
@@ -33,7 +33,7 @@ if ( post_password_required() ) {
 				$comments_number = get_comments_number();
 				if ( '1' === $comments_number ) {
 					/* translators: %s: post title */
-					printf( _x( 'One Reply to &ldquo;%s&rdquo;', 'comments title', 'theme-ordinaire' ), get_the_title() );
+					printf( _x( 'One Reply to &ldquo;%s&rdquo;', 'comments title', 'ordinaire' ), get_the_title() );
 				} else {
 					printf(
 						/* translators: 1: number of comments, 2: post title */
@@ -42,7 +42,7 @@ if ( post_password_required() ) {
 							'%1$s Replies to &ldquo;%2$s&rdquo;',
 							$comments_number,
 							'comments title',
-							'theme-ordinaire'
+							'ordinaire'
 						),
 						number_format_i18n( $comments_number ),
 						get_the_title()
@@ -57,14 +57,14 @@ if ( post_password_required() ) {
 					'avatar_size' => 100,
 					'style'       => 'ol',
 					'short_ping'  => true,
-					'reply_text'  => twentyseventeen_get_svg( array( 'icon' => 'mail-reply' ) ) . __( 'Reply', 'theme-ordinaire' ),
+					'reply_text'  => twentyseventeen_get_svg( array( 'icon' => 'mail-reply' ) ) . __( 'Reply', 'ordinaire' ),
 				) );
 			?>
 		</ol>
 
 		<?php the_comments_pagination( array(
-			'prev_text' => twentyseventeen_get_svg( array( 'icon' => 'arrow-left' ) ) . '<span class="screen-reader-text">' . __( 'Previous', 'theme-ordinaire' ) . '</span>',
-			'next_text' => '<span class="screen-reader-text">' . __( 'Next', 'theme-ordinaire' ) . '</span>' . twentyseventeen_get_svg( array( 'icon' => 'arrow-right' ) ),
+			'prev_text' => twentyseventeen_get_svg( array( 'icon' => 'arrow-left' ) ) . '<span class="screen-reader-text">' . __( 'Previous', 'ordinaire' ) . '</span>',
+			'next_text' => '<span class="screen-reader-text">' . __( 'Next', 'ordinaire' ) . '</span>' . twentyseventeen_get_svg( array( 'icon' => 'arrow-right' ) ),
 		) );
 
 	endif; // Check for have_comments().
@@ -72,7 +72,7 @@ if ( post_password_required() ) {
 	// If comments are closed and there are comments, let's leave a little note, shall we?
 	if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) : ?>
 
-		<p class="no-comments"><?php _e( 'Comments are closed.', 'theme-ordinaire' ); ?></p>
+		<p class="no-comments"><?php _e( 'Comments are closed.', 'ordinaire' ); ?></p>
 	<?php
 	endif;
 

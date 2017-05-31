@@ -63,7 +63,7 @@
                 <?php $ab = wp_count_posts("projects"); ?> 
                 <?php if ($ab->publish == 0) : ?>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <div class="box-portfolio  portfolio-box-hover" style="background-image: url( /wp-content/themes/uitheme/assets/images/port-img.png );">
+                        <div class="box-portfolio  portfolio-box-hover" style="background-image: url( /wp-content/themes/ordinaire/assets/images/port-img.png );">
                             <div class="overlay overlay-projects">
                                 <div class="text">
                                     <h3 class="fade-in-out" >ADD PROJECTS...</h3>
@@ -73,7 +73,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <div class="box-portfolio  portfolio-box-hover" style="background-image: url( /wp-content/themes/uitheme/assets/images/port-img.png );">
+                        <div class="box-portfolio  portfolio-box-hover" style="background-image: url( /wp-content/themes/ordinaire/assets/images/port-img.png );">
                             <div class="overlay overlay-projects">
                                 <div class="text">
                                     <h3 class="fade-in-out" >ADD PROJECTS...</h3>
@@ -105,7 +105,7 @@
                         <?php if (!has_post_thumbnail()) { // check if the post has a Post Thumbnail assigned to it. ?>
 
                             <div class="box-portfolio portfolio-box-hover" 
-                                 style="background-image: url( /wp-content/themes/uitheme/assets/images/port-img.png );">
+                                 style="background-image: url( /wp-content/themes/ordinaire/assets/images/port-img.png );">
                                 <div class="overlay overlay-projects">
                                     <div class="text">
                                         <h3><span class="fade-in-out" ><?php the_title(); ?></span></h3>

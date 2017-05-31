@@ -5,7 +5,7 @@ Tested up to: WordPress 4.7.5
 Version: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: blog, accessibility-ready, custom-colors, custom-header, custom-logo, custom-menu, editor-style, featured-images, translation-ready
+Tags: one-column
 
 == Description ==
 Our 2017 default theme is clean, blog-focused, and designed for clarity. Thème ordinaire simple, straightforward typography is readable on a wide variety of screen sizes, and suitable for multiple languages. We designed it using a mobile-first approach, meaning your content takes center-stage, regardless of whether your visitors arrive by smartphone, tablet, laptop, or desktop computer.

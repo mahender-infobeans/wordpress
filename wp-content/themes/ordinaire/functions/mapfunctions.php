@@ -6,6 +6,7 @@ function mapIntegrate() {
 
 	//create new top-level menu
 	add_theme_page('My Map Settings', 'Map Settings', 'administrator', __FILE__, 'mapSettings' , '/wp-content/themes/uitheme/assets/images/iconMap.ico' );
+	wp_enqueue_style( 'admin.css', get_stylesheet_uri() );
 
 	//call register settings function
 	add_action( 'admin_init', 'mapIntegration' );
@@ -165,78 +166,3 @@ function mapSettings() {
 </div>
 
 <?php } ?>
-<style type="text/css">
-	.mapSectionAdmin #map {
-		height: 350px;
-		width: 75%;
-	}
-	/* Optional: Makes the sample page fill the window. */
-	
-	.mapSectionAdmin #description {
-		font-family: Roboto;
-		font-size: 15px;
-		font-weight: 300;
-	}
-
-	.mapSectionAdmin #infowindow-content .title {
-		font-weight: bold;
-	}
-
-	.mapSectionAdmin #infowindow-content {
-		display: none;
-	}
-
-	.mapSectionAdmin #map #infowindow-content {
-		display: inline;
-	}
-
-	.mapSectionAdmin .pac-card {
-		margin: 10px 10px 0 0;
-		border-radius: 2px 0 0 2px;
-		box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		outline: none;
-		box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-		background-color: #fff;
-		font-family: Roboto;
-	}
-
-	.mapSectionAdmin #pac-container {
-		padding-bottom: 12px;
-		margin-right: 12px;
-	}
-
-	.mapSectionAdmin .pac-controls {
-		display: inline-block;
-		padding: 5px 11px;
-	}
-
-	.mapSectionAdmin .pac-controls label {
-		font-family: Roboto;
-		font-size: 13px;
-		font-weight: 300;
-	}
-
-	.mapSectionAdmin #pac-input {
-		background-color: #fff;
-		font-family: Roboto;
-		font-size: 15px;
-		font-weight: 300;
-		margin-left: 12px;
-		padding: 0 11px 0 13px;
-		text-overflow: ellipsis;
-		width: 400px;
-	}
-
-	.mapSectionAdmin #pac-input:focus {
-		border-color: #4d90fe;
-	}
-
-	.mapSectionAdmin #title {
-		color: #fff;
-		background-color: #4d90fe;
-		font-size: 25px;
-		font-weight: 500;
-		padding: 6px 12px;
-	}
-</style>

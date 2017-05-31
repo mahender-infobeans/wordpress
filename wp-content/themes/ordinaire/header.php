@@ -24,7 +24,8 @@
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/js/script.js"></script>
 <?php wp_head(); ?>
 </head>
-<body class=" <?php body_class( $class ); ?>">
+<body <?php body_class(); ?> >
+
 <?php if ( ! isset( $content_width ) ) $content_width = 900; ?>
 
 	<?php 
