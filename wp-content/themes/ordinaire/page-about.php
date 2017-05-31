@@ -85,7 +85,7 @@
 					while ( $loop->have_posts() ) : $loop->the_post(); 
 					$counter++;
 					?>
-					<div role="presentation" class="tab-button item post-<?php the_ID(); ?> <?php ($counter == 1) ? 'active' : ''?> head-class"><a href="#post-<?php the_ID(); ?>" aria-controls="home" role="tab" data-toggle="tab" class="deco-none red-class"><?php the_title();?></a></div>
+					<div role="presentation" class="tab-button item post-<?php the_ID(); ?> <?php echo ($counter == 1) ? 'active' : ''?> head-class"><a href="#post-<?php the_ID(); ?>" aria-controls="home" role="tab" data-toggle="tab" class="deco-none red-class"><?php the_title();?></a></div>
 				<?php endwhile; wp_reset_query(); ?>
 			</div>
 			<div class="tab-content">
@@ -95,7 +95,7 @@
 				while ( $loop->have_posts() ) : $loop->the_post(); 
 				$counter++;
 				?>
-				<div role="tabpanel" class="tab-pane tab-content responsive col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1 tab-box <?php ($counter == 1) ? 'active' : ''?>" id="post-<?php the_ID(); ?>">
+				<div role="tabpanel" class="tab-pane tab-content responsive col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1 tab-box <?php echo ($counter == 1) ? 'active' : ''?>" id="post-<?php the_ID(); ?>">
 					<?php the_content();?>
 
 				</div>
