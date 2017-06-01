@@ -4,7 +4,7 @@ add_action('admin_menu', 'my_cool_plugin_create_menu');
 
 function my_cool_plugin_create_menu() {
     //create new top-level menu
-    add_theme_page('My Cool Plugin Settings', 'Theme Options', 'administrator', __FILE__, 'my_cool_plugin_settings_page', '/wp-content/themes/uitheme/assets/images/icon.gif');
+    add_theme_page('My Cool Plugin Settings', 'Theme Options', 'administrator', __FILE__, 'my_cool_plugin_settings_page', '/wp-content/themes/ordinaire/assets/images/icon.gif');
 
     //call register settings function
     add_action('admin_init', 'register_my_cool_plugin_settings');

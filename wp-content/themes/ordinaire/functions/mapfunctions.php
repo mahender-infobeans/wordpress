@@ -5,7 +5,7 @@ add_action('admin_menu', 'mapIntegrate');
 function mapIntegrate() {
 
 	//create new top-level menu
-	add_theme_page('My Map Settings', 'Map Settings', 'administrator', __FILE__, 'mapSettings' , '/wp-content/themes/uitheme/assets/images/iconMap.ico' );
+	add_theme_page('My Map Settings', 'Map Settings', 'administrator', __FILE__, 'mapSettings' , '/wp-content/themes/ordinaire/assets/images/iconMap.ico' );
 	wp_enqueue_style( 'admin.css', get_stylesheet_uri() );
 
 	//call register settings function

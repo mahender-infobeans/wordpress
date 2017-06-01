@@ -128,7 +128,7 @@
 			<?php if ( !has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it. ?>
 			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center team-border">
 				<div class="image-overlay">
-					<img class="team-image" src="/wp-content/themes/uitheme/assets/images/team-default.png" alt="image-person" />
+					<img class="team-image" src="/wp-content/themes/ordinaire/assets/images/team-default.png" alt="image-person" />
 				</div>
 				<div class="box-image">
 				</div>
