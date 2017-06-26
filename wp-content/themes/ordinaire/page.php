@@ -34,15 +34,15 @@
 	<div class="container">
 		<div class="row"> 
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				<h2 class="about-text text-trans color-darkgray"><?php echo get_post_custom_values("page_tag")[0] == ""? 'Enter Page Tag': get_post_custom_values("page_tag")[0]; ?></h2>
-				<h1 class="we-text color-darkgray"> <?php echo get_post_custom_values("title_page")[0] == ""? 'Enter some Title': get_post_custom_values("title_page")[0]; ?></h1>
+				<h2 class="about-text text-trans ordinaire-color-darkgray"><?php echo get_post_custom_values("page_tag")[0] == ""? 'Enter Page Tag': get_post_custom_values("page_tag")[0]; ?></h2>
+				<h1 class="we-text ordinaire-color-darkgray"> <?php echo get_post_custom_values("title_page")[0] == ""? 'Enter some Title': get_post_custom_values("title_page")[0]; ?></h1>
 			</div>
 		</div>
 	</div>
 </div>
 
 <div class="container">
-	<div class="row color-darkgray">
+	<div class="row ordinaire-color-darkgray">
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 20px 15px;">
 			<?php while ( have_posts() ) : the_post(); ?> <!--Because the_content() works only inside a WP Loop -->
 				<div class="entry-content-page">

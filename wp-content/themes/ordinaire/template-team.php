@@ -1,3 +1,4 @@
+<?php /* Template Name: template-team */ ?>
 <?php get_header(); ?>
 <style type="text/css">
 	<?php $page_background = get_post_custom_values("page-background")[0] == ""? '#D4E157': get_post_custom_values("page-background")[0]; ?>
@@ -6,7 +7,7 @@
 		background-color: <?php echo $page_background; ?>;
 		color: <?php echo $page_font; ?>;
 	}
-	.header-background{
+	.header-background{ 
 		background-color: <?php echo $page_background; ?>;
 	}
 	.menu-horizontal li a{

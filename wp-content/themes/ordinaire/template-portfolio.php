@@ -1,3 +1,4 @@
+<?php /* Template Name: template-portfolio */ ?>
 <?php get_header(); ?>
 <style type="text/css">
 <?php $page_background = get_post_custom_values("page-background")[0] == "" ? '#FFFA78' : get_post_custom_values("page-background")[0]; ?>
@@ -30,12 +31,12 @@
     $("head").append(element);
 </script>
 <!-- 2nd page header -->
-<div class="aboutus-header bgcolor-yellow">	
+<div class="aboutus-header ordinaire-bgcolor-yellow">	
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <h2 class="about-text text-trans color-darkgray">Portfolio</h2>
-                <h1 class="we-text color-darkgray"> <?php echo get_post_custom_values("title_page")[0] == "" ? 'Stay Connected...' : get_post_custom_values("title_page")[0]; ?></h1>
+                <h2 class="about-text text-trans ordinaire-color-darkgray">Portfolio</h2>
+                <h1 class="we-text ordinaire-color-darkgray"> <?php echo get_post_custom_values("title_page")[0] == "" ? 'Stay Connected...' : get_post_custom_values("title_page")[0]; ?></h1>
             </div>
         </div>
     </div>

@@ -1,3 +1,4 @@
+<?php /* Template Name: template-about */ ?>
 <?php get_header(); ?>
 
 <style type="text/css"> 

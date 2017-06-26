@@ -1,11 +1,11 @@
 <?php 
 // example start
-
+ 
 
 /**
  * This file represents an example of the code that themes would use to register
  * the required plugins.
- *
+ * 
  * It is expected that theme authors would copy and paste this code into their
  * functions.php file, and amend to suit.
  *
@@ -73,9 +73,9 @@ function theme_ordinaire_register_required_plugins() {
             'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
             'external_url'       => '', // If set, overrides default API URL and points to an external URL.
             'is_callable'        => '', // If set, this callable will be be checked for availability to determine if a plugin is active.
-        ),
+            ),
 
-    );
+        );
 
     /*
      * Array of configuration settings. Amend each line as needed.
@@ -95,8 +95,8 @@ function theme_ordinaire_register_required_plugins() {
         'dismiss_msg'  => '',                      // If 'dismissable' is false, this message will be output at top of nag.
         'is_automatic' => false,                   // Automatically activate plugins after installation or not.
         'message'      => '',                      // Message to output right before the plugins table.
-	
-    );
+        
+        );
 
     tgmpa( $plugins, $config );
 }
@@ -106,6 +106,17 @@ function theme_ordinaire_register_required_plugins() {
 require_once(TEMPLATEPATH . '/functions/admin-menu.php');
 require_once(TEMPLATEPATH . '/functions/mapfunctions.php');
 // require_once(TEMPLATEPATH.  '/functions/class-tgm-plugin-activation.php');
+
+// Enqueue scripts and styles.
+
+// function ordinaire_scripts(){
+//     // Add custom fonts, used in the main stylesheet.
+//     wp_enqueue_style( 'ordinaire-fonts', twentyseventeen_fonts_url(), array(), null );
+
+//     // Theme stylesheet.
+//     wp_enqueue_style( 'ordinaire-style', get_stylesheet_uri() );
+// }
+// add_action( 'wp_enqueue_scripts', 'ordinaire_scripts' );
 
 // example end
 
@@ -123,10 +134,10 @@ add_theme_support( 'custom-logo' );
 add_theme_support('post-thumbnails');
 
 // navigation menu
-function register_my_menu() {
+function ordinaire_register_my_menu() {
   register_nav_menu('header-menu',( 'Header Menu' ));
 }
-add_action( 'init', 'register_my_menu' );
+add_action( 'init', 'ordinaire_register_my_menu' );
 
 
 
@@ -136,22 +147,22 @@ add_theme_support( 'title-tag' );
 
 // wp link pages
 $defaults = array(
-        'before'           => '<p>' . ( 'Pages:' ),
-        'after'            => '</p>',
-        'link_before'      => '',
-        'link_after'       => '',
-        'next_or_number'   => 'number',
-        'separator'        => ' ',
-        'nextpagelink'     => ( 'Next page' ),
-        'previouspagelink' => ( 'Previous page' ),
-        'pagelink'         => '%',
-        'echo'             => 1
+    'before'           => '<p>' . ( 'Pages:' ),
+    'after'            => '</p>',
+    'link_before'      => '',
+    'link_after'       => '',
+    'next_or_number'   => 'number',
+    'separator'        => ' ',
+    'nextpagelink'     => ( 'Next page' ),
+    'previouspagelink' => ( 'Previous page' ),
+    'pagelink'         => '%',
+    'echo'             => 1
     );
- 
-        wp_link_pages( $defaults );
+
+wp_link_pages( $defaults );
 
 // theme support added
-        add_theme_support( 'automatic-feed-links' );
+add_theme_support( 'automatic-feed-links' );
 
 
 
@@ -169,7 +180,7 @@ $defaults = array(
     'wp-head-callback'       => '',
     'admin-head-callback'    => '',
     'admin-preview-callback' => '',
-);
+    );
 add_theme_support( 'custom-header', $defaults );
 
 
@@ -185,32 +196,39 @@ $defaults = array(
     'wp-head-callback'       => '_custom_background_cb',
     'admin-head-callback'    => '',
     'admin-preview-callback' => ''
-);
+    );
 add_theme_support( 'custom-background', $defaults );
 
 
 /**
  * Registers an editor stylesheet for the theme.
  */
-function wpdocs_theme_add_editor_styles() {
+function ordinaire_wpdocs_theme_add_editor_styles() {
     add_editor_style( 'custom-editor-style.css' );
 }
-add_action( 'admin_init', 'wpdocs_theme_add_editor_styles' );
+add_action( 'admin_init', 'ordinaire_wpdocs_theme_add_editor_styles' );
 
 
 // sidebar added
-add_action( 'widgets_init', 'theme_slug_widgets_init' );
-function theme_slug_widgets_init() {
+add_action( 'widgets_init', 'ordinaire_theme_slug_widgets_init' );
+function ordinaire_theme_slug_widgets_init() {
     register_sidebar( array(
         'name' => __( 'Main Sidebar', 'ordinaire' ),
         'id' => 'sidebar-1',
         'description' => __( 'Widgets in this area will be shown on all posts and pages.', 'ordinaire' ),
         'before_widget' => '<li id="%1$s" class="widget %2$s">',
-    'after_widget'  => '</li>',
-    'before_title'  => '<h2 class="widgettitle">',
-    'after_title'   => '</h2>',
-    ) );
+        'after_widget'  => '</li>',
+        'before_title'  => '<h2 class="widgettitle">',
+        'after_title'   => '</h2>',
+        ) );
 }
+
+
+/**
+ * Enqueue scripts and styles.
+ *
+ * @since Ordinaire 1.0
+ */
 
 function admin_style() {
   wp_enqueue_style('admin-styles', get_template_directory_uri().'/assets/css/admin.css');
@@ -219,3 +237,26 @@ add_action('admin_enqueue_scripts', 'admin_style');
 
 ?>
 
+<?php 
+/**
+ * Enqueue scripts and styles
+ */
+
+function ordinaire_enqueue_scripts() { 
+    // all styles
+    wp_enqueue_style( 'bootstrap', get_stylesheet_directory_uri() . '/assets/css/bootstrap.min.css');
+    wp_enqueue_style( 'bootstrap', get_stylesheet_directory_uri() . '/assets/css/bootstrap.css');
+    wp_enqueue_style( 'theme-style', get_stylesheet_directory_uri() . '/style.css');
+    wp_enqueue_style( 'owl-css', get_stylesheet_directory_uri() . '/assets/css/owl.carousel.css', array(), 20141119 );
+    wp_enqueue_style( 'owl-theme-css', get_stylesheet_directory_uri() . '/assets/css/owl.theme.default.css', array(), 20141119 );
+    wp_enqueue_style( 'fontawesome-min', get_stylesheet_directory_uri() . '/assets/css/font-awesome.min.css', array(), 20141119 );
+    wp_enqueue_style( 'fontawesome', get_stylesheet_directory_uri() . '/assets/css/font-awesome.css', array(), 20141119 );
+    
+    // all scripts
+
+    wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array(), '20120206', true );
+    wp_enqueue_script( 'theme-script', get_template_directory_uri() . '/assets/js/script.js', array(), '20120206', true );
+    wp_enqueue_script( 'fontawesome', get_template_directory_uri() . '/assets/js/fa.js', array(), '20120206', true );
+}
+add_action( 'wp_enqueue_scripts', 'ordinaire_enqueue_scripts' );
+?>

@@ -1,16 +1,16 @@
 <?php
 // create custom plugin settings menu
-add_action('admin_menu', 'my_cool_plugin_create_menu');
+add_action('admin_menu', 'ordinaire_my_cool_plugin_create_menu');
 
-function my_cool_plugin_create_menu() {
+function ordinaire_my_cool_plugin_create_menu() {
     //create new top-level menu
-    add_theme_page('My Cool Plugin Settings', 'Theme Options', 'administrator', __FILE__, 'my_cool_plugin_settings_page', '/wp-content/themes/ordinaire/assets/images/icon.gif');
+    add_theme_page('My Cool Plugin Settings', 'Theme Options', 'administrator', __FILE__, 'ordinaire_my_cool_plugin_settings_page', '/wp-content/themes/ordinaire/assets/images/icon.gif');
 
     //call register settings function
-    add_action('admin_init', 'register_my_cool_plugin_settings');
+    add_action('admin_init', 'ordinaire_register_my_cool_plugin_settings');
 }
 
-function register_my_cool_plugin_settings() {
+function ordinaire_register_my_cool_plugin_settings() {
     //register our settings
     register_setting('my-cool-plugin-settings-group', 'homeheading');
     register_setting('my-cool-plugin-settings-group', 'homesubheading');
@@ -19,7 +19,7 @@ function register_my_cool_plugin_settings() {
     register_setting('my-cool-plugin-settings-group', 'address');
 }
 
-function my_cool_plugin_settings_page() {
+function ordinaire_my_cool_plugin_settings_page() {
     ?>
     <div class="wrap">
         <h1>Theme Option values</h1>

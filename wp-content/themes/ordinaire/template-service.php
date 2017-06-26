@@ -1,3 +1,4 @@
+<?php /* Template Name: template-service */ ?>
 <?php get_header(); ?>
 <style type="text/css">
 	<?php $page_background = get_post_custom_values("page-background")[0] == ""? '#4FD5EE': get_post_custom_values("page-background")[0]; ?>

@@ -1,3 +1,4 @@
+<?php /* Template Name: template-blog */ ?>
 <?php get_header(); ?>
 <style type="text/css">
 	<?php $page_background = get_post_custom_values("page-background")[0] == ""? '#ff9999': get_post_custom_values("page-background")[0]; ?>
@@ -37,7 +38,7 @@
 <!-- the blog page content will show with this code -->
 
 <div class="container">
-	<div class="row color-darkgray">
+	<div class="row ordinaire-color-darkgray">
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 20px 15px;">
 			<?php while ( have_posts() ) : the_post(); ?> <!--Because the_content() works only inside a WP Loop -->
 				<div class="entry-content-page">

@@ -1,3 +1,4 @@
+<?php /* Template Name: template-home */ ?>
 <?php get_header(); ?>
 <style type="text/css">
 	<?php $page_background = get_post_custom_values("page-background")[0] == ""? '#0ABBB5': get_post_custom_values("page-background")[0]; ?>
