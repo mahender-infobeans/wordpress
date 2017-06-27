@@ -20,17 +20,17 @@
 	}
 </style>
 <script type="text/javascript">
-(function($){
-	var ordinaire_colorx = shadeColor1("<?php echo $page_background; ?>",30);
-	var ordinaire_element ="<style>.menu-horizontal li a:hover{"+
-	"background-color: "+ ordinaire_colorx +";"+
-	"box-shadow: 0px 0px 13px 0px "+ ordinaire_colorx +" inset;" +
-	"}"+
-	".current-menu-item{"+
-	"background-color: "+ ordinaire_colorx+
-	"}" +
-	"</style>";
-	$("head").append(ordinaire_element);    
+	(function($){
+		var ordinaire_colorx = shadeColor1("<?php echo $page_background; ?>",30);
+		var ordinaire_element ="<style>.menu-horizontal li a:hover{"+
+		"background-color: "+ ordinaire_colorx +";"+
+		"box-shadow: 0px 0px 13px 0px "+ ordinaire_colorx +" inset;" +
+		"}"+
+		".current-menu-item{"+
+		"background-color: "+ ordinaire_colorx+
+		"}" +
+		"</style>";
+		$("head").append(ordinaire_element);    
 	}(jQuery));
 </script>
 <div class="aboutus-header about-back-color">	
@@ -111,23 +111,23 @@
 
 <script type="text/javascript">
 	
-(function($){
-	$('.owl-carousel').owlCarousel({
-		loop:false,
-		margin:10,
-		nav:true,
-		responsive:{
-			0:{
-				items:2
-			},
-			600:{
-				items:4
-			},
-			1000:{
-				items:3
+	(function($){
+		$('.owl-carousel').owlCarousel({
+			loop:false,
+			margin:10,
+			nav:true,
+			responsive:{
+				0:{
+					items:2
+				},
+				600:{
+					items:4
+				},
+				1000:{
+					items:3
+				}
 			}
-		}
-	});
+		});
 	}(jQuery));
 </script>
 <?php get_footer(); ?>

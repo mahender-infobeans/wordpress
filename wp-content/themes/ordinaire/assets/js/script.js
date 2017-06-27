@@ -2,7 +2,7 @@
  * Theme Javsacript Document
  */
 
-(function ($) {
+ (function ($) {
 
     $(document).ready(function () {
 
@@ -23,7 +23,7 @@
             $(this).tab('show');
         });
 
-       
+        
 
     });
 

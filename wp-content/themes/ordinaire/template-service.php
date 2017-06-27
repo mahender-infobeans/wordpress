@@ -19,18 +19,18 @@
 	}
 </style>
 <script type="text/javascript">
-(function($){
-	var ordinaire_colorx = shadeColor1("<?php echo $page_background; ?>",91);
-	var ordinaire_element ="<style>.menu-horizontal li a:hover{"+
-	"background-color: "+ ordinaire_colorx +";"+
-	"box-shadow: 0px 0px 13px 0px "+ ordinaire_colorx +" inset;" +
-	"}"+
-	".current-menu-item{"+
-	"background-color: "+ ordinaire_colorx+
-	"}" +
-	"</style>";
-	$("head").append(ordinaire_element);
-		}(jQuery));
+	(function($){
+		var ordinaire_colorx = shadeColor1("<?php echo $page_background; ?>",91);
+		var ordinaire_element ="<style>.menu-horizontal li a:hover{"+
+		"background-color: "+ ordinaire_colorx +";"+
+		"box-shadow: 0px 0px 13px 0px "+ ordinaire_colorx +" inset;" +
+		"}"+
+		".current-menu-item{"+
+		"background-color: "+ ordinaire_colorx+
+		"}" +
+		"</style>";
+		$("head").append(ordinaire_element);
+	}(jQuery));
 </script>
 <div class="serviceus-header">	
 	<div class="container">
@@ -58,7 +58,7 @@
 				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 					<p class="marginleft10 resp-text-center">Definition</p>
 					<div class="image-box borderbox">
-					<span class="ico-services"><i class="fa fa-book fa-5x" aria-hidden="true"></i></span>
+						<span class="ico-services"><i class="fa fa-book fa-5x" aria-hidden="true"></i></span>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
@@ -70,7 +70,7 @@
 				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 					<p class="resp-text-center">Development</p>
 					<div class="image-box">
-					<span class="ico-services"><i class="fa fa-desktop fa-5x" aria-hidden="true"></i></span>
+						<span class="ico-services"><i class="fa fa-desktop fa-5x" aria-hidden="true"></i></span>
 					</div>
 				</div>
 
@@ -168,23 +168,23 @@
 </div>
 
 <script type="text/javascript">
-(function($){
-	$('.owl-carousel').owlCarousel({
-		loop:false,
-		margin:10,
-		nav:true,
-		responsive:{
-			0:{
-				items:2
-			},
-			600:{
-				items:3
-			},
-			1000:{
-				items:3
+	(function($){
+		$('.owl-carousel').owlCarousel({
+			loop:false,
+			margin:10,
+			nav:true,
+			responsive:{
+				0:{
+					items:2
+				},
+				600:{
+					items:3
+				},
+				1000:{
+					items:3
+				}
 			}
-		}
-	})
+		})
 	}(jQuery));
 </script>
 <?php get_footer(); ?>

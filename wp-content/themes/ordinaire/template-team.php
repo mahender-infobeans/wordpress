@@ -19,18 +19,18 @@
 	}
 </style>
 <script type="text/javascript">
-(function($){
-	var ordinaire_colorx = shadeColor1("<?php echo $page_background; ?>",84);
-	var ordinaire_element ="<style>.menu-horizontal li a:hover{"+
-	"background-color: "+ ordinaire_colorx +";"+
-	"box-shadow: 0px 0px 13px 0px "+ ordinaire_colorx +" inset;" +
-	"}"+
-	".current-menu-item{"+
-	"background-color: "+ ordinaire_colorx+
-	"}" +
-	"</style>";
-	$("head").append(ordinaire_element);
-		}(jQuery));
+	(function($){
+		var ordinaire_colorx = shadeColor1("<?php echo $page_background; ?>",84);
+		var ordinaire_element ="<style>.menu-horizontal li a:hover{"+
+		"background-color: "+ ordinaire_colorx +";"+
+		"box-shadow: 0px 0px 13px 0px "+ ordinaire_colorx +" inset;" +
+		"}"+
+		".current-menu-item{"+
+		"background-color: "+ ordinaire_colorx+
+		"}" +
+		"</style>";
+		$("head").append(ordinaire_element);
+	}(jQuery));
 </script>
 <div class="aboutus-header team-back">	
 	<div class="container">
@@ -115,7 +115,7 @@
 			<?php if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it. ?>
 			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center team-border">
 				<div class="image-overlay">
-					<img class="team-image" src="<?php the_post_thumbnail_url(); ?>" alt="image-person" />
+					<img class="team-image" src="<?php esc_url(the_post_thumbnail_url()); ?>" alt="image-person" />
 				</div>
 				<div class="box-image">
 				</div>

@@ -19,20 +19,20 @@
 	}	
 </style>
 <script type="text/javascript">
-var ordinaire_colors = new Array('#00b3b3', '#218b8d', '#286476', '#26a2b0', '#3acead');
-    function ordinaire_colorChange(tic) {
-        tic %= ordinaire_colors.length;
-        document.bgColor = ordinaire_colors[tic];
-        setTimeout("ordinaire_colorChange(" + (tic + 1) + ")", 4000);
-    }
+	var ordinaire_colors = new Array('#00b3b3', '#218b8d', '#286476', '#26a2b0', '#3acead');
+	function ordinaire_colorChange(tic) {
+		tic %= ordinaire_colors.length;
+		document.bgColor = ordinaire_colors[tic];
+		setTimeout("ordinaire_colorChange(" + (tic + 1) + ")", 4000);
+	}
 
-    function ordinaire_colorChangeOnDiv(tic, divId) {
-        tic %= ordinaire_colors.length;
-        divVar = document.getElementById(divId);
-        divVar.style.background = ordinaire_colors[tic];
-        setTimeout("ordinaire_colorChangeOnDiv(" + (tic + 1) + ", '" + divId + "')", 4000);
-    }
-    
+	function ordinaire_colorChangeOnDiv(tic, divId) {
+		tic %= ordinaire_colors.length;
+		divVar = document.getElementById(divId);
+		divVar.style.background = ordinaire_colors[tic];
+		setTimeout("ordinaire_colorChangeOnDiv(" + (tic + 1) + ", '" + divId + "')", 4000);
+	}
+
 	(function($){
 		var ordinaire_colorx = shadeColor1("<?php echo $page_background; ?>",68);
 		var ordinaire_element ="<style>.menu-horizontal li a:hover{"+
@@ -46,41 +46,41 @@ var ordinaire_colors = new Array('#00b3b3', '#218b8d', '#286476', '#26a2b0', '#3
 		$("head").append(ordinaire_element);
 
 		  //color change home
-    
- $("#home").ready(function () {
-            if ($("#divtest").length == 1) {
-                ordinaire_colorChange(0);
-                ordinaire_colorChangeOnDiv(2, 'divtest');
-            }
 
-        });
-	}(jQuery));
+		  $("#home").ready(function () {
+		  	if ($("#divtest").length == 1) {
+		  		ordinaire_colorChange(0);
+		  		ordinaire_colorChangeOnDiv(2, 'divtest');
+		  	}
+
+		  });
+		}(jQuery));
 
 
-</script>
-<!-- default slider if no slider block has been added by the admin -->
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0" id="home">
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center divheight" id="divtest">
-				<p class="home-text home-text-margin"><span class="font48"><?php echo (get_option("homeheading")==""?"Theme ordinaire":get_option("homeheading")); ?></span>
-					<p class="home-text">
-						<?php echo (get_option("homesubheading")==""?"Welcome to the world of WOW":get_option("homesubheading")); ?>
-					</p>
+	</script>
+	<!-- default slider if no slider block has been added by the admin -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0" id="home">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center divheight" id="divtest">
+					<p class="home-text home-text-margin"><span class="font48"><?php echo (get_option("homeheading")==""?"Theme ordinaire":get_option("homeheading")); ?></span>
+						<p class="home-text">
+							<?php echo (get_option("homesubheading")==""?"Welcome to the world of WOW":get_option("homesubheading")); ?>
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="container">
-		<div class="row">
-			
-			<?php
-			while ( have_posts() ) : the_post(); ?> 
-			<div class="col-lg-12 col-md-12 b-block home-background">
-				<?php the_content(); ?> <!-- Page Content -->
-			</div><!-- .entry-content-page -->
+		<div class="container">
+			<div class="row">
 
-			<?php
+				<?php
+				while ( have_posts() ) : the_post(); ?> 
+				<div class="col-lg-12 col-md-12 b-block home-background">
+					<?php the_content(); ?> <!-- Page Content -->
+				</div><!-- .entry-content-page -->
+
+				<?php
     endwhile; //resetting the page loop
     wp_reset_query(); //resetting the page query
     ?>
@@ -126,7 +126,7 @@ var ordinaire_colors = new Array('#00b3b3', '#218b8d', '#286476', '#26a2b0', '#3
 				<?php foreach($slider as $slide): ?>
 
 					<div class="item  img-back parallex-slider <?php echo ($count == 0) ? 'active' : ''; ?>"
-						style="background-image: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id($slide->ID)) ?> )">
+						style="background-image: url(<?php echo esc_url(wp_get_attachment_url( get_post_thumbnail_id($slide->ID))); ?> )">
 
 						<div class="carousel-caption">
 							<h3 class="font36"><?php  echo $slider[$count]->post_title; ?></h3>

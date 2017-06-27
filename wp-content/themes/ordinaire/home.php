@@ -19,18 +19,18 @@
 	}
 </style>
 <script type="text/javascript">
-(function($){
-	var ordinaire_colorx = shadeColor1("<?php echo $page_background; ?>",30);
-	var ordinaire_element ="<style>.menu-horizontal li a:hover{"+
-	"background-color: "+ ordinaire_colorx +";"+
-	"box-shadow: 0px 0px 13px 0px "+ ordinaire_colorx +" inset;" +
-	"}"+
-	".current-menu-item{"+
-	"background-color: "+ ordinaire_colorx+
-	"}" +
-	"</style>";
-	$("head").append(ordinaire_element);
-		}(jQuery));
+	(function($){
+		var ordinaire_colorx = shadeColor1("<?php echo $page_background; ?>",30);
+		var ordinaire_element ="<style>.menu-horizontal li a:hover{"+
+		"background-color: "+ ordinaire_colorx +";"+
+		"box-shadow: 0px 0px 13px 0px "+ ordinaire_colorx +" inset;" +
+		"}"+
+		".current-menu-item{"+
+		"background-color: "+ ordinaire_colorx+
+		"}" +
+		"</style>";
+		$("head").append(ordinaire_element);
+	}(jQuery));
 
 	
 </script>
@@ -63,7 +63,7 @@
 </style>
 
 <div class="container">
-<p><?php the_tags(); ?></p>
+	<p><?php the_tags(); ?></p>
 	<!-- start of Masonry -->
 	<div class="grid">
 		<?php 
@@ -72,34 +72,34 @@
 	// $wp_query = new WP_Query(); $wp_query->query('posts_per_page=5' . '&paged='.$paged);
 		while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		<div class="grid-item" >
-			<div class="row masonry-body">
-				<?php if ( has_post_thumbnail() ) { ?>
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0 blog-image">
-					<img class="blog-img" src="<?php echo the_post_thumbnail_url(); ?>" alt="blog-image" />
-				</div>
-				<?php }  ?>
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font16">
-					<p class="text-center date-col"> <?php the_date(); ?></p>
-				</div>
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<strong>
-						<h3 class="text-center capitalize-blg">
-							<a href="<?php the_permalink(); ?>" class="blog-link" title="Read more"><?php the_title(); ?></a>
-						</h3></strong>
+			<div class="grid-item" >
+				<div class="row masonry-body">
+					<?php if ( has_post_thumbnail() ) { ?>
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding0 blog-image">
+					<img class="blog-img" src="<?php echo esc_url(the_post_thumbnail_url()); ?>" alt="blog-image" />
 					</div>
+					<?php }  ?>
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font16">
-						<p class="text-center">Posted By: <span class="capitalize-blg"><?php the_author(); ?></span></p>
+						<p class="text-center date-col"> <?php the_date(); ?></p>
 					</div>
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<strong>
+							<h3 class="text-center capitalize-blg">
+								<a href="<?php the_permalink(); ?>" class="blog-link" title="Read more"><?php the_title(); ?></a>
+							</h3></strong>
+						</div>
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 font16">
+							<p class="text-center">Posted By: <span class="capitalize-blg"><?php the_author(); ?></span></p>
+						</div>
 
-					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-						<p><?php the_excerpt(); ?></p>
-					</div>
-					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-						<button type="button" class="btn btn-lg btn-block continue-button"><a class="blog-link-btn" href="<?php the_permalink(); ?>" title="Read more">Continue Reading</a></button>
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+							<p><?php the_excerpt(); ?></p>
+						</div>
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+							<button type="button" class="btn btn-lg btn-block continue-button"><a class="blog-link-btn" href="<?php the_permalink(); ?>" title="Read more">Continue Reading</a></button>
+						</div>
 					</div>
 				</div>
-			</div>
 			</div>
 		<?php endwhile; ?>
 	</div>

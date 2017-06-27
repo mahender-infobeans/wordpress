@@ -37,9 +37,9 @@
 
 
 
-	<div class="container">
-<?php while ( have_posts() ) : the_post(); ?> <!--Because the_content() works only inside a WP Loop -->
-	
+<div class="container">
+	<?php while ( have_posts() ) : the_post(); ?> <!--Because the_content() works only inside a WP Loop -->
+		
 
 		<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2 blog-wrapper">
 			<?php if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it. ?>
@@ -57,14 +57,14 @@
 				<p class="text-center"> <?php the_author(); ?></p>
 			</div>
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-			<?php the_content(); ?>
+				<?php the_content(); ?>
 			</div>
 
 
-				<?php
+			<?php
     				endwhile; //resetting the page loop
     				wp_reset_query(); //resetting the page query
-    			?>
+    				?>
 
 
-		</div>
+    			</div>

@@ -20,18 +20,18 @@
 	}
 </style>
 <script type="text/javascript">
-(function($){
-	var ordinaire_colorx = shadeColor1("<?php echo $page_background; ?>",30);
-	var ordinaire_element ="<style>.menu-horizontal li a:hover{"+
-	"background-color: "+ ordinaire_colorx +";"+
-	"box-shadow: 0px 0px 13px 0px "+ ordinaire_colorx +" inset;" +
-	"}"+
-	".current-menu-item{"+
-	"background-color: "+ ordinaire_colorx+
-	"}" +
-	"</style>";
-	$("head").append(ordinaire_element);
-		}(jQuery));
+	(function($){
+		var ordinaire_colorx = shadeColor1("<?php echo $page_background; ?>",30);
+		var ordinaire_element ="<style>.menu-horizontal li a:hover{"+
+		"background-color: "+ ordinaire_colorx +";"+
+		"box-shadow: 0px 0px 13px 0px "+ ordinaire_colorx +" inset;" +
+		"}"+
+		".current-menu-item{"+
+		"background-color: "+ ordinaire_colorx+
+		"}" +
+		"</style>";
+		$("head").append(ordinaire_element);
+	}(jQuery));
 </script>
 
 <!-- <body> -->
@@ -49,19 +49,19 @@
 				<?php
     				endwhile; //resetting the page loop
     				wp_reset_query(); //resetting the page query
-    			?>
-		</div>
+    				?>
+    			</div>
 
-	</div>
-</div>
+    		</div>
+    	</div>
 
-<!-- </body> -->
-
-
+    	<!-- </body> -->
 
 
 
 
-	
 
-<?php get_footer(); ?>
+
+    	
+
+    	<?php get_footer(); ?>

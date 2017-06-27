@@ -1,8 +1,8 @@
 <?php /* Template Name: template-portfolio */ ?>
 <?php get_header(); ?>
 <style type="text/css">
-<?php $page_background = get_post_custom_values("page-background")[0] == "" ? '#FFFA78' : get_post_custom_values("page-background")[0]; ?>
-<?php $page_font = get_post_custom_values("header-font")[0] == "" ? '#333' : get_post_custom_values("header-font")[0]; ?>
+    <?php $page_background = get_post_custom_values("page-background")[0] == "" ? '#FFFA78' : get_post_custom_values("page-background")[0]; ?>
+    <?php $page_font = get_post_custom_values("header-font")[0] == "" ? '#333' : get_post_custom_values("header-font")[0]; ?>
     .header-background-custom{
         background-color: <?php echo $page_background; ?>;
         color: <?php echo $page_font; ?>;
@@ -30,7 +30,7 @@
     "}" +
     "</style>";
     $("head").append(ordinaire_element);
-        }(jQuery));
+}(jQuery));
 </script>
 <!-- 2nd page header -->
 <div class="aboutus-header ordinaire-bgcolor-yellow">	
@@ -89,46 +89,46 @@
 
                 <?php while ($loop->have_posts()) : $loop->the_post(); ?>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mt15">
-                        <?php if (has_post_thumbnail()) { // check if the post has a Post Thumbnail assigned to it. ?>
+                        <?php if (has_post_thumbnail()) { // check if the post has a Thumbnail assigned to it. ?>
 
-                            <div class="box-portfolio portfolio-box-hover"
-                                 style="background-image: url( 
-                                 <?php the_post_thumbnail_url(); ?>
-                                 );">
-                                <div class="overlay overlay-projects">
-                                    <div class="text">
-                                        <h3><span class="fade-in-out" ><?php the_title(); ?></span></h3>
-                                        <div class="show-hover">
-                                            <?php the_content(); ?>
-                                        </div>
-                                    </div>
+                        <div class="box-portfolio portfolio-box-hover"
+                        style="background-image: url( 
+                            <?php esc_url(the_post_thumbnail_url()); ?>
+                           );">
+                           <div class="overlay overlay-projects">
+                            <div class="text">
+                                <h3><span class="fade-in-out" ><?php the_title(); ?></span></h3>
+                                <div class="show-hover">
+                                    <?php the_content(); ?>
                                 </div>
                             </div>
-                        <?php } ?>
-                        <?php if (!has_post_thumbnail()) { // check if the post has a Post Thumbnail assigned to it. ?>
-
-                            <div class="box-portfolio portfolio-box-hover" 
-                                 style="background-image: url( /wp-content/themes/ordinaire/assets/images/port-img.png );">
-                                <div class="overlay overlay-projects">
-                                    <div class="text">
-                                        <h3><span class="fade-in-out" ><?php the_title(); ?></span></h3>
-                                        <div class="show-hover">
-                                            <?php the_content(); ?>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        <?php } ?>
+                        </div>
                     </div>
+                    <?php } ?>
+                    <?php if (!has_post_thumbnail()) { // check if  the post has not Thumbnail assigned to it. ?>
 
-                <?php endwhile; ?>
-
-                <!-- repeat block end -->
+                    <div class="box-portfolio portfolio-box-hover" 
+                    style="background-image: url( /wp-content/themes/ordinaire/assets/images/port-img.png );">
+                    <div class="overlay overlay-projects">
+                        <div class="text">
+                            <h3><span class="fade-in-out" ><?php the_title(); ?></span></h3>
+                            <div class="show-hover">
+                                <?php the_content(); ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <?php } ?>
             </div>
 
+        <?php endwhile; ?>
 
-        </div>
+        <!-- repeat block end -->
     </div>
+
+
+</div>
+</div>
 </div>
 
 <?php get_footer(); ?>
