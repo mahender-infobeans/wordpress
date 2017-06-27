@@ -1,7 +1,6 @@
 /*
 Theme Name: ordinaire
-Theme URI: https://infobeans.com/;
-Author: PUNE UI TEAM INFOBEANS
+Author: uipuneinfobeans
 Author URI: https://profiles.wordpress.org/uipuneinfobeans
 Description: This is our first theme which is made for the learning purpose. Hope You All like it.
 Version: 1.0.1
@@ -197,11 +196,13 @@ body{
 .menu-horizontal li{
 	float: left;
 	padding: 0px 15px 0px 15px;
+	list-style: none;
 }
 
 .menu-horizontal li a{
 	color: #333;
 	font-size: 18px;
+	list-style: none;
 }
 /*Horizontal menu of all page end*/
 
