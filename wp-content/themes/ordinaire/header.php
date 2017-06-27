@@ -7,9 +7,8 @@
 
 <title><?php wp_title('|', true, 'right'); ?></title>
 	<!-- jQuery library -->
-	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/js/jquery.min.js"></script>
-	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/js/owl.carousel.min.js"></script>
-	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/js/masonry.pkgd.js"></script>
+
+	
 <script type="text/javascript">
 		function shadeColor1(hex, percent){
     // strip the leading # if it's there

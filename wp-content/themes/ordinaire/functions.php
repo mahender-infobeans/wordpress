@@ -1,6 +1,6 @@
 <?php 
 // example start
- 
+
 
 /**
  * This file represents an example of the code that themes would use to register
@@ -36,7 +36,7 @@
  */
 require_once get_template_directory() . '/class-tgm-plugin-activation.php';
 
-add_action( 'tgmpa_register', 'theme_ordinaire_register_required_plugins' );
+add_action( 'tgmpa_register', 'ordinaire_register_required_plugins' );
 
 /**
  * Register the required plugins for this theme.
@@ -55,7 +55,7 @@ add_action( 'tgmpa_register', 'theme_ordinaire_register_required_plugins' );
  *
  * This function is hooked into `tgmpa_register`, which is fired on the WP `init` action on priority 10.
  */
-function theme_ordinaire_register_required_plugins() {
+function ordinaire_register_required_plugins() {
     /*
      * Array of plugin arrays. Required keys are name and slug.
      * If the source is NOT from the .org repo, then source is also required.
@@ -147,14 +147,14 @@ add_theme_support( 'title-tag' );
 
 // wp link pages
 $defaults = array(
-    'before'           => '<p>' . ( 'Pages:' ),
+    'before'           => '<p>' . __( 'Pages:', 'ordinaire' ),
     'after'            => '</p>',
     'link_before'      => '',
     'link_after'       => '',
     'next_or_number'   => 'number',
     'separator'        => ' ',
-    'nextpagelink'     => ( 'Next page' ),
-    'previouspagelink' => ( 'Previous page' ),
+    'nextpagelink'     => __( 'Next page', 'ordinaire' ),
+    'previouspagelink' => __( 'Previous page', 'ordinaire' ),
     'pagelink'         => '%',
     'echo'             => 1
     );
@@ -193,7 +193,7 @@ $defaults = array(
     'default-repeat'         => '',
     'default-position-x'     => '',
     'default-attachment'     => '',
-    'wp-head-callback'       => '_custom_background_cb',
+    'wp-head-callback'       => __('_custom_background_cb', 'ordinaire'),
     'admin-head-callback'    => '',
     'admin-preview-callback' => ''
     );
@@ -243,6 +243,15 @@ add_action('admin_enqueue_scripts', 'admin_style');
  */
 
 function ordinaire_enqueue_scripts() { 
+ 
+  // all scripts
+    wp_enqueue_script("jquery"); 
+    wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array('jquery'), '20120206', true );
+    wp_enqueue_script( 'theme-script', get_template_directory_uri() . '/assets/js/script.js', array('jquery'), '20120206', true );
+    wp_enqueue_script( 'fontawesome', get_template_directory_uri() . '/assets/js/fa.js', array('jquery'), '20120206', true );
+    wp_enqueue_script( 'owlcarousel', get_template_directory_uri() . '/assets/js/owl.carousel.min.js', array('jquery'), '20120206', false );
+    wp_enqueue_script( 'masonry', get_template_directory_uri() . '/assets/js/masonry.pkgd.js', array('jquery'), '20120206', true );
+
     // all styles
     wp_enqueue_style( 'bootstrap', get_stylesheet_directory_uri() . '/assets/css/bootstrap.min.css');
     wp_enqueue_style( 'bootstrap', get_stylesheet_directory_uri() . '/assets/css/bootstrap.css');
@@ -252,11 +261,7 @@ function ordinaire_enqueue_scripts() {
     wp_enqueue_style( 'fontawesome-min', get_stylesheet_directory_uri() . '/assets/css/font-awesome.min.css', array(), 20141119 );
     wp_enqueue_style( 'fontawesome', get_stylesheet_directory_uri() . '/assets/css/font-awesome.css', array(), 20141119 );
     
-    // all scripts
-
-    wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array(), '20120206', true );
-    wp_enqueue_script( 'theme-script', get_template_directory_uri() . '/assets/js/script.js', array(), '20120206', true );
-    wp_enqueue_script( 'fontawesome', get_template_directory_uri() . '/assets/js/fa.js', array(), '20120206', true );
+    
 }
 add_action( 'wp_enqueue_scripts', 'ordinaire_enqueue_scripts' );
 ?>

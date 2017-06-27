@@ -19,17 +19,18 @@
 	}
 </style>
 <script type="text/javascript">
-	var colorx = shadeColor1("<?php echo $page_background; ?>",91);
-	console.log(colorx);
-	var element ="<style>.menu-horizontal li a:hover{"+
-	"background-color: "+ colorx +";"+
-	"box-shadow: 0px 0px 13px 0px "+ colorx +" inset;" +
+(function($){
+	var ordinaire_colorx = shadeColor1("<?php echo $page_background; ?>",91);
+	var ordinaire_element ="<style>.menu-horizontal li a:hover{"+
+	"background-color: "+ ordinaire_colorx +";"+
+	"box-shadow: 0px 0px 13px 0px "+ ordinaire_colorx +" inset;" +
 	"}"+
 	".current-menu-item{"+
-	"background-color: "+ colorx+
+	"background-color: "+ ordinaire_colorx+
 	"}" +
 	"</style>";
-	$("head").append(element);
+	$("head").append(ordinaire_element);
+		}(jQuery));
 </script>
 <div class="serviceus-header">	
 	<div class="container">
@@ -167,6 +168,7 @@
 </div>
 
 <script type="text/javascript">
+(function($){
 	$('.owl-carousel').owlCarousel({
 		loop:false,
 		margin:10,
@@ -183,6 +185,6 @@
 			}
 		}
 	})
-
+	}(jQuery));
 </script>
 <?php get_footer(); ?>

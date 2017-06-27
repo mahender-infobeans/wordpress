@@ -19,16 +19,44 @@
 	}	
 </style>
 <script type="text/javascript">
-	var colorx = shadeColor1("<?php echo $page_background; ?>",68);
-	var element ="<style>.menu-horizontal li a:hover{"+
-	"background-color: "+ colorx +";"+ 
-	"box-shadow: 0px 0px 13px 0px "+ colorx +" inset;" +
-	"}"+
-	".current-menu-item{"+
-	"background-color: "+ colorx+
-	"}" +
-	"</style>";
-	$("head").append(element);
+var ordinaire_colors = new Array('#00b3b3', '#218b8d', '#286476', '#26a2b0', '#3acead');
+    function ordinaire_colorChange(tic) {
+        tic %= ordinaire_colors.length;
+        document.bgColor = ordinaire_colors[tic];
+        setTimeout("ordinaire_colorChange(" + (tic + 1) + ")", 4000);
+    }
+
+    function ordinaire_colorChangeOnDiv(tic, divId) {
+        tic %= ordinaire_colors.length;
+        divVar = document.getElementById(divId);
+        divVar.style.background = ordinaire_colors[tic];
+        setTimeout("ordinaire_colorChangeOnDiv(" + (tic + 1) + ", '" + divId + "')", 4000);
+    }
+    
+	(function($){
+		var ordinaire_colorx = shadeColor1("<?php echo $page_background; ?>",68);
+		var ordinaire_element ="<style>.menu-horizontal li a:hover{"+
+		"background-color: "+ ordinaire_colorx +";"+ 
+		"box-shadow: 0px 0px 13px 0px "+ ordinaire_colorx +" inset;" +
+		"}"+
+		".current-menu-item{"+
+		"background-color: "+ ordinaire_colorx+
+		"}" +
+		"</style>";
+		$("head").append(ordinaire_element);
+
+		  //color change home
+    
+ $("#home").ready(function () {
+            if ($("#divtest").length == 1) {
+                ordinaire_colorChange(0);
+                ordinaire_colorChangeOnDiv(2, 'divtest');
+            }
+
+        });
+	}(jQuery));
+
+
 </script>
 <!-- default slider if no slider block has been added by the admin -->
 <div class="container-fluid">

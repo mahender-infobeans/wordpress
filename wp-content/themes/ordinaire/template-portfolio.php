@@ -19,16 +19,18 @@
     }
 </style>
 <script type="text/javascript">
-    var colorx = shadeColor1("<?php echo $page_background; ?>", 85);
-    var element = "<style>.menu-horizontal li a:hover{" +
-            "background-color: " + colorx + ";" +
-            "box-shadow: 0px 0px 13px 0px " + colorx + " inset;" +
-            "}" +
-            ".current-menu-item{" +
-            "background-color: " + colorx +
-            "}" +
-            "</style>";
-    $("head").append(element);
+  (function($){
+    var ordinaire_colorx = shadeColor1("<?php echo $page_background; ?>",85);
+    var ordinaire_element ="<style>.menu-horizontal li a:hover{"+
+    "background-color: "+ ordinaire_colorx +";"+
+    "box-shadow: 0px 0px 13px 0px "+ ordinaire_colorx +" inset;" +
+    "}"+
+    ".current-menu-item{"+
+    "background-color: "+ ordinaire_colorx+
+    "}" +
+    "</style>";
+    $("head").append(ordinaire_element);
+        }(jQuery));
 </script>
 <!-- 2nd page header -->
 <div class="aboutus-header ordinaire-bgcolor-yellow">	
