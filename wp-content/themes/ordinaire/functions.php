@@ -107,16 +107,7 @@ require_once(TEMPLATEPATH . '/functions/admin-menu.php');
 require_once(TEMPLATEPATH . '/functions/mapfunctions.php');
 // require_once(TEMPLATEPATH.  '/functions/class-tgm-plugin-activation.php');
 
-// Enqueue scripts and styles.
 
-// function ordinaire_scripts(){
-//     // Add custom fonts, used in the main stylesheet.
-//     wp_enqueue_style( 'ordinaire-fonts', twentyseventeen_fonts_url(), array(), null );
-
-//     // Theme stylesheet.
-//     wp_enqueue_style( 'ordinaire-style', get_stylesheet_uri() );
-// }
-// add_action( 'wp_enqueue_scripts', 'ordinaire_scripts' );
 
 // example end
 
