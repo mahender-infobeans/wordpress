@@ -107,7 +107,7 @@ require_once(TEMPLATEPATH . '/functions/admin-menu.php');
 require_once(TEMPLATEPATH . '/functions/mapfunctions.php');
 // require_once(TEMPLATEPATH.  '/functions/class-tgm-plugin-activation.php');
 
-
+remove_filter( 'the_content', 'wpautop' );
 
 // example end
 

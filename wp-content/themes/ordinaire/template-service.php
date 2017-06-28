@@ -17,7 +17,7 @@
 		background-color: <?php echo $page_background; ?>;
 		color: <?php echo $page_font; ?>;
 	}
-</style>
+</style> 
 <script type="text/javascript">
 	(function($){
 		var ordinaire_colorx = shadeColor1("<?php echo $page_background; ?>",91);
@@ -97,7 +97,7 @@
 				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 					<p class="block-title resp-text-center"><?php the_title(); ?></p>
 					<div class="image-box ">
-						<span class="ico-services"><i class="<?php  ?> fa-5x" aria-hidden="true"></i></span>
+						<span class="ico-services"><i class="<?php the_content(); ?>" aria-hidden="true"></i></span>
 					</div>
 				</div>
 			<?php endwhile; ?>
