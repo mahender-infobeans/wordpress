@@ -41,7 +41,7 @@
 	?>
 	<header>
 		
-		<div class="header-background">
+		<div class="ordinaire-header-background">
 			<!-- <?php echo is_front_page()?'home-top-header':''?> -->
 			<div class="container-fluid">
 				<div class="col-lg-3 col-md-3 col-sm-2 col-xs-12 padding15">
@@ -58,12 +58,12 @@
 				</div>
 
 				<div class="col-lg-9 col-md-9 col-sm-10 col-xs-12">
-					<nav class="header-menu">
+					<nav class="ordinaire-header-menu">
 						
 						<?php 
 						wp_nav_menu( array( 'theme_location' => 'header-menu',
 							'menu_id' => 'ordinaire-menu-header-horizontal',
-							'menu_class' => 'menu-horizontal navbar-collapse collapse nav navbar-nav right-768up'
+							'menu_class' => 'ordinaire-menu-horizontal navbar-collapse collapse nav navbar-nav right-768up'
 							) );
 							?>
 						</nav>

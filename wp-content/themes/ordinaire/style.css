@@ -60,14 +60,14 @@ body{
 .ordinaire-box-contact{
 	min-height: 580px;
 	width: 100%;
-	background-color: #ddd;
+	/*background-color: #ddd;*/
 }
-.box-portfolio{
+.ordinaire-box-portfolio{
 	min-height: 420px;
 	width: 100%;
 	background-color: #ddd;
 }
-.contact-box{
+.ordinaire-contact-box{
 	margin: 10px auto;
 	display: table;
 }
@@ -81,35 +81,34 @@ body{
 	vertical-align: middle;
 	color: #fff;
 }
-.portfolio-box-hover{
+.ordinaire-portfolio-box-hover{
 	position: relative;
 	background: 0 0/contain;
 }
-.portfolio-box-hover:hover .overlay{
+.ordinaire-portfolio-box-hover:hover .ordinaire-overlay{
 	height: 100%;
 }
-.contact-block{
-	height: 580px;
-    margin-top: 10px;
+.ordinaire-contact-block{
+	
 }
 .margintop50{
 	margin-top: 50px;
 }
-.show-hover{
+.ordinaire-show-hover{
 	display: none;
 	animation-fill-mode: forwards;
 }
-.portfolio-box-hover:hover .show-hover{
+.ordinaire-portfolio-box-hover:hover .ordinaire-show-hover{
 	display: block;
 	animation-fill-mode: forwards;
 	animation: fadein 2s;
 }
-.fade-in-out{
+.ordinaire-fade-in-out{
 	animation-fill-mode: forwards;
 	animation: fadein 2s;
 
 }
-.portfolio-box-hover:hover .fade-in-out{
+.ordinaire-portfolio-box-hover:hover .ordinaire-fade-in-out{
 	animation-fill-mode: forwards;
 	animation: fadein 2s;
 }
@@ -117,13 +116,13 @@ body{
 	from{display: none;opacity: 0;}
 	to{display: block;opacity: 1;}
 }
-.overlay-projects{
+.ordinaire-overlay-projects{
 	background-color:  #FFFA78;
 	background-image: url(/wp-content/themes/ordinaire/assets/images/port-img-hover.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 }
-.overlay {
+.ordinaire-overlay {
 	position: absolute;
 	bottom: 0;
 	right: 0;
@@ -137,7 +136,7 @@ body{
 	transition: .5s ease;
 	overflow: hidden;
 }
-.text {
+.ordinaire-text {
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -154,7 +153,7 @@ body{
 
 
 /*Horizontal menu of all page start */
-.menu-horizontal{
+.ordinaire-menu-horizontal{
 	padding: 0;
 	margin: 0.9375rem 0.3125rem 0;
 	text-align: center;
@@ -166,14 +165,14 @@ body{
 	color: #6f43d6;
 }
 /*text animation home page end */
-.home-top-header{
+.ordinaire-home-top-header{
 	display: none;
 }
-.home-side-header{
+.ordinaire-home-side-header{
 	display: block;
 }
 /*home page footer css*/
-.footer-home{
+.ordinaire-footer-home{
 	position: absolute;
 	z-index: 10;
 	left: 0px;
@@ -183,7 +182,7 @@ body{
 	bottom: 0px;
 }
 
-.footer {
+.ordinaire-footer {
 	position: absolute;
 	bottom: 0;
 	right: 0;
@@ -193,13 +192,13 @@ body{
 	text-align: center;
 	color: #fff;
 }
-.menu-horizontal li{
+.ordinaire-menu-horizontal li{
 	float: left;
 	padding: 0px 15px 0px 15px;
 	list-style: none;
 }
 
-.menu-horizontal li a{
+.ordinaire-menu-horizontal li a{
 	color: #333;
 	font-size: 18px;
 	list-style: none;
@@ -208,22 +207,22 @@ body{
 
 /*logo start*/
 
-.about-back-color{
+.ordinaire-about-back-color{
 	background-color: #1DE9B6;
 }
 .text-trans{
 	text-transform: capitalize;
 }
-.about-text{
+.ordinaire-about-text{
 	margin-bottom: -15px;
 	font-weight: bold;
 	font-size: 22px;
 }
-.we-text{
+.ordinaire-we-text{
 	font-weight: bold;
 	font-size: 80px;
 }
-.img1{
+.ordinaire-img1{
 	position: absolute;
 	right: 40px;
 	top: 35px;
@@ -231,7 +230,7 @@ body{
 	width: 200px;
 	background-image: url("/wp-content/themes/ordinaire/assets/images/tri-right.png");
 }
-.img2{
+.ordinaire-img2{
 	position: absolute;
 	left: 40px;
 	bottom: 5px;
@@ -305,10 +304,10 @@ body{
 /*toggle navigation responsive btn end*/
 
 
-.home-top-header{
+.ordinaire-home-top-header{
 	display: none;
 }
-.home-side-header{
+.ordinaire-home-side-header{
 	display: block;
 }
 /*home page footer css*/
@@ -329,7 +328,7 @@ body{
 	color: #fff;
 }
 
-.mt15{
+.ordinaire-mt15{
 	margin-top: 15px;
 }
 .margin-top10{
@@ -348,7 +347,7 @@ html{
 	src: url("/wp-content/themes/ordinaire/assets/font/CenturyGothic/07558_CenturyGothic.ttf");
 }
 
-.aboutus-header{
+.ordinaire-aboutus-header{
 	color: #fff;
 	padding-top: 100px;
 	padding-bottom: 100px;
@@ -356,10 +355,7 @@ html{
 .aboutBckcolor{
 	background-color: #1DE9B6;
 }
-.text-trans{
-	text-transform: capitalize;
-}
-.work-div{
+.ordinaire-work-div{
 	background-color: #F0F0F0;
 	padding: 10px 0px;
 	font-size: 20px;
@@ -370,7 +366,7 @@ html{
 	margin-bottom: -40px;
 }
 /*team page css*/
-.team-back{
+.ordinaire-team-back{
 	background-color: #D4E157;
 }
 .team-slogan{
@@ -412,7 +408,7 @@ html{
 .paddingtop8{
 	padding-top: 8px;
 }
-.team-border{
+.ordinaire-team-border{
 	padding-top: 25px;
 	cursor: pointer;
 	position: relative;
@@ -444,16 +440,11 @@ html{
 	-ms-transform: translate(-50%, -50%);
 	z-index: 10;
 }
-.team-border:hover .overlay-team {
+.ordinaire-team-border:hover .overlay-team {
 	opacity: 1;
 }
 
-
-.we-text{
-	font-weight: bold;
-	font-size: 80px;
-}
-.img1{
+.ordinaire-img1{
 	position: absolute;
 	right: 40px;
 	top: 35px;
@@ -461,7 +452,7 @@ html{
 	height: 200px;
 	width: 200px;
 }
-.img2{
+.ordinaire-img2{
 	position: absolute;
 	left: 40px;
 	bottom: 5px;
@@ -510,7 +501,7 @@ html{
 	height:5px;
 	background-color: #DFDFDF;
 }
-.tab-box{
+.ordinaire-tab-box{
 	background-color: #fff;
 	box-shadow: 4px 9px 13px 4px #eee;
 }
@@ -541,13 +532,13 @@ html{
 
 
 /*service page css*/
-.serviceus-header{
+.ordinaire-serviceus-header{
 	background-color: #4FD5EE;
 	color: #fff;
 	padding-top: 100px;
 	padding-bottom: 100px;
 }
-.image-box{
+.ordinaire-image-box{
 	background-color: #fff;
 	box-shadow: 0px 0px 16px 1px #d3d3d3;
 	height: 140px;
@@ -564,7 +555,7 @@ html{
 	50%  { border-color: rgba(0, 255, 255, 0); }
 	100% { border-color: rgba(0, 255, 255, 1); }
 }
-.image-box img{
+.ordinaire-image-box img{
 	padding: 50px;
 }
 .marginTop100{
@@ -587,13 +578,6 @@ html{
 	margin-left: 9px;
 }
 
-
-.work-div{
-	background-color: #F0F0F0;
-	padding: 10px 0px;
-	font-size: 20px;
-	color: #333;
-}
 .margin40{
 	margin-top: 40px;
 	margin-bottom: -40px;
@@ -641,7 +625,7 @@ html{
 	padding-top: 10px;
 	margin-bottom: -10px;
 }
-.font16{
+.ordinaire-font16{
 	font-size: 16px;
 }
 .blog-link-btn,
@@ -676,12 +660,12 @@ html{
 	transition: .7s ease;
 }
 /* home page css*/
-.img-back{
+.ordinaire-img-back{
 	height: 400px;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.default-img{
+.ordinaire-default-img{
 	background-image: url(/wp-content/themes/ordinaire/assets/images/slider-img1.jpg);
 }
 .arrows{
@@ -725,7 +709,7 @@ html{
 .service-tab{
 	overflow: auto;
 }
-.ico-services{
+.ordinaire-ico-services{
 	color: #4FD5EE;
 }
 .responsive .owl-prev{
@@ -749,17 +733,17 @@ html{
 	z-index: 2 !important;
 	color: #fff !important;
 }
-.bgcolor-darkblue{
+.ordinaire-bgcolor-darkblue{
 	background-color: #3d60d0;
 }
 .padding0{
 	padding-left: 0;
 	padding-right: 0;
 }
-.font28{
+.ordinaire-font28{
 	font-size: 28px;
 }
-.font48{
+.ordinaire-font48{
 	font-size: 48px;
 }
 .contact-image{
@@ -803,15 +787,15 @@ html{
 .paddingtop30{
 	padding-top: 20px;
 }
-.bottom-contact{
+.ordinaire-bottom-contact{
 	border-bottom: 2px solid #3d60d0;
 	padding: 5px;
 }
-.home-background{
+.ordinaire-home-background{
 	background-color: #0ABBB5;
 	color: #fff;
 }
-.parallax-2{
+.ordinaire-parallax-2{
 	background-image: url("/wp-content/themes/ordinaire/assets/images/studio2.jpg");
 	min-height: 500px; 
 	background-attachment: fixed;
@@ -819,7 +803,7 @@ html{
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.parallax-1 {
+.ordinaire-parallax-1 {
 	min-height: 500px; 
 	background-attachment: fixed;
 	background-position: center;
@@ -829,14 +813,14 @@ html{
 .padding30{
 	padding: 30px;
 }
-.parallex-slider{
+.ordinaire-parallex-slider{
 	min-height: 600px; 
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.home-text{
+.ordinaire-home-text{
 	color: #fff;
 	font-size: 54px;
 }
@@ -847,21 +831,21 @@ html{
 #home *{
 	transition: 4.0s ease;
 }
-.font36{
+.ordinaire-font36{
 	font-size: 36px;
 	text-transform: capitalize;
 	font-weight: 700;
 }
-.font26{
+.ordinaire-font26{
 	font-size: 26px;
 }
 .marginbtm30{
 	margin-bottom: 30px;
 }
-.b-head{
+.ordinaire-b-head{
 	padding-top: 15px;
 }
-.b-block{
+.ordinaire-b-block{
 	font-size: 16px;
 	padding: 10px 15px;
 }
@@ -1000,7 +984,7 @@ and (orientation : landscape) {
 	}
 }
 @media screen and (min-width: 767px) and (max-width: 1024px){
-	.we-text {
+	.ordinaire-we-text {
 		font-weight: bold;
 		font-size: 50px;
 	}
@@ -1010,19 +994,19 @@ and (orientation : landscape) {
 	}
 }
 @media screen and (min-width: 767px) and (max-width: 1024px){
-	.we-text {
+	.ordinaire-we-text {
 		font-weight: bold;
 		font-size: 50px;
 	}
 
 }
 @media screen and (min-width: 320px) and (max-width: 1024px){
-	.aboutus-header {
+	.ordinaire-aboutus-header {
 		padding-top: 60px;
 		padding-bottom: 70px;
 		margin-bottom: 30px;
 	}
-	.img1{
+	.ordinaire-img1{
 		z-index: -1;
 	}
 	.service-left{
@@ -1046,7 +1030,7 @@ and (orientation : landscape) {
 	}
 }
 @media screen and (min-width: 320px) and (max-width: 767px){
-	.we-text {
+	.ordinaire-we-text {
 		font-weight: bold;
 		font-size: 40px;
 	}
@@ -1073,7 +1057,7 @@ and (orientation : landscape) {
 		bottom: 35px;
 		font-size: 35px;
 	}
-	.menu-horizontal li{
+	.ordinaire-menu-horizontal li{
 		float: left;
 		padding: 10px 10px;
 		width: 100%;
