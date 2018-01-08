@@ -3,17 +3,17 @@
 <style type="text/css">
 	<?php $page_background = get_post_custom_values("page-background")[0] == ""? '#3d60d0': get_post_custom_values("page-background")[0]; ?>
 	<?php $page_font = get_post_custom_values("header-font")[0] == ""? '#fff': get_post_custom_values("header-font")[0]; ?>
-	.header-background-custom{
+	.ordinaire-header-background-custom{
 		background-color: <?php echo $page_background; ?>;
 		color: <?php echo $page_font; ?>;
 	}
-	.header-background{
+	.ordinaire-header-background{
 		background-color: <?php echo $page_background; ?>;
 	}
-	.menu-horizontal li a{
+	.ordinaire-menu-horizontal li a{
 		color: <?php echo $page_font; ?>;	
 	}
-	.footer,.footer a.infobeans-footer{
+	.ordinaire-footer,.ordinaire-footer a.ordinaire-infobeans-footer{
 		background-color: <?php echo $page_background; ?>;
 		color: <?php echo $page_font; ?>;
 	}
@@ -22,7 +22,7 @@
 
 	(function($){
 		var ordinaire_colorx = shadeColor1("<?php echo $page_background; ?>",64);
-		var ordinaire_element ="<style>.menu-horizontal li a:hover{"+
+		var ordinaire_element ="<style>.ordinaire-menu-horizontal li a:hover{"+
 		"background-color: "+ ordinaire_colorx +";"+
 		"box-shadow: 0px 0px 13px 0px "+ ordinaire_colorx +" inset;" +
 		"}"+
@@ -34,12 +34,12 @@
 	}(jQuery));
 </script>
 <!-- 2nd page header -->
-<div class="aboutus-header bgcolor-darkblue">	
+<div class="ordinaire-aboutus-header ordinaire-bgcolor-darkblue">	
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				<h2 class="about-text text-trans">Contact Us</h2>
-				<h1 class="we-text"> <?php echo get_post_custom_values("title_page")[0] == ""? 'Stay Connected...': get_post_custom_values("title_page")[0]; ?></h1>
+				<h2 class="ordinaire-about-text text-trans">Contact Us</h2>
+				<h1 class="ordinaire-we-text"> <?php echo get_post_custom_values("title_page")[0] == ""? 'Stay Connected...': get_post_custom_values("title_page")[0]; ?></h1>
 			</div>.
 		</div>
 	</div>
@@ -48,7 +48,7 @@
 <div class="container">
 	<div class="row ordinaire-color-darkgray" style="background-color: #fff;">
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-			<p class="text-center paddingtop30"> <span class="font28">Crafted To</span> <br><span class="font48"> PERFECTION</span></p>
+			<p class="text-center paddingtop30"> <span class="ordinaire-font28">Crafted To</span> <br><span class="ordinaire-font48"> PERFECTION</span></p>
 		</div>
 
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -58,31 +58,31 @@
 	</div>
 	<div class="row marginbtm30">
 		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 pull-left">
-			<h3 class="text-center bottom-contact"><strong>ART DIRECTION</strong></h3>
+			<h3 class="text-center ordinaire-bottom-contact"><strong>ART DIRECTION</strong></h3>
 		</div>
 		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 pull-left"">
-			<h3 class="text-center bottom-contact"><strong>PRODUCTION</strong></h3>
+			<h3 class="text-center ordinaire-bottom-contact"><strong>PRODUCTION</strong></h3>
 		</div>
 		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 pull-left">
-			<h3 class="text-center bottom-contact"><strong>CREATIVE</strong></h3>
+			<h3 class="text-center ordinaire-bottom-contact"><strong>CREATIVE</strong></h3>
 		</div>
 		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 pull-left">
-			<h3 class="text-center bottom-contact"><strong>CREATIVE</strong></h3>
+			<h3 class="text-center ordinaire-bottom-contact"><strong>CREATIVE</strong></h3>
 		</div>
 		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 pull-left">
-			<h3 class="text-center bottom-contact"><strong>CREATIVE</strong></h3>
+			<h3 class="text-center ordinaire-bottom-contact"><strong>CREATIVE</strong></h3>
 		</div>
 		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 pull-left">
-			<h3 class="text-center bottom-contact"><strong>CREATIVE</strong></h3>
+			<h3 class="text-center ordinaire-bottom-contact"><strong>CREATIVE</strong></h3>
 		</div>
 	</div>
 </div>
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding0 bgcolor-darkblue contact-block">
-			<div class="box-contact contact-box">
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding0 ordinaire-bgcolor-darkblue ordinaire-contact-block">
+			<div class="ordinaire-box-contact ordinaire-contact-box">
 				<div class="center-vertical-box">
-					<p class="text-center font28 margintop50">CONTACT US</p>
+					<p class="text-center ordinaire-font28 margintop50">CONTACT US</p>
 					<hr class="contact-hr">
 					<p> <?php echo (get_option("address")==""?"Unit 101-C, Level 1, Delta -1,Giga Space IT Park, Viman Nagar, Pune, Maharashtra 411014":get_option("address")); ?></p>
 					<p> <?php echo (get_option("emailid")==""?"infob3ans@gmail.com":get_option("emailid")); ?></p>
@@ -99,7 +99,7 @@
 		</div>
 		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding0">
 			<div class="box-contact contact-box" style="display: block;">
-				<div id="googleMap" style="width:100%;height:580px;"></div>
+				<div id="googleMap" style="width:100%;height:600px;"></div>
 			</div>
 		</div>
 	</div>
